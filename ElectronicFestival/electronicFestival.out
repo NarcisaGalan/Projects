@@ -1,0 +1,315 @@
+============================== Mace4 =================================
+Mace4 (64) version 2009-11A, November 2009.
+Process 11659 was started by narcisa on narcisa-ThinkPad-Edge-E531,
+Fri Nov 30 15:18:15 2018
+The command was "mace4 -f electronicFestival.in".
+============================== end of head ===========================
+
+============================== INPUT =================================
+
+% Reading from file electronicFestival.in
+
+set(arithmetic).
+    % set(arithmetic) -> clear(lnh).
+    % set(arithmetic) -> assign(selection_order, 0).
+
+    % Declaring Mace4 arithmetic parse types.
+assign(domain_size,5).
+    % assign(domain_size, 5) -> assign(start_size, 5).
+    % assign(domain_size, 5) -> assign(end_size, 5).
+
+list(distinct).
+[Scottish,Canadian,French,Dutch,American].
+[blue,black,green,red,pink].
+[drum,dubstep,EDM,house,trance].
+[Xibalba,Shangri,Asgard,Arcadia,Valhalla].
+[age1,age2,age3,age4,age5].
+[camping,juggling,painting,singing,surfing].
+end_of_list.
+
+formulas(assumptions).
+right_dj(x,y) <-> x + 1 = y.
+neighbors(x,y) <-> right_dj(x,y) | right_dj(y,x).
+one_end(x) <-> x = 4 | x = 0.
+somewhere_right(x,y) <-> x + 1 = y | x + 2 = y | x + 3 = y.
+between(x,y,z) <-> somewhere_right(x,y) & somewhere_right(y,z).
+somewhere_right(Scottish,pink).
+Arcadia = 3.
+age2 = 0.
+right_dj(Canadian,EDM).
+neighbors(painting,dubstep).
+between(Scottish,black,dubstep).
+neighbors(French,blue).
+one_end(camping).
+Asgard = blue.
+between(green,painting,blue).
+drum = 4.
+Asgard = 2.
+neighbors(trance,dubstep).
+right_dj(Canadian,jugglin).
+right_dj(black,singing).
+neighbors(age3,juggling).
+age4 = 3.
+between(Dutch,age4,age1).
+somewhere_right(blue,Xibalba).
+Valhalla = surfing.
+somewhere_right(French,red).
+end_of_list.
+
+============================== end of input ==========================
+
+============================== PROCESS NON-CLAUSAL FORMULAS ==========
+
+% Formulas that are not ordinary clauses:
+1 right_dj(x,y) <-> x + 1 = y # label(non_clause).  [assumption].
+2 neighbors(x,y) <-> right_dj(x,y) | right_dj(y,x) # label(non_clause).  [assumption].
+3 one_end(x) <-> x = 4 | x = 0 # label(non_clause).  [assumption].
+4 somewhere_right(x,y) <-> x + 1 = y | x + 2 = y | x + 3 = y # label(non_clause).  [assumption].
+5 between(x,y,z) <-> somewhere_right(x,y) & somewhere_right(y,z) # label(non_clause).  [assumption].
+
+============================== end of process non-clausal formulas ===
+
+============================== CLAUSES FOR SEARCH ====================
+
+formulas(mace4_clauses).
+-right_dj(x,y) | x + 1 = y.
+right_dj(x,y) | x + 1 != y.
+-neighbors(x,y) | right_dj(x,y) | right_dj(y,x).
+neighbors(x,y) | -right_dj(x,y).
+neighbors(x,y) | -right_dj(y,x).
+-one_end(x) | 4 = x | 0 = x.
+one_end(x) | 4 != x.
+one_end(x) | 0 != x.
+-somewhere_right(x,y) | x + 1 = y | x + 2 = y | x + 3 = y.
+somewhere_right(x,y) | x + 1 != y.
+somewhere_right(x,y) | x + 2 != y.
+somewhere_right(x,y) | x + 3 != y.
+-between(x,y,z) | somewhere_right(x,y).
+-between(x,y,z) | somewhere_right(y,z).
+between(x,y,z) | -somewhere_right(x,y) | -somewhere_right(y,z).
+somewhere_right(Scottish,pink).
+Arcadia = 3.
+age2 = 0.
+right_dj(Canadian,EDM).
+neighbors(painting,dubstep).
+between(Scottish,black,dubstep).
+neighbors(French,blue).
+one_end(camping).
+Asgard = blue.
+between(green,painting,blue).
+drum = 4.
+Asgard = 2.
+neighbors(trance,dubstep).
+right_dj(Canadian,jugglin).
+right_dj(black,singing).
+neighbors(age3,juggling).
+age4 = 3.
+between(Dutch,age4,age1).
+somewhere_right(blue,Xibalba).
+Valhalla = surfing.
+somewhere_right(French,red).
+Scottish != Canadian.
+Scottish != French.
+Scottish != Dutch.
+Scottish != American.
+Canadian != French.
+Canadian != Dutch.
+Canadian != American.
+French != Dutch.
+French != American.
+Dutch != American.
+blue != black.
+blue != green.
+blue != red.
+blue != pink.
+black != green.
+black != red.
+black != pink.
+green != red.
+green != pink.
+red != pink.
+drum != dubstep.
+drum != EDM.
+drum != house.
+drum != trance.
+dubstep != EDM.
+dubstep != house.
+dubstep != trance.
+EDM != house.
+EDM != trance.
+house != trance.
+Xibalba != Shangri.
+Xibalba != Asgard.
+Xibalba != Arcadia.
+Xibalba != Valhalla.
+Shangri != Asgard.
+Shangri != Arcadia.
+Shangri != Valhalla.
+Asgard != Arcadia.
+Asgard != Valhalla.
+Arcadia != Valhalla.
+age1 != age2.
+age1 != age3.
+age1 != age4.
+age1 != age5.
+age2 != age3.
+age2 != age4.
+age2 != age5.
+age3 != age4.
+age3 != age5.
+age4 != age5.
+camping != juggling.
+camping != painting.
+camping != singing.
+camping != surfing.
+juggling != painting.
+juggling != singing.
+juggling != surfing.
+painting != singing.
+painting != surfing.
+singing != surfing.
+end_of_list.
+
+============================== end of clauses for search =============
+
+% The largest natural number in the input is 4.
+
+============================== DOMAIN SIZE 5 =========================
+
+============================== MODEL =================================
+
+interpretation( 5, [number=1, seconds=0], [
+
+        function(Arcadia, [ 3 ]),
+
+        function(Asgard, [ 2 ]),
+
+        function(Canadian, [ 2 ]),
+
+        function(Dutch, [ 1 ]),
+
+        function(EDM, [ 3 ]),
+
+        function(French, [ 3 ]),
+
+        function(Scottish, [ 0 ]),
+
+        function(Valhalla, [ 0 ]),
+
+        function(Xibalba, [ 4 ]),
+
+        function(age1, [ 4 ]),
+
+        function(age2, [ 0 ]),
+
+        function(age3, [ 2 ]),
+
+        function(age4, [ 3 ]),
+
+        function(black, [ 1 ]),
+
+        function(blue, [ 2 ]),
+
+        function(camping, [ 4 ]),
+
+        function(drum, [ 4 ]),
+
+        function(dubstep, [ 2 ]),
+
+        function(green, [ 0 ]),
+
+        function(jugglin, [ 3 ]),
+
+        function(juggling, [ 3 ]),
+
+        function(painting, [ 1 ]),
+
+        function(pink, [ 3 ]),
+
+        function(red, [ 4 ]),
+
+        function(singing, [ 2 ]),
+
+        function(surfing, [ 0 ]),
+
+        function(trance, [ 1 ]),
+
+        relation(one_end(_), [ 1, 0, 0, 0, 1 ]),
+
+        relation(neighbors(_,_), [
+			   0, 1, 0, 0, 0,
+			   1, 0, 1, 0, 0,
+			   0, 1, 0, 1, 0,
+			   0, 0, 1, 0, 1,
+			   0, 0, 0, 1, 0 ]),
+
+        relation(right_dj(_,_), [
+			   0, 1, 0, 0, 0,
+			   0, 0, 1, 0, 0,
+			   0, 0, 0, 1, 0,
+			   0, 0, 0, 0, 1,
+			   0, 0, 0, 0, 0 ]),
+
+        relation(somewhere_right(_,_), [
+			   0, 1, 1, 1, 0,
+			   0, 0, 1, 1, 1,
+			   0, 0, 0, 1, 1,
+			   0, 0, 0, 0, 1,
+			   0, 0, 0, 0, 0 ]),
+
+        relation(between(_,_,_), [
+			   0, 0, 0, 0, 0,
+			   0, 0, 1, 1, 1,
+			   0, 0, 0, 1, 1,
+			   0, 0, 0, 0, 1,
+			   0, 0, 0, 0, 0,
+			   0, 0, 0, 0, 0,
+			   0, 0, 0, 0, 0,
+			   0, 0, 0, 1, 1,
+			   0, 0, 0, 0, 1,
+			   0, 0, 0, 0, 0,
+			   0, 0, 0, 0, 0,
+			   0, 0, 0, 0, 0,
+			   0, 0, 0, 0, 0,
+			   0, 0, 0, 0, 1,
+			   0, 0, 0, 0, 0,
+			   0, 0, 0, 0, 0,
+			   0, 0, 0, 0, 0,
+			   0, 0, 0, 0, 0,
+			   0, 0, 0, 0, 0,
+			   0, 0, 0, 0, 0,
+			   0, 0, 0, 0, 0,
+			   0, 0, 0, 0, 0,
+			   0, 0, 0, 0, 0,
+			   0, 0, 0, 0, 0,
+			   0, 0, 0, 0, 0 ]),
+
+        function(American, [ 4 ]),
+
+        function(Shangri, [ 1 ]),
+
+        function(age5, [ 1 ]),
+
+        function(house, [ 0 ])
+]).
+
+============================== end of model ==========================
+
+============================== STATISTICS ============================
+
+For domain size 5.
+
+Current CPU time: 0.00 seconds (total CPU time: 0.02 seconds).
+Ground clauses: seen=696, kept=284.
+Selections=82, assignments=392, propagations=496, current_models=1.
+Rewrite_terms=2363, rewrite_bools=1515, indexes=0.
+Rules_from_neg_clauses=282, cross_offs=1106.
+
+============================== end of statistics =====================
+
+User_CPU=0.02, System_CPU=0.00, Wall_clock=0.
+
+Exiting with 1 model.
+
+Process 11659 exit (max_models) Fri Nov 30 15:18:15 2018
+The process finished Fri Nov 30 15:18:15 2018

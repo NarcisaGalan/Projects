@@ -1,0 +1,4267 @@
+# 
+# Copyright (c) 2005 IBM Corporation and others.
+# All rights reserved. This program and the accompanying materials
+# are made available under the terms of the Common Public License v1.0
+# which accompanies this distribution, and is available at
+# http://www.eclipse.org/legal/cpl-v10.html
+# 
+# Contributors:
+# IBM - Initial implementation
+# 
+
+loading proiect.e
+loading foundations/Root.e
+loading foundations/EC.e
+602 variables and 2420 clauses
+relsat solver
+10 models
+---
+model 1:
+0
+AtWork(Ion).
+OnVacantion(Vasile).
+Happens(BuildFoundation(Ion), 0).
+1
+-OnVacantion(Vasile).
++AtWork(Vasile).
++Foundation(Ion).
+Happens(BuildStructure(Ion), 1).
+2
++Structure(Ion).
+Happens(BuildWalls(Ion), 2).
+3
++Wall(Ion).
+Happens(BuildRoof(Ion), 3).
+4
+-AtWork(Vasile).
++OnVacantion(Vasile).
++Roof(Ion).
+Happens(InstallWindows(Ion), 4).
+5
+-OnVacantion(Vasile).
++AtWork(Vasile).
++Windows(Ion).
+Happens(IsolateHouse(Vasile), 5).
+6
++Isolation(Vasile).
+Happens(BuildFloor(Vasile), 6).
+Happens(BuildInterior(Ion), 6).
+7
++Floor(Vasile).
++Interior(Ion).
+Happens(PaintHouse(Ion), 7).
+8
+-AtWork(Ion).
+-AtWork(Vasile).
++OnVacantion(Ion).
++OnVacantion(Vasile).
++Paint(Ion).
+9
+-OnVacantion(Ion).
+-OnVacantion(Vasile).
++AtWork(Ion).
++AtWork(Vasile).
+P
+ReleasedAt(AtWork(Ion), 0).
+ReleasedAt(AtWork(Ion), 1).
+ReleasedAt(AtWork(Ion), 2).
+ReleasedAt(AtWork(Ion), 3).
+ReleasedAt(AtWork(Ion), 4).
+ReleasedAt(AtWork(Ion), 5).
+ReleasedAt(AtWork(Ion), 6).
+ReleasedAt(AtWork(Ion), 7).
+ReleasedAt(AtWork(Ion), 8).
+ReleasedAt(AtWork(Ion), 9).
+ReleasedAt(AtWork(Vasile), 0).
+ReleasedAt(AtWork(Vasile), 1).
+ReleasedAt(AtWork(Vasile), 2).
+ReleasedAt(AtWork(Vasile), 3).
+ReleasedAt(AtWork(Vasile), 4).
+ReleasedAt(AtWork(Vasile), 5).
+ReleasedAt(AtWork(Vasile), 6).
+ReleasedAt(AtWork(Vasile), 7).
+ReleasedAt(AtWork(Vasile), 8).
+ReleasedAt(AtWork(Vasile), 9).
+ReleasedAt(OnVacantion(Ion), 0).
+ReleasedAt(OnVacantion(Ion), 1).
+ReleasedAt(OnVacantion(Ion), 2).
+ReleasedAt(OnVacantion(Ion), 3).
+ReleasedAt(OnVacantion(Ion), 4).
+ReleasedAt(OnVacantion(Ion), 5).
+ReleasedAt(OnVacantion(Ion), 6).
+ReleasedAt(OnVacantion(Ion), 7).
+ReleasedAt(OnVacantion(Ion), 8).
+ReleasedAt(OnVacantion(Ion), 9).
+ReleasedAt(OnVacantion(Vasile), 0).
+ReleasedAt(OnVacantion(Vasile), 1).
+ReleasedAt(OnVacantion(Vasile), 2).
+ReleasedAt(OnVacantion(Vasile), 3).
+ReleasedAt(OnVacantion(Vasile), 4).
+ReleasedAt(OnVacantion(Vasile), 5).
+ReleasedAt(OnVacantion(Vasile), 6).
+ReleasedAt(OnVacantion(Vasile), 7).
+ReleasedAt(OnVacantion(Vasile), 8).
+ReleasedAt(OnVacantion(Vasile), 9).
+!Happens(BuildFloor(Ion), 0).
+!Happens(BuildFloor(Ion), 1).
+!Happens(BuildFloor(Ion), 2).
+!Happens(BuildFloor(Ion), 3).
+!Happens(BuildFloor(Ion), 4).
+!Happens(BuildFloor(Ion), 5).
+!Happens(BuildFloor(Ion), 6).
+!Happens(BuildFloor(Ion), 7).
+!Happens(BuildFloor(Ion), 8).
+!Happens(BuildFloor(Vasile), 0).
+!Happens(BuildFloor(Vasile), 1).
+!Happens(BuildFloor(Vasile), 2).
+!Happens(BuildFloor(Vasile), 3).
+!Happens(BuildFloor(Vasile), 4).
+!Happens(BuildFloor(Vasile), 5).
+!Happens(BuildFloor(Vasile), 7).
+!Happens(BuildFloor(Vasile), 8).
+!Happens(BuildFoundation(Ion), 1).
+!Happens(BuildFoundation(Ion), 2).
+!Happens(BuildFoundation(Ion), 3).
+!Happens(BuildFoundation(Ion), 4).
+!Happens(BuildFoundation(Ion), 5).
+!Happens(BuildFoundation(Ion), 6).
+!Happens(BuildFoundation(Ion), 7).
+!Happens(BuildFoundation(Ion), 8).
+!Happens(BuildFoundation(Vasile), 0).
+!Happens(BuildFoundation(Vasile), 1).
+!Happens(BuildFoundation(Vasile), 2).
+!Happens(BuildFoundation(Vasile), 3).
+!Happens(BuildFoundation(Vasile), 4).
+!Happens(BuildFoundation(Vasile), 5).
+!Happens(BuildFoundation(Vasile), 6).
+!Happens(BuildFoundation(Vasile), 7).
+!Happens(BuildFoundation(Vasile), 8).
+!Happens(BuildInterior(Ion), 0).
+!Happens(BuildInterior(Ion), 1).
+!Happens(BuildInterior(Ion), 2).
+!Happens(BuildInterior(Ion), 3).
+!Happens(BuildInterior(Ion), 4).
+!Happens(BuildInterior(Ion), 5).
+!Happens(BuildInterior(Ion), 7).
+!Happens(BuildInterior(Ion), 8).
+!Happens(BuildInterior(Vasile), 0).
+!Happens(BuildInterior(Vasile), 1).
+!Happens(BuildInterior(Vasile), 2).
+!Happens(BuildInterior(Vasile), 3).
+!Happens(BuildInterior(Vasile), 4).
+!Happens(BuildInterior(Vasile), 5).
+!Happens(BuildInterior(Vasile), 6).
+!Happens(BuildInterior(Vasile), 7).
+!Happens(BuildInterior(Vasile), 8).
+!Happens(BuildRoof(Ion), 0).
+!Happens(BuildRoof(Ion), 1).
+!Happens(BuildRoof(Ion), 2).
+!Happens(BuildRoof(Ion), 4).
+!Happens(BuildRoof(Ion), 5).
+!Happens(BuildRoof(Ion), 6).
+!Happens(BuildRoof(Ion), 7).
+!Happens(BuildRoof(Ion), 8).
+!Happens(BuildRoof(Vasile), 0).
+!Happens(BuildRoof(Vasile), 1).
+!Happens(BuildRoof(Vasile), 2).
+!Happens(BuildRoof(Vasile), 3).
+!Happens(BuildRoof(Vasile), 4).
+!Happens(BuildRoof(Vasile), 5).
+!Happens(BuildRoof(Vasile), 6).
+!Happens(BuildRoof(Vasile), 7).
+!Happens(BuildRoof(Vasile), 8).
+!Happens(BuildStructure(Ion), 0).
+!Happens(BuildStructure(Ion), 2).
+!Happens(BuildStructure(Ion), 3).
+!Happens(BuildStructure(Ion), 4).
+!Happens(BuildStructure(Ion), 5).
+!Happens(BuildStructure(Ion), 6).
+!Happens(BuildStructure(Ion), 7).
+!Happens(BuildStructure(Ion), 8).
+!Happens(BuildStructure(Vasile), 0).
+!Happens(BuildStructure(Vasile), 1).
+!Happens(BuildStructure(Vasile), 2).
+!Happens(BuildStructure(Vasile), 3).
+!Happens(BuildStructure(Vasile), 4).
+!Happens(BuildStructure(Vasile), 5).
+!Happens(BuildStructure(Vasile), 6).
+!Happens(BuildStructure(Vasile), 7).
+!Happens(BuildStructure(Vasile), 8).
+!Happens(BuildWalls(Ion), 0).
+!Happens(BuildWalls(Ion), 1).
+!Happens(BuildWalls(Ion), 3).
+!Happens(BuildWalls(Ion), 4).
+!Happens(BuildWalls(Ion), 5).
+!Happens(BuildWalls(Ion), 6).
+!Happens(BuildWalls(Ion), 7).
+!Happens(BuildWalls(Ion), 8).
+!Happens(BuildWalls(Vasile), 0).
+!Happens(BuildWalls(Vasile), 1).
+!Happens(BuildWalls(Vasile), 2).
+!Happens(BuildWalls(Vasile), 3).
+!Happens(BuildWalls(Vasile), 4).
+!Happens(BuildWalls(Vasile), 5).
+!Happens(BuildWalls(Vasile), 6).
+!Happens(BuildWalls(Vasile), 7).
+!Happens(BuildWalls(Vasile), 8).
+!Happens(InstallWindows(Ion), 0).
+!Happens(InstallWindows(Ion), 1).
+!Happens(InstallWindows(Ion), 2).
+!Happens(InstallWindows(Ion), 3).
+!Happens(InstallWindows(Ion), 5).
+!Happens(InstallWindows(Ion), 6).
+!Happens(InstallWindows(Ion), 7).
+!Happens(InstallWindows(Ion), 8).
+!Happens(InstallWindows(Vasile), 0).
+!Happens(InstallWindows(Vasile), 1).
+!Happens(InstallWindows(Vasile), 2).
+!Happens(InstallWindows(Vasile), 3).
+!Happens(InstallWindows(Vasile), 4).
+!Happens(InstallWindows(Vasile), 5).
+!Happens(InstallWindows(Vasile), 6).
+!Happens(InstallWindows(Vasile), 7).
+!Happens(InstallWindows(Vasile), 8).
+!Happens(IsolateHouse(Ion), 0).
+!Happens(IsolateHouse(Ion), 1).
+!Happens(IsolateHouse(Ion), 2).
+!Happens(IsolateHouse(Ion), 3).
+!Happens(IsolateHouse(Ion), 4).
+!Happens(IsolateHouse(Ion), 5).
+!Happens(IsolateHouse(Ion), 6).
+!Happens(IsolateHouse(Ion), 7).
+!Happens(IsolateHouse(Ion), 8).
+!Happens(IsolateHouse(Vasile), 0).
+!Happens(IsolateHouse(Vasile), 1).
+!Happens(IsolateHouse(Vasile), 2).
+!Happens(IsolateHouse(Vasile), 3).
+!Happens(IsolateHouse(Vasile), 4).
+!Happens(IsolateHouse(Vasile), 6).
+!Happens(IsolateHouse(Vasile), 7).
+!Happens(IsolateHouse(Vasile), 8).
+!Happens(PaintHouse(Ion), 0).
+!Happens(PaintHouse(Ion), 1).
+!Happens(PaintHouse(Ion), 2).
+!Happens(PaintHouse(Ion), 3).
+!Happens(PaintHouse(Ion), 4).
+!Happens(PaintHouse(Ion), 5).
+!Happens(PaintHouse(Ion), 6).
+!Happens(PaintHouse(Ion), 8).
+!Happens(PaintHouse(Vasile), 0).
+!Happens(PaintHouse(Vasile), 1).
+!Happens(PaintHouse(Vasile), 2).
+!Happens(PaintHouse(Vasile), 3).
+!Happens(PaintHouse(Vasile), 4).
+!Happens(PaintHouse(Vasile), 5).
+!Happens(PaintHouse(Vasile), 6).
+!Happens(PaintHouse(Vasile), 7).
+!Happens(PaintHouse(Vasile), 8).
+!ReleasedAt(Floor(Ion), 0).
+!ReleasedAt(Floor(Ion), 1).
+!ReleasedAt(Floor(Ion), 2).
+!ReleasedAt(Floor(Ion), 3).
+!ReleasedAt(Floor(Ion), 4).
+!ReleasedAt(Floor(Ion), 5).
+!ReleasedAt(Floor(Ion), 6).
+!ReleasedAt(Floor(Ion), 7).
+!ReleasedAt(Floor(Ion), 8).
+!ReleasedAt(Floor(Ion), 9).
+!ReleasedAt(Floor(Vasile), 0).
+!ReleasedAt(Floor(Vasile), 1).
+!ReleasedAt(Floor(Vasile), 2).
+!ReleasedAt(Floor(Vasile), 3).
+!ReleasedAt(Floor(Vasile), 4).
+!ReleasedAt(Floor(Vasile), 5).
+!ReleasedAt(Floor(Vasile), 6).
+!ReleasedAt(Floor(Vasile), 7).
+!ReleasedAt(Floor(Vasile), 8).
+!ReleasedAt(Floor(Vasile), 9).
+!ReleasedAt(Foundation(Ion), 0).
+!ReleasedAt(Foundation(Ion), 1).
+!ReleasedAt(Foundation(Ion), 2).
+!ReleasedAt(Foundation(Ion), 3).
+!ReleasedAt(Foundation(Ion), 4).
+!ReleasedAt(Foundation(Ion), 5).
+!ReleasedAt(Foundation(Ion), 6).
+!ReleasedAt(Foundation(Ion), 7).
+!ReleasedAt(Foundation(Ion), 8).
+!ReleasedAt(Foundation(Ion), 9).
+!ReleasedAt(Foundation(Vasile), 0).
+!ReleasedAt(Foundation(Vasile), 1).
+!ReleasedAt(Foundation(Vasile), 2).
+!ReleasedAt(Foundation(Vasile), 3).
+!ReleasedAt(Foundation(Vasile), 4).
+!ReleasedAt(Foundation(Vasile), 5).
+!ReleasedAt(Foundation(Vasile), 6).
+!ReleasedAt(Foundation(Vasile), 7).
+!ReleasedAt(Foundation(Vasile), 8).
+!ReleasedAt(Foundation(Vasile), 9).
+!ReleasedAt(Interior(Ion), 0).
+!ReleasedAt(Interior(Ion), 1).
+!ReleasedAt(Interior(Ion), 2).
+!ReleasedAt(Interior(Ion), 3).
+!ReleasedAt(Interior(Ion), 4).
+!ReleasedAt(Interior(Ion), 5).
+!ReleasedAt(Interior(Ion), 6).
+!ReleasedAt(Interior(Ion), 7).
+!ReleasedAt(Interior(Ion), 8).
+!ReleasedAt(Interior(Ion), 9).
+!ReleasedAt(Interior(Vasile), 0).
+!ReleasedAt(Interior(Vasile), 1).
+!ReleasedAt(Interior(Vasile), 2).
+!ReleasedAt(Interior(Vasile), 3).
+!ReleasedAt(Interior(Vasile), 4).
+!ReleasedAt(Interior(Vasile), 5).
+!ReleasedAt(Interior(Vasile), 6).
+!ReleasedAt(Interior(Vasile), 7).
+!ReleasedAt(Interior(Vasile), 8).
+!ReleasedAt(Interior(Vasile), 9).
+!ReleasedAt(Isolation(Ion), 0).
+!ReleasedAt(Isolation(Ion), 1).
+!ReleasedAt(Isolation(Ion), 2).
+!ReleasedAt(Isolation(Ion), 3).
+!ReleasedAt(Isolation(Ion), 4).
+!ReleasedAt(Isolation(Ion), 5).
+!ReleasedAt(Isolation(Ion), 6).
+!ReleasedAt(Isolation(Ion), 7).
+!ReleasedAt(Isolation(Ion), 8).
+!ReleasedAt(Isolation(Ion), 9).
+!ReleasedAt(Isolation(Vasile), 0).
+!ReleasedAt(Isolation(Vasile), 1).
+!ReleasedAt(Isolation(Vasile), 2).
+!ReleasedAt(Isolation(Vasile), 3).
+!ReleasedAt(Isolation(Vasile), 4).
+!ReleasedAt(Isolation(Vasile), 5).
+!ReleasedAt(Isolation(Vasile), 6).
+!ReleasedAt(Isolation(Vasile), 7).
+!ReleasedAt(Isolation(Vasile), 8).
+!ReleasedAt(Isolation(Vasile), 9).
+!ReleasedAt(Paint(Ion), 0).
+!ReleasedAt(Paint(Ion), 1).
+!ReleasedAt(Paint(Ion), 2).
+!ReleasedAt(Paint(Ion), 3).
+!ReleasedAt(Paint(Ion), 4).
+!ReleasedAt(Paint(Ion), 5).
+!ReleasedAt(Paint(Ion), 6).
+!ReleasedAt(Paint(Ion), 7).
+!ReleasedAt(Paint(Ion), 8).
+!ReleasedAt(Paint(Ion), 9).
+!ReleasedAt(Paint(Vasile), 0).
+!ReleasedAt(Paint(Vasile), 1).
+!ReleasedAt(Paint(Vasile), 2).
+!ReleasedAt(Paint(Vasile), 3).
+!ReleasedAt(Paint(Vasile), 4).
+!ReleasedAt(Paint(Vasile), 5).
+!ReleasedAt(Paint(Vasile), 6).
+!ReleasedAt(Paint(Vasile), 7).
+!ReleasedAt(Paint(Vasile), 8).
+!ReleasedAt(Paint(Vasile), 9).
+!ReleasedAt(Roof(Ion), 0).
+!ReleasedAt(Roof(Ion), 1).
+!ReleasedAt(Roof(Ion), 2).
+!ReleasedAt(Roof(Ion), 3).
+!ReleasedAt(Roof(Ion), 4).
+!ReleasedAt(Roof(Ion), 5).
+!ReleasedAt(Roof(Ion), 6).
+!ReleasedAt(Roof(Ion), 7).
+!ReleasedAt(Roof(Ion), 8).
+!ReleasedAt(Roof(Ion), 9).
+!ReleasedAt(Roof(Vasile), 0).
+!ReleasedAt(Roof(Vasile), 1).
+!ReleasedAt(Roof(Vasile), 2).
+!ReleasedAt(Roof(Vasile), 3).
+!ReleasedAt(Roof(Vasile), 4).
+!ReleasedAt(Roof(Vasile), 5).
+!ReleasedAt(Roof(Vasile), 6).
+!ReleasedAt(Roof(Vasile), 7).
+!ReleasedAt(Roof(Vasile), 8).
+!ReleasedAt(Roof(Vasile), 9).
+!ReleasedAt(Structure(Ion), 0).
+!ReleasedAt(Structure(Ion), 1).
+!ReleasedAt(Structure(Ion), 2).
+!ReleasedAt(Structure(Ion), 3).
+!ReleasedAt(Structure(Ion), 4).
+!ReleasedAt(Structure(Ion), 5).
+!ReleasedAt(Structure(Ion), 6).
+!ReleasedAt(Structure(Ion), 7).
+!ReleasedAt(Structure(Ion), 8).
+!ReleasedAt(Structure(Ion), 9).
+!ReleasedAt(Structure(Vasile), 0).
+!ReleasedAt(Structure(Vasile), 1).
+!ReleasedAt(Structure(Vasile), 2).
+!ReleasedAt(Structure(Vasile), 3).
+!ReleasedAt(Structure(Vasile), 4).
+!ReleasedAt(Structure(Vasile), 5).
+!ReleasedAt(Structure(Vasile), 6).
+!ReleasedAt(Structure(Vasile), 7).
+!ReleasedAt(Structure(Vasile), 8).
+!ReleasedAt(Structure(Vasile), 9).
+!ReleasedAt(Wall(Ion), 0).
+!ReleasedAt(Wall(Ion), 1).
+!ReleasedAt(Wall(Ion), 2).
+!ReleasedAt(Wall(Ion), 3).
+!ReleasedAt(Wall(Ion), 4).
+!ReleasedAt(Wall(Ion), 5).
+!ReleasedAt(Wall(Ion), 6).
+!ReleasedAt(Wall(Ion), 7).
+!ReleasedAt(Wall(Ion), 8).
+!ReleasedAt(Wall(Ion), 9).
+!ReleasedAt(Wall(Vasile), 0).
+!ReleasedAt(Wall(Vasile), 1).
+!ReleasedAt(Wall(Vasile), 2).
+!ReleasedAt(Wall(Vasile), 3).
+!ReleasedAt(Wall(Vasile), 4).
+!ReleasedAt(Wall(Vasile), 5).
+!ReleasedAt(Wall(Vasile), 6).
+!ReleasedAt(Wall(Vasile), 7).
+!ReleasedAt(Wall(Vasile), 8).
+!ReleasedAt(Wall(Vasile), 9).
+!ReleasedAt(Windows(Ion), 0).
+!ReleasedAt(Windows(Ion), 1).
+!ReleasedAt(Windows(Ion), 2).
+!ReleasedAt(Windows(Ion), 3).
+!ReleasedAt(Windows(Ion), 4).
+!ReleasedAt(Windows(Ion), 5).
+!ReleasedAt(Windows(Ion), 6).
+!ReleasedAt(Windows(Ion), 7).
+!ReleasedAt(Windows(Ion), 8).
+!ReleasedAt(Windows(Ion), 9).
+!ReleasedAt(Windows(Vasile), 0).
+!ReleasedAt(Windows(Vasile), 1).
+!ReleasedAt(Windows(Vasile), 2).
+!ReleasedAt(Windows(Vasile), 3).
+!ReleasedAt(Windows(Vasile), 4).
+!ReleasedAt(Windows(Vasile), 5).
+!ReleasedAt(Windows(Vasile), 6).
+!ReleasedAt(Windows(Vasile), 7).
+!ReleasedAt(Windows(Vasile), 8).
+!ReleasedAt(Windows(Vasile), 9).
+---
+model 2:
+0
+AtWork(Ion).
+OnVacantion(Vasile).
+Happens(BuildFoundation(Ion), 0).
+1
+-OnVacantion(Vasile).
++AtWork(Vasile).
++Foundation(Ion).
+Happens(BuildStructure(Ion), 1).
+2
++Structure(Ion).
+Happens(BuildWalls(Ion), 2).
+3
++Wall(Ion).
+Happens(BuildRoof(Ion), 3).
+4
+-AtWork(Vasile).
++OnVacantion(Vasile).
++Roof(Ion).
+Happens(InstallWindows(Ion), 4).
+5
+-OnVacantion(Vasile).
++AtWork(Vasile).
++Windows(Ion).
+Happens(IsolateHouse(Vasile), 5).
+6
++Isolation(Vasile).
+Happens(BuildFloor(Vasile), 6).
+Happens(BuildInterior(Ion), 6).
+7
++Floor(Vasile).
++Interior(Ion).
+Happens(BuildFloor(Vasile), 7).
+Happens(PaintHouse(Ion), 7).
+8
+-AtWork(Ion).
+-AtWork(Vasile).
++OnVacantion(Ion).
++OnVacantion(Vasile).
++Paint(Ion).
+9
+-OnVacantion(Ion).
+-OnVacantion(Vasile).
++AtWork(Ion).
++AtWork(Vasile).
+P
+ReleasedAt(AtWork(Ion), 0).
+ReleasedAt(AtWork(Ion), 1).
+ReleasedAt(AtWork(Ion), 2).
+ReleasedAt(AtWork(Ion), 3).
+ReleasedAt(AtWork(Ion), 4).
+ReleasedAt(AtWork(Ion), 5).
+ReleasedAt(AtWork(Ion), 6).
+ReleasedAt(AtWork(Ion), 7).
+ReleasedAt(AtWork(Ion), 8).
+ReleasedAt(AtWork(Ion), 9).
+ReleasedAt(AtWork(Vasile), 0).
+ReleasedAt(AtWork(Vasile), 1).
+ReleasedAt(AtWork(Vasile), 2).
+ReleasedAt(AtWork(Vasile), 3).
+ReleasedAt(AtWork(Vasile), 4).
+ReleasedAt(AtWork(Vasile), 5).
+ReleasedAt(AtWork(Vasile), 6).
+ReleasedAt(AtWork(Vasile), 7).
+ReleasedAt(AtWork(Vasile), 8).
+ReleasedAt(AtWork(Vasile), 9).
+ReleasedAt(OnVacantion(Ion), 0).
+ReleasedAt(OnVacantion(Ion), 1).
+ReleasedAt(OnVacantion(Ion), 2).
+ReleasedAt(OnVacantion(Ion), 3).
+ReleasedAt(OnVacantion(Ion), 4).
+ReleasedAt(OnVacantion(Ion), 5).
+ReleasedAt(OnVacantion(Ion), 6).
+ReleasedAt(OnVacantion(Ion), 7).
+ReleasedAt(OnVacantion(Ion), 8).
+ReleasedAt(OnVacantion(Ion), 9).
+ReleasedAt(OnVacantion(Vasile), 0).
+ReleasedAt(OnVacantion(Vasile), 1).
+ReleasedAt(OnVacantion(Vasile), 2).
+ReleasedAt(OnVacantion(Vasile), 3).
+ReleasedAt(OnVacantion(Vasile), 4).
+ReleasedAt(OnVacantion(Vasile), 5).
+ReleasedAt(OnVacantion(Vasile), 6).
+ReleasedAt(OnVacantion(Vasile), 7).
+ReleasedAt(OnVacantion(Vasile), 8).
+ReleasedAt(OnVacantion(Vasile), 9).
+!Happens(BuildFloor(Ion), 0).
+!Happens(BuildFloor(Ion), 1).
+!Happens(BuildFloor(Ion), 2).
+!Happens(BuildFloor(Ion), 3).
+!Happens(BuildFloor(Ion), 4).
+!Happens(BuildFloor(Ion), 5).
+!Happens(BuildFloor(Ion), 6).
+!Happens(BuildFloor(Ion), 7).
+!Happens(BuildFloor(Ion), 8).
+!Happens(BuildFloor(Vasile), 0).
+!Happens(BuildFloor(Vasile), 1).
+!Happens(BuildFloor(Vasile), 2).
+!Happens(BuildFloor(Vasile), 3).
+!Happens(BuildFloor(Vasile), 4).
+!Happens(BuildFloor(Vasile), 5).
+!Happens(BuildFloor(Vasile), 8).
+!Happens(BuildFoundation(Ion), 1).
+!Happens(BuildFoundation(Ion), 2).
+!Happens(BuildFoundation(Ion), 3).
+!Happens(BuildFoundation(Ion), 4).
+!Happens(BuildFoundation(Ion), 5).
+!Happens(BuildFoundation(Ion), 6).
+!Happens(BuildFoundation(Ion), 7).
+!Happens(BuildFoundation(Ion), 8).
+!Happens(BuildFoundation(Vasile), 0).
+!Happens(BuildFoundation(Vasile), 1).
+!Happens(BuildFoundation(Vasile), 2).
+!Happens(BuildFoundation(Vasile), 3).
+!Happens(BuildFoundation(Vasile), 4).
+!Happens(BuildFoundation(Vasile), 5).
+!Happens(BuildFoundation(Vasile), 6).
+!Happens(BuildFoundation(Vasile), 7).
+!Happens(BuildFoundation(Vasile), 8).
+!Happens(BuildInterior(Ion), 0).
+!Happens(BuildInterior(Ion), 1).
+!Happens(BuildInterior(Ion), 2).
+!Happens(BuildInterior(Ion), 3).
+!Happens(BuildInterior(Ion), 4).
+!Happens(BuildInterior(Ion), 5).
+!Happens(BuildInterior(Ion), 7).
+!Happens(BuildInterior(Ion), 8).
+!Happens(BuildInterior(Vasile), 0).
+!Happens(BuildInterior(Vasile), 1).
+!Happens(BuildInterior(Vasile), 2).
+!Happens(BuildInterior(Vasile), 3).
+!Happens(BuildInterior(Vasile), 4).
+!Happens(BuildInterior(Vasile), 5).
+!Happens(BuildInterior(Vasile), 6).
+!Happens(BuildInterior(Vasile), 7).
+!Happens(BuildInterior(Vasile), 8).
+!Happens(BuildRoof(Ion), 0).
+!Happens(BuildRoof(Ion), 1).
+!Happens(BuildRoof(Ion), 2).
+!Happens(BuildRoof(Ion), 4).
+!Happens(BuildRoof(Ion), 5).
+!Happens(BuildRoof(Ion), 6).
+!Happens(BuildRoof(Ion), 7).
+!Happens(BuildRoof(Ion), 8).
+!Happens(BuildRoof(Vasile), 0).
+!Happens(BuildRoof(Vasile), 1).
+!Happens(BuildRoof(Vasile), 2).
+!Happens(BuildRoof(Vasile), 3).
+!Happens(BuildRoof(Vasile), 4).
+!Happens(BuildRoof(Vasile), 5).
+!Happens(BuildRoof(Vasile), 6).
+!Happens(BuildRoof(Vasile), 7).
+!Happens(BuildRoof(Vasile), 8).
+!Happens(BuildStructure(Ion), 0).
+!Happens(BuildStructure(Ion), 2).
+!Happens(BuildStructure(Ion), 3).
+!Happens(BuildStructure(Ion), 4).
+!Happens(BuildStructure(Ion), 5).
+!Happens(BuildStructure(Ion), 6).
+!Happens(BuildStructure(Ion), 7).
+!Happens(BuildStructure(Ion), 8).
+!Happens(BuildStructure(Vasile), 0).
+!Happens(BuildStructure(Vasile), 1).
+!Happens(BuildStructure(Vasile), 2).
+!Happens(BuildStructure(Vasile), 3).
+!Happens(BuildStructure(Vasile), 4).
+!Happens(BuildStructure(Vasile), 5).
+!Happens(BuildStructure(Vasile), 6).
+!Happens(BuildStructure(Vasile), 7).
+!Happens(BuildStructure(Vasile), 8).
+!Happens(BuildWalls(Ion), 0).
+!Happens(BuildWalls(Ion), 1).
+!Happens(BuildWalls(Ion), 3).
+!Happens(BuildWalls(Ion), 4).
+!Happens(BuildWalls(Ion), 5).
+!Happens(BuildWalls(Ion), 6).
+!Happens(BuildWalls(Ion), 7).
+!Happens(BuildWalls(Ion), 8).
+!Happens(BuildWalls(Vasile), 0).
+!Happens(BuildWalls(Vasile), 1).
+!Happens(BuildWalls(Vasile), 2).
+!Happens(BuildWalls(Vasile), 3).
+!Happens(BuildWalls(Vasile), 4).
+!Happens(BuildWalls(Vasile), 5).
+!Happens(BuildWalls(Vasile), 6).
+!Happens(BuildWalls(Vasile), 7).
+!Happens(BuildWalls(Vasile), 8).
+!Happens(InstallWindows(Ion), 0).
+!Happens(InstallWindows(Ion), 1).
+!Happens(InstallWindows(Ion), 2).
+!Happens(InstallWindows(Ion), 3).
+!Happens(InstallWindows(Ion), 5).
+!Happens(InstallWindows(Ion), 6).
+!Happens(InstallWindows(Ion), 7).
+!Happens(InstallWindows(Ion), 8).
+!Happens(InstallWindows(Vasile), 0).
+!Happens(InstallWindows(Vasile), 1).
+!Happens(InstallWindows(Vasile), 2).
+!Happens(InstallWindows(Vasile), 3).
+!Happens(InstallWindows(Vasile), 4).
+!Happens(InstallWindows(Vasile), 5).
+!Happens(InstallWindows(Vasile), 6).
+!Happens(InstallWindows(Vasile), 7).
+!Happens(InstallWindows(Vasile), 8).
+!Happens(IsolateHouse(Ion), 0).
+!Happens(IsolateHouse(Ion), 1).
+!Happens(IsolateHouse(Ion), 2).
+!Happens(IsolateHouse(Ion), 3).
+!Happens(IsolateHouse(Ion), 4).
+!Happens(IsolateHouse(Ion), 5).
+!Happens(IsolateHouse(Ion), 6).
+!Happens(IsolateHouse(Ion), 7).
+!Happens(IsolateHouse(Ion), 8).
+!Happens(IsolateHouse(Vasile), 0).
+!Happens(IsolateHouse(Vasile), 1).
+!Happens(IsolateHouse(Vasile), 2).
+!Happens(IsolateHouse(Vasile), 3).
+!Happens(IsolateHouse(Vasile), 4).
+!Happens(IsolateHouse(Vasile), 6).
+!Happens(IsolateHouse(Vasile), 7).
+!Happens(IsolateHouse(Vasile), 8).
+!Happens(PaintHouse(Ion), 0).
+!Happens(PaintHouse(Ion), 1).
+!Happens(PaintHouse(Ion), 2).
+!Happens(PaintHouse(Ion), 3).
+!Happens(PaintHouse(Ion), 4).
+!Happens(PaintHouse(Ion), 5).
+!Happens(PaintHouse(Ion), 6).
+!Happens(PaintHouse(Ion), 8).
+!Happens(PaintHouse(Vasile), 0).
+!Happens(PaintHouse(Vasile), 1).
+!Happens(PaintHouse(Vasile), 2).
+!Happens(PaintHouse(Vasile), 3).
+!Happens(PaintHouse(Vasile), 4).
+!Happens(PaintHouse(Vasile), 5).
+!Happens(PaintHouse(Vasile), 6).
+!Happens(PaintHouse(Vasile), 7).
+!Happens(PaintHouse(Vasile), 8).
+!ReleasedAt(Floor(Ion), 0).
+!ReleasedAt(Floor(Ion), 1).
+!ReleasedAt(Floor(Ion), 2).
+!ReleasedAt(Floor(Ion), 3).
+!ReleasedAt(Floor(Ion), 4).
+!ReleasedAt(Floor(Ion), 5).
+!ReleasedAt(Floor(Ion), 6).
+!ReleasedAt(Floor(Ion), 7).
+!ReleasedAt(Floor(Ion), 8).
+!ReleasedAt(Floor(Ion), 9).
+!ReleasedAt(Floor(Vasile), 0).
+!ReleasedAt(Floor(Vasile), 1).
+!ReleasedAt(Floor(Vasile), 2).
+!ReleasedAt(Floor(Vasile), 3).
+!ReleasedAt(Floor(Vasile), 4).
+!ReleasedAt(Floor(Vasile), 5).
+!ReleasedAt(Floor(Vasile), 6).
+!ReleasedAt(Floor(Vasile), 7).
+!ReleasedAt(Floor(Vasile), 8).
+!ReleasedAt(Floor(Vasile), 9).
+!ReleasedAt(Foundation(Ion), 0).
+!ReleasedAt(Foundation(Ion), 1).
+!ReleasedAt(Foundation(Ion), 2).
+!ReleasedAt(Foundation(Ion), 3).
+!ReleasedAt(Foundation(Ion), 4).
+!ReleasedAt(Foundation(Ion), 5).
+!ReleasedAt(Foundation(Ion), 6).
+!ReleasedAt(Foundation(Ion), 7).
+!ReleasedAt(Foundation(Ion), 8).
+!ReleasedAt(Foundation(Ion), 9).
+!ReleasedAt(Foundation(Vasile), 0).
+!ReleasedAt(Foundation(Vasile), 1).
+!ReleasedAt(Foundation(Vasile), 2).
+!ReleasedAt(Foundation(Vasile), 3).
+!ReleasedAt(Foundation(Vasile), 4).
+!ReleasedAt(Foundation(Vasile), 5).
+!ReleasedAt(Foundation(Vasile), 6).
+!ReleasedAt(Foundation(Vasile), 7).
+!ReleasedAt(Foundation(Vasile), 8).
+!ReleasedAt(Foundation(Vasile), 9).
+!ReleasedAt(Interior(Ion), 0).
+!ReleasedAt(Interior(Ion), 1).
+!ReleasedAt(Interior(Ion), 2).
+!ReleasedAt(Interior(Ion), 3).
+!ReleasedAt(Interior(Ion), 4).
+!ReleasedAt(Interior(Ion), 5).
+!ReleasedAt(Interior(Ion), 6).
+!ReleasedAt(Interior(Ion), 7).
+!ReleasedAt(Interior(Ion), 8).
+!ReleasedAt(Interior(Ion), 9).
+!ReleasedAt(Interior(Vasile), 0).
+!ReleasedAt(Interior(Vasile), 1).
+!ReleasedAt(Interior(Vasile), 2).
+!ReleasedAt(Interior(Vasile), 3).
+!ReleasedAt(Interior(Vasile), 4).
+!ReleasedAt(Interior(Vasile), 5).
+!ReleasedAt(Interior(Vasile), 6).
+!ReleasedAt(Interior(Vasile), 7).
+!ReleasedAt(Interior(Vasile), 8).
+!ReleasedAt(Interior(Vasile), 9).
+!ReleasedAt(Isolation(Ion), 0).
+!ReleasedAt(Isolation(Ion), 1).
+!ReleasedAt(Isolation(Ion), 2).
+!ReleasedAt(Isolation(Ion), 3).
+!ReleasedAt(Isolation(Ion), 4).
+!ReleasedAt(Isolation(Ion), 5).
+!ReleasedAt(Isolation(Ion), 6).
+!ReleasedAt(Isolation(Ion), 7).
+!ReleasedAt(Isolation(Ion), 8).
+!ReleasedAt(Isolation(Ion), 9).
+!ReleasedAt(Isolation(Vasile), 0).
+!ReleasedAt(Isolation(Vasile), 1).
+!ReleasedAt(Isolation(Vasile), 2).
+!ReleasedAt(Isolation(Vasile), 3).
+!ReleasedAt(Isolation(Vasile), 4).
+!ReleasedAt(Isolation(Vasile), 5).
+!ReleasedAt(Isolation(Vasile), 6).
+!ReleasedAt(Isolation(Vasile), 7).
+!ReleasedAt(Isolation(Vasile), 8).
+!ReleasedAt(Isolation(Vasile), 9).
+!ReleasedAt(Paint(Ion), 0).
+!ReleasedAt(Paint(Ion), 1).
+!ReleasedAt(Paint(Ion), 2).
+!ReleasedAt(Paint(Ion), 3).
+!ReleasedAt(Paint(Ion), 4).
+!ReleasedAt(Paint(Ion), 5).
+!ReleasedAt(Paint(Ion), 6).
+!ReleasedAt(Paint(Ion), 7).
+!ReleasedAt(Paint(Ion), 8).
+!ReleasedAt(Paint(Ion), 9).
+!ReleasedAt(Paint(Vasile), 0).
+!ReleasedAt(Paint(Vasile), 1).
+!ReleasedAt(Paint(Vasile), 2).
+!ReleasedAt(Paint(Vasile), 3).
+!ReleasedAt(Paint(Vasile), 4).
+!ReleasedAt(Paint(Vasile), 5).
+!ReleasedAt(Paint(Vasile), 6).
+!ReleasedAt(Paint(Vasile), 7).
+!ReleasedAt(Paint(Vasile), 8).
+!ReleasedAt(Paint(Vasile), 9).
+!ReleasedAt(Roof(Ion), 0).
+!ReleasedAt(Roof(Ion), 1).
+!ReleasedAt(Roof(Ion), 2).
+!ReleasedAt(Roof(Ion), 3).
+!ReleasedAt(Roof(Ion), 4).
+!ReleasedAt(Roof(Ion), 5).
+!ReleasedAt(Roof(Ion), 6).
+!ReleasedAt(Roof(Ion), 7).
+!ReleasedAt(Roof(Ion), 8).
+!ReleasedAt(Roof(Ion), 9).
+!ReleasedAt(Roof(Vasile), 0).
+!ReleasedAt(Roof(Vasile), 1).
+!ReleasedAt(Roof(Vasile), 2).
+!ReleasedAt(Roof(Vasile), 3).
+!ReleasedAt(Roof(Vasile), 4).
+!ReleasedAt(Roof(Vasile), 5).
+!ReleasedAt(Roof(Vasile), 6).
+!ReleasedAt(Roof(Vasile), 7).
+!ReleasedAt(Roof(Vasile), 8).
+!ReleasedAt(Roof(Vasile), 9).
+!ReleasedAt(Structure(Ion), 0).
+!ReleasedAt(Structure(Ion), 1).
+!ReleasedAt(Structure(Ion), 2).
+!ReleasedAt(Structure(Ion), 3).
+!ReleasedAt(Structure(Ion), 4).
+!ReleasedAt(Structure(Ion), 5).
+!ReleasedAt(Structure(Ion), 6).
+!ReleasedAt(Structure(Ion), 7).
+!ReleasedAt(Structure(Ion), 8).
+!ReleasedAt(Structure(Ion), 9).
+!ReleasedAt(Structure(Vasile), 0).
+!ReleasedAt(Structure(Vasile), 1).
+!ReleasedAt(Structure(Vasile), 2).
+!ReleasedAt(Structure(Vasile), 3).
+!ReleasedAt(Structure(Vasile), 4).
+!ReleasedAt(Structure(Vasile), 5).
+!ReleasedAt(Structure(Vasile), 6).
+!ReleasedAt(Structure(Vasile), 7).
+!ReleasedAt(Structure(Vasile), 8).
+!ReleasedAt(Structure(Vasile), 9).
+!ReleasedAt(Wall(Ion), 0).
+!ReleasedAt(Wall(Ion), 1).
+!ReleasedAt(Wall(Ion), 2).
+!ReleasedAt(Wall(Ion), 3).
+!ReleasedAt(Wall(Ion), 4).
+!ReleasedAt(Wall(Ion), 5).
+!ReleasedAt(Wall(Ion), 6).
+!ReleasedAt(Wall(Ion), 7).
+!ReleasedAt(Wall(Ion), 8).
+!ReleasedAt(Wall(Ion), 9).
+!ReleasedAt(Wall(Vasile), 0).
+!ReleasedAt(Wall(Vasile), 1).
+!ReleasedAt(Wall(Vasile), 2).
+!ReleasedAt(Wall(Vasile), 3).
+!ReleasedAt(Wall(Vasile), 4).
+!ReleasedAt(Wall(Vasile), 5).
+!ReleasedAt(Wall(Vasile), 6).
+!ReleasedAt(Wall(Vasile), 7).
+!ReleasedAt(Wall(Vasile), 8).
+!ReleasedAt(Wall(Vasile), 9).
+!ReleasedAt(Windows(Ion), 0).
+!ReleasedAt(Windows(Ion), 1).
+!ReleasedAt(Windows(Ion), 2).
+!ReleasedAt(Windows(Ion), 3).
+!ReleasedAt(Windows(Ion), 4).
+!ReleasedAt(Windows(Ion), 5).
+!ReleasedAt(Windows(Ion), 6).
+!ReleasedAt(Windows(Ion), 7).
+!ReleasedAt(Windows(Ion), 8).
+!ReleasedAt(Windows(Ion), 9).
+!ReleasedAt(Windows(Vasile), 0).
+!ReleasedAt(Windows(Vasile), 1).
+!ReleasedAt(Windows(Vasile), 2).
+!ReleasedAt(Windows(Vasile), 3).
+!ReleasedAt(Windows(Vasile), 4).
+!ReleasedAt(Windows(Vasile), 5).
+!ReleasedAt(Windows(Vasile), 6).
+!ReleasedAt(Windows(Vasile), 7).
+!ReleasedAt(Windows(Vasile), 8).
+!ReleasedAt(Windows(Vasile), 9).
+---
+model 3:
+0
+AtWork(Ion).
+OnVacantion(Vasile).
+Happens(BuildFoundation(Ion), 0).
+1
+-OnVacantion(Vasile).
++AtWork(Vasile).
++Foundation(Ion).
+Happens(BuildStructure(Ion), 1).
+2
++Structure(Ion).
+Happens(BuildWalls(Ion), 2).
+3
++Wall(Ion).
+Happens(BuildRoof(Ion), 3).
+4
+-AtWork(Vasile).
++OnVacantion(Vasile).
++Roof(Ion).
+Happens(InstallWindows(Ion), 4).
+5
+-AtWork(Ion).
+-OnVacantion(Vasile).
++AtWork(Vasile).
++OnVacantion(Ion).
++Windows(Ion).
+Happens(IsolateHouse(Vasile), 5).
+6
+-OnVacantion(Ion).
++AtWork(Ion).
++Isolation(Vasile).
+Happens(BuildFloor(Vasile), 6).
+Happens(BuildInterior(Ion), 6).
+7
++Floor(Vasile).
++Interior(Ion).
+Happens(BuildFloor(Vasile), 7).
+Happens(PaintHouse(Ion), 7).
+8
+-AtWork(Ion).
+-AtWork(Vasile).
++OnVacantion(Ion).
++OnVacantion(Vasile).
++Paint(Ion).
+9
+-OnVacantion(Ion).
+-OnVacantion(Vasile).
++AtWork(Ion).
++AtWork(Vasile).
+P
+ReleasedAt(AtWork(Ion), 0).
+ReleasedAt(AtWork(Ion), 1).
+ReleasedAt(AtWork(Ion), 2).
+ReleasedAt(AtWork(Ion), 3).
+ReleasedAt(AtWork(Ion), 4).
+ReleasedAt(AtWork(Ion), 5).
+ReleasedAt(AtWork(Ion), 6).
+ReleasedAt(AtWork(Ion), 7).
+ReleasedAt(AtWork(Ion), 8).
+ReleasedAt(AtWork(Ion), 9).
+ReleasedAt(AtWork(Vasile), 0).
+ReleasedAt(AtWork(Vasile), 1).
+ReleasedAt(AtWork(Vasile), 2).
+ReleasedAt(AtWork(Vasile), 3).
+ReleasedAt(AtWork(Vasile), 4).
+ReleasedAt(AtWork(Vasile), 5).
+ReleasedAt(AtWork(Vasile), 6).
+ReleasedAt(AtWork(Vasile), 7).
+ReleasedAt(AtWork(Vasile), 8).
+ReleasedAt(AtWork(Vasile), 9).
+ReleasedAt(OnVacantion(Ion), 0).
+ReleasedAt(OnVacantion(Ion), 1).
+ReleasedAt(OnVacantion(Ion), 2).
+ReleasedAt(OnVacantion(Ion), 3).
+ReleasedAt(OnVacantion(Ion), 4).
+ReleasedAt(OnVacantion(Ion), 5).
+ReleasedAt(OnVacantion(Ion), 6).
+ReleasedAt(OnVacantion(Ion), 7).
+ReleasedAt(OnVacantion(Ion), 8).
+ReleasedAt(OnVacantion(Ion), 9).
+ReleasedAt(OnVacantion(Vasile), 0).
+ReleasedAt(OnVacantion(Vasile), 1).
+ReleasedAt(OnVacantion(Vasile), 2).
+ReleasedAt(OnVacantion(Vasile), 3).
+ReleasedAt(OnVacantion(Vasile), 4).
+ReleasedAt(OnVacantion(Vasile), 5).
+ReleasedAt(OnVacantion(Vasile), 6).
+ReleasedAt(OnVacantion(Vasile), 7).
+ReleasedAt(OnVacantion(Vasile), 8).
+ReleasedAt(OnVacantion(Vasile), 9).
+!Happens(BuildFloor(Ion), 0).
+!Happens(BuildFloor(Ion), 1).
+!Happens(BuildFloor(Ion), 2).
+!Happens(BuildFloor(Ion), 3).
+!Happens(BuildFloor(Ion), 4).
+!Happens(BuildFloor(Ion), 5).
+!Happens(BuildFloor(Ion), 6).
+!Happens(BuildFloor(Ion), 7).
+!Happens(BuildFloor(Ion), 8).
+!Happens(BuildFloor(Vasile), 0).
+!Happens(BuildFloor(Vasile), 1).
+!Happens(BuildFloor(Vasile), 2).
+!Happens(BuildFloor(Vasile), 3).
+!Happens(BuildFloor(Vasile), 4).
+!Happens(BuildFloor(Vasile), 5).
+!Happens(BuildFloor(Vasile), 8).
+!Happens(BuildFoundation(Ion), 1).
+!Happens(BuildFoundation(Ion), 2).
+!Happens(BuildFoundation(Ion), 3).
+!Happens(BuildFoundation(Ion), 4).
+!Happens(BuildFoundation(Ion), 5).
+!Happens(BuildFoundation(Ion), 6).
+!Happens(BuildFoundation(Ion), 7).
+!Happens(BuildFoundation(Ion), 8).
+!Happens(BuildFoundation(Vasile), 0).
+!Happens(BuildFoundation(Vasile), 1).
+!Happens(BuildFoundation(Vasile), 2).
+!Happens(BuildFoundation(Vasile), 3).
+!Happens(BuildFoundation(Vasile), 4).
+!Happens(BuildFoundation(Vasile), 5).
+!Happens(BuildFoundation(Vasile), 6).
+!Happens(BuildFoundation(Vasile), 7).
+!Happens(BuildFoundation(Vasile), 8).
+!Happens(BuildInterior(Ion), 0).
+!Happens(BuildInterior(Ion), 1).
+!Happens(BuildInterior(Ion), 2).
+!Happens(BuildInterior(Ion), 3).
+!Happens(BuildInterior(Ion), 4).
+!Happens(BuildInterior(Ion), 5).
+!Happens(BuildInterior(Ion), 7).
+!Happens(BuildInterior(Ion), 8).
+!Happens(BuildInterior(Vasile), 0).
+!Happens(BuildInterior(Vasile), 1).
+!Happens(BuildInterior(Vasile), 2).
+!Happens(BuildInterior(Vasile), 3).
+!Happens(BuildInterior(Vasile), 4).
+!Happens(BuildInterior(Vasile), 5).
+!Happens(BuildInterior(Vasile), 6).
+!Happens(BuildInterior(Vasile), 7).
+!Happens(BuildInterior(Vasile), 8).
+!Happens(BuildRoof(Ion), 0).
+!Happens(BuildRoof(Ion), 1).
+!Happens(BuildRoof(Ion), 2).
+!Happens(BuildRoof(Ion), 4).
+!Happens(BuildRoof(Ion), 5).
+!Happens(BuildRoof(Ion), 6).
+!Happens(BuildRoof(Ion), 7).
+!Happens(BuildRoof(Ion), 8).
+!Happens(BuildRoof(Vasile), 0).
+!Happens(BuildRoof(Vasile), 1).
+!Happens(BuildRoof(Vasile), 2).
+!Happens(BuildRoof(Vasile), 3).
+!Happens(BuildRoof(Vasile), 4).
+!Happens(BuildRoof(Vasile), 5).
+!Happens(BuildRoof(Vasile), 6).
+!Happens(BuildRoof(Vasile), 7).
+!Happens(BuildRoof(Vasile), 8).
+!Happens(BuildStructure(Ion), 0).
+!Happens(BuildStructure(Ion), 2).
+!Happens(BuildStructure(Ion), 3).
+!Happens(BuildStructure(Ion), 4).
+!Happens(BuildStructure(Ion), 5).
+!Happens(BuildStructure(Ion), 6).
+!Happens(BuildStructure(Ion), 7).
+!Happens(BuildStructure(Ion), 8).
+!Happens(BuildStructure(Vasile), 0).
+!Happens(BuildStructure(Vasile), 1).
+!Happens(BuildStructure(Vasile), 2).
+!Happens(BuildStructure(Vasile), 3).
+!Happens(BuildStructure(Vasile), 4).
+!Happens(BuildStructure(Vasile), 5).
+!Happens(BuildStructure(Vasile), 6).
+!Happens(BuildStructure(Vasile), 7).
+!Happens(BuildStructure(Vasile), 8).
+!Happens(BuildWalls(Ion), 0).
+!Happens(BuildWalls(Ion), 1).
+!Happens(BuildWalls(Ion), 3).
+!Happens(BuildWalls(Ion), 4).
+!Happens(BuildWalls(Ion), 5).
+!Happens(BuildWalls(Ion), 6).
+!Happens(BuildWalls(Ion), 7).
+!Happens(BuildWalls(Ion), 8).
+!Happens(BuildWalls(Vasile), 0).
+!Happens(BuildWalls(Vasile), 1).
+!Happens(BuildWalls(Vasile), 2).
+!Happens(BuildWalls(Vasile), 3).
+!Happens(BuildWalls(Vasile), 4).
+!Happens(BuildWalls(Vasile), 5).
+!Happens(BuildWalls(Vasile), 6).
+!Happens(BuildWalls(Vasile), 7).
+!Happens(BuildWalls(Vasile), 8).
+!Happens(InstallWindows(Ion), 0).
+!Happens(InstallWindows(Ion), 1).
+!Happens(InstallWindows(Ion), 2).
+!Happens(InstallWindows(Ion), 3).
+!Happens(InstallWindows(Ion), 5).
+!Happens(InstallWindows(Ion), 6).
+!Happens(InstallWindows(Ion), 7).
+!Happens(InstallWindows(Ion), 8).
+!Happens(InstallWindows(Vasile), 0).
+!Happens(InstallWindows(Vasile), 1).
+!Happens(InstallWindows(Vasile), 2).
+!Happens(InstallWindows(Vasile), 3).
+!Happens(InstallWindows(Vasile), 4).
+!Happens(InstallWindows(Vasile), 5).
+!Happens(InstallWindows(Vasile), 6).
+!Happens(InstallWindows(Vasile), 7).
+!Happens(InstallWindows(Vasile), 8).
+!Happens(IsolateHouse(Ion), 0).
+!Happens(IsolateHouse(Ion), 1).
+!Happens(IsolateHouse(Ion), 2).
+!Happens(IsolateHouse(Ion), 3).
+!Happens(IsolateHouse(Ion), 4).
+!Happens(IsolateHouse(Ion), 5).
+!Happens(IsolateHouse(Ion), 6).
+!Happens(IsolateHouse(Ion), 7).
+!Happens(IsolateHouse(Ion), 8).
+!Happens(IsolateHouse(Vasile), 0).
+!Happens(IsolateHouse(Vasile), 1).
+!Happens(IsolateHouse(Vasile), 2).
+!Happens(IsolateHouse(Vasile), 3).
+!Happens(IsolateHouse(Vasile), 4).
+!Happens(IsolateHouse(Vasile), 6).
+!Happens(IsolateHouse(Vasile), 7).
+!Happens(IsolateHouse(Vasile), 8).
+!Happens(PaintHouse(Ion), 0).
+!Happens(PaintHouse(Ion), 1).
+!Happens(PaintHouse(Ion), 2).
+!Happens(PaintHouse(Ion), 3).
+!Happens(PaintHouse(Ion), 4).
+!Happens(PaintHouse(Ion), 5).
+!Happens(PaintHouse(Ion), 6).
+!Happens(PaintHouse(Ion), 8).
+!Happens(PaintHouse(Vasile), 0).
+!Happens(PaintHouse(Vasile), 1).
+!Happens(PaintHouse(Vasile), 2).
+!Happens(PaintHouse(Vasile), 3).
+!Happens(PaintHouse(Vasile), 4).
+!Happens(PaintHouse(Vasile), 5).
+!Happens(PaintHouse(Vasile), 6).
+!Happens(PaintHouse(Vasile), 7).
+!Happens(PaintHouse(Vasile), 8).
+!ReleasedAt(Floor(Ion), 0).
+!ReleasedAt(Floor(Ion), 1).
+!ReleasedAt(Floor(Ion), 2).
+!ReleasedAt(Floor(Ion), 3).
+!ReleasedAt(Floor(Ion), 4).
+!ReleasedAt(Floor(Ion), 5).
+!ReleasedAt(Floor(Ion), 6).
+!ReleasedAt(Floor(Ion), 7).
+!ReleasedAt(Floor(Ion), 8).
+!ReleasedAt(Floor(Ion), 9).
+!ReleasedAt(Floor(Vasile), 0).
+!ReleasedAt(Floor(Vasile), 1).
+!ReleasedAt(Floor(Vasile), 2).
+!ReleasedAt(Floor(Vasile), 3).
+!ReleasedAt(Floor(Vasile), 4).
+!ReleasedAt(Floor(Vasile), 5).
+!ReleasedAt(Floor(Vasile), 6).
+!ReleasedAt(Floor(Vasile), 7).
+!ReleasedAt(Floor(Vasile), 8).
+!ReleasedAt(Floor(Vasile), 9).
+!ReleasedAt(Foundation(Ion), 0).
+!ReleasedAt(Foundation(Ion), 1).
+!ReleasedAt(Foundation(Ion), 2).
+!ReleasedAt(Foundation(Ion), 3).
+!ReleasedAt(Foundation(Ion), 4).
+!ReleasedAt(Foundation(Ion), 5).
+!ReleasedAt(Foundation(Ion), 6).
+!ReleasedAt(Foundation(Ion), 7).
+!ReleasedAt(Foundation(Ion), 8).
+!ReleasedAt(Foundation(Ion), 9).
+!ReleasedAt(Foundation(Vasile), 0).
+!ReleasedAt(Foundation(Vasile), 1).
+!ReleasedAt(Foundation(Vasile), 2).
+!ReleasedAt(Foundation(Vasile), 3).
+!ReleasedAt(Foundation(Vasile), 4).
+!ReleasedAt(Foundation(Vasile), 5).
+!ReleasedAt(Foundation(Vasile), 6).
+!ReleasedAt(Foundation(Vasile), 7).
+!ReleasedAt(Foundation(Vasile), 8).
+!ReleasedAt(Foundation(Vasile), 9).
+!ReleasedAt(Interior(Ion), 0).
+!ReleasedAt(Interior(Ion), 1).
+!ReleasedAt(Interior(Ion), 2).
+!ReleasedAt(Interior(Ion), 3).
+!ReleasedAt(Interior(Ion), 4).
+!ReleasedAt(Interior(Ion), 5).
+!ReleasedAt(Interior(Ion), 6).
+!ReleasedAt(Interior(Ion), 7).
+!ReleasedAt(Interior(Ion), 8).
+!ReleasedAt(Interior(Ion), 9).
+!ReleasedAt(Interior(Vasile), 0).
+!ReleasedAt(Interior(Vasile), 1).
+!ReleasedAt(Interior(Vasile), 2).
+!ReleasedAt(Interior(Vasile), 3).
+!ReleasedAt(Interior(Vasile), 4).
+!ReleasedAt(Interior(Vasile), 5).
+!ReleasedAt(Interior(Vasile), 6).
+!ReleasedAt(Interior(Vasile), 7).
+!ReleasedAt(Interior(Vasile), 8).
+!ReleasedAt(Interior(Vasile), 9).
+!ReleasedAt(Isolation(Ion), 0).
+!ReleasedAt(Isolation(Ion), 1).
+!ReleasedAt(Isolation(Ion), 2).
+!ReleasedAt(Isolation(Ion), 3).
+!ReleasedAt(Isolation(Ion), 4).
+!ReleasedAt(Isolation(Ion), 5).
+!ReleasedAt(Isolation(Ion), 6).
+!ReleasedAt(Isolation(Ion), 7).
+!ReleasedAt(Isolation(Ion), 8).
+!ReleasedAt(Isolation(Ion), 9).
+!ReleasedAt(Isolation(Vasile), 0).
+!ReleasedAt(Isolation(Vasile), 1).
+!ReleasedAt(Isolation(Vasile), 2).
+!ReleasedAt(Isolation(Vasile), 3).
+!ReleasedAt(Isolation(Vasile), 4).
+!ReleasedAt(Isolation(Vasile), 5).
+!ReleasedAt(Isolation(Vasile), 6).
+!ReleasedAt(Isolation(Vasile), 7).
+!ReleasedAt(Isolation(Vasile), 8).
+!ReleasedAt(Isolation(Vasile), 9).
+!ReleasedAt(Paint(Ion), 0).
+!ReleasedAt(Paint(Ion), 1).
+!ReleasedAt(Paint(Ion), 2).
+!ReleasedAt(Paint(Ion), 3).
+!ReleasedAt(Paint(Ion), 4).
+!ReleasedAt(Paint(Ion), 5).
+!ReleasedAt(Paint(Ion), 6).
+!ReleasedAt(Paint(Ion), 7).
+!ReleasedAt(Paint(Ion), 8).
+!ReleasedAt(Paint(Ion), 9).
+!ReleasedAt(Paint(Vasile), 0).
+!ReleasedAt(Paint(Vasile), 1).
+!ReleasedAt(Paint(Vasile), 2).
+!ReleasedAt(Paint(Vasile), 3).
+!ReleasedAt(Paint(Vasile), 4).
+!ReleasedAt(Paint(Vasile), 5).
+!ReleasedAt(Paint(Vasile), 6).
+!ReleasedAt(Paint(Vasile), 7).
+!ReleasedAt(Paint(Vasile), 8).
+!ReleasedAt(Paint(Vasile), 9).
+!ReleasedAt(Roof(Ion), 0).
+!ReleasedAt(Roof(Ion), 1).
+!ReleasedAt(Roof(Ion), 2).
+!ReleasedAt(Roof(Ion), 3).
+!ReleasedAt(Roof(Ion), 4).
+!ReleasedAt(Roof(Ion), 5).
+!ReleasedAt(Roof(Ion), 6).
+!ReleasedAt(Roof(Ion), 7).
+!ReleasedAt(Roof(Ion), 8).
+!ReleasedAt(Roof(Ion), 9).
+!ReleasedAt(Roof(Vasile), 0).
+!ReleasedAt(Roof(Vasile), 1).
+!ReleasedAt(Roof(Vasile), 2).
+!ReleasedAt(Roof(Vasile), 3).
+!ReleasedAt(Roof(Vasile), 4).
+!ReleasedAt(Roof(Vasile), 5).
+!ReleasedAt(Roof(Vasile), 6).
+!ReleasedAt(Roof(Vasile), 7).
+!ReleasedAt(Roof(Vasile), 8).
+!ReleasedAt(Roof(Vasile), 9).
+!ReleasedAt(Structure(Ion), 0).
+!ReleasedAt(Structure(Ion), 1).
+!ReleasedAt(Structure(Ion), 2).
+!ReleasedAt(Structure(Ion), 3).
+!ReleasedAt(Structure(Ion), 4).
+!ReleasedAt(Structure(Ion), 5).
+!ReleasedAt(Structure(Ion), 6).
+!ReleasedAt(Structure(Ion), 7).
+!ReleasedAt(Structure(Ion), 8).
+!ReleasedAt(Structure(Ion), 9).
+!ReleasedAt(Structure(Vasile), 0).
+!ReleasedAt(Structure(Vasile), 1).
+!ReleasedAt(Structure(Vasile), 2).
+!ReleasedAt(Structure(Vasile), 3).
+!ReleasedAt(Structure(Vasile), 4).
+!ReleasedAt(Structure(Vasile), 5).
+!ReleasedAt(Structure(Vasile), 6).
+!ReleasedAt(Structure(Vasile), 7).
+!ReleasedAt(Structure(Vasile), 8).
+!ReleasedAt(Structure(Vasile), 9).
+!ReleasedAt(Wall(Ion), 0).
+!ReleasedAt(Wall(Ion), 1).
+!ReleasedAt(Wall(Ion), 2).
+!ReleasedAt(Wall(Ion), 3).
+!ReleasedAt(Wall(Ion), 4).
+!ReleasedAt(Wall(Ion), 5).
+!ReleasedAt(Wall(Ion), 6).
+!ReleasedAt(Wall(Ion), 7).
+!ReleasedAt(Wall(Ion), 8).
+!ReleasedAt(Wall(Ion), 9).
+!ReleasedAt(Wall(Vasile), 0).
+!ReleasedAt(Wall(Vasile), 1).
+!ReleasedAt(Wall(Vasile), 2).
+!ReleasedAt(Wall(Vasile), 3).
+!ReleasedAt(Wall(Vasile), 4).
+!ReleasedAt(Wall(Vasile), 5).
+!ReleasedAt(Wall(Vasile), 6).
+!ReleasedAt(Wall(Vasile), 7).
+!ReleasedAt(Wall(Vasile), 8).
+!ReleasedAt(Wall(Vasile), 9).
+!ReleasedAt(Windows(Ion), 0).
+!ReleasedAt(Windows(Ion), 1).
+!ReleasedAt(Windows(Ion), 2).
+!ReleasedAt(Windows(Ion), 3).
+!ReleasedAt(Windows(Ion), 4).
+!ReleasedAt(Windows(Ion), 5).
+!ReleasedAt(Windows(Ion), 6).
+!ReleasedAt(Windows(Ion), 7).
+!ReleasedAt(Windows(Ion), 8).
+!ReleasedAt(Windows(Ion), 9).
+!ReleasedAt(Windows(Vasile), 0).
+!ReleasedAt(Windows(Vasile), 1).
+!ReleasedAt(Windows(Vasile), 2).
+!ReleasedAt(Windows(Vasile), 3).
+!ReleasedAt(Windows(Vasile), 4).
+!ReleasedAt(Windows(Vasile), 5).
+!ReleasedAt(Windows(Vasile), 6).
+!ReleasedAt(Windows(Vasile), 7).
+!ReleasedAt(Windows(Vasile), 8).
+!ReleasedAt(Windows(Vasile), 9).
+---
+model 4:
+0
+AtWork(Ion).
+OnVacantion(Vasile).
+Happens(BuildFoundation(Ion), 0).
+1
+-OnVacantion(Vasile).
++AtWork(Vasile).
++Foundation(Ion).
+Happens(BuildStructure(Ion), 1).
+2
++Structure(Ion).
+Happens(BuildWalls(Ion), 2).
+3
++Wall(Ion).
+Happens(BuildRoof(Ion), 3).
+4
+-AtWork(Vasile).
++OnVacantion(Vasile).
++Roof(Ion).
+Happens(InstallWindows(Ion), 4).
+5
+-AtWork(Ion).
+-OnVacantion(Vasile).
++AtWork(Vasile).
++OnVacantion(Ion).
++Windows(Ion).
+Happens(IsolateHouse(Vasile), 5).
+6
+-OnVacantion(Ion).
++AtWork(Ion).
++Isolation(Vasile).
+Happens(BuildFloor(Vasile), 6).
+Happens(BuildInterior(Ion), 6).
+7
++Floor(Vasile).
++Interior(Ion).
+Happens(PaintHouse(Ion), 7).
+8
+-AtWork(Ion).
+-AtWork(Vasile).
++OnVacantion(Ion).
++OnVacantion(Vasile).
++Paint(Ion).
+9
+-OnVacantion(Ion).
+-OnVacantion(Vasile).
++AtWork(Ion).
++AtWork(Vasile).
+P
+ReleasedAt(AtWork(Ion), 0).
+ReleasedAt(AtWork(Ion), 1).
+ReleasedAt(AtWork(Ion), 2).
+ReleasedAt(AtWork(Ion), 3).
+ReleasedAt(AtWork(Ion), 4).
+ReleasedAt(AtWork(Ion), 5).
+ReleasedAt(AtWork(Ion), 6).
+ReleasedAt(AtWork(Ion), 7).
+ReleasedAt(AtWork(Ion), 8).
+ReleasedAt(AtWork(Ion), 9).
+ReleasedAt(AtWork(Vasile), 0).
+ReleasedAt(AtWork(Vasile), 1).
+ReleasedAt(AtWork(Vasile), 2).
+ReleasedAt(AtWork(Vasile), 3).
+ReleasedAt(AtWork(Vasile), 4).
+ReleasedAt(AtWork(Vasile), 5).
+ReleasedAt(AtWork(Vasile), 6).
+ReleasedAt(AtWork(Vasile), 7).
+ReleasedAt(AtWork(Vasile), 8).
+ReleasedAt(AtWork(Vasile), 9).
+ReleasedAt(OnVacantion(Ion), 0).
+ReleasedAt(OnVacantion(Ion), 1).
+ReleasedAt(OnVacantion(Ion), 2).
+ReleasedAt(OnVacantion(Ion), 3).
+ReleasedAt(OnVacantion(Ion), 4).
+ReleasedAt(OnVacantion(Ion), 5).
+ReleasedAt(OnVacantion(Ion), 6).
+ReleasedAt(OnVacantion(Ion), 7).
+ReleasedAt(OnVacantion(Ion), 8).
+ReleasedAt(OnVacantion(Ion), 9).
+ReleasedAt(OnVacantion(Vasile), 0).
+ReleasedAt(OnVacantion(Vasile), 1).
+ReleasedAt(OnVacantion(Vasile), 2).
+ReleasedAt(OnVacantion(Vasile), 3).
+ReleasedAt(OnVacantion(Vasile), 4).
+ReleasedAt(OnVacantion(Vasile), 5).
+ReleasedAt(OnVacantion(Vasile), 6).
+ReleasedAt(OnVacantion(Vasile), 7).
+ReleasedAt(OnVacantion(Vasile), 8).
+ReleasedAt(OnVacantion(Vasile), 9).
+!Happens(BuildFloor(Ion), 0).
+!Happens(BuildFloor(Ion), 1).
+!Happens(BuildFloor(Ion), 2).
+!Happens(BuildFloor(Ion), 3).
+!Happens(BuildFloor(Ion), 4).
+!Happens(BuildFloor(Ion), 5).
+!Happens(BuildFloor(Ion), 6).
+!Happens(BuildFloor(Ion), 7).
+!Happens(BuildFloor(Ion), 8).
+!Happens(BuildFloor(Vasile), 0).
+!Happens(BuildFloor(Vasile), 1).
+!Happens(BuildFloor(Vasile), 2).
+!Happens(BuildFloor(Vasile), 3).
+!Happens(BuildFloor(Vasile), 4).
+!Happens(BuildFloor(Vasile), 5).
+!Happens(BuildFloor(Vasile), 7).
+!Happens(BuildFloor(Vasile), 8).
+!Happens(BuildFoundation(Ion), 1).
+!Happens(BuildFoundation(Ion), 2).
+!Happens(BuildFoundation(Ion), 3).
+!Happens(BuildFoundation(Ion), 4).
+!Happens(BuildFoundation(Ion), 5).
+!Happens(BuildFoundation(Ion), 6).
+!Happens(BuildFoundation(Ion), 7).
+!Happens(BuildFoundation(Ion), 8).
+!Happens(BuildFoundation(Vasile), 0).
+!Happens(BuildFoundation(Vasile), 1).
+!Happens(BuildFoundation(Vasile), 2).
+!Happens(BuildFoundation(Vasile), 3).
+!Happens(BuildFoundation(Vasile), 4).
+!Happens(BuildFoundation(Vasile), 5).
+!Happens(BuildFoundation(Vasile), 6).
+!Happens(BuildFoundation(Vasile), 7).
+!Happens(BuildFoundation(Vasile), 8).
+!Happens(BuildInterior(Ion), 0).
+!Happens(BuildInterior(Ion), 1).
+!Happens(BuildInterior(Ion), 2).
+!Happens(BuildInterior(Ion), 3).
+!Happens(BuildInterior(Ion), 4).
+!Happens(BuildInterior(Ion), 5).
+!Happens(BuildInterior(Ion), 7).
+!Happens(BuildInterior(Ion), 8).
+!Happens(BuildInterior(Vasile), 0).
+!Happens(BuildInterior(Vasile), 1).
+!Happens(BuildInterior(Vasile), 2).
+!Happens(BuildInterior(Vasile), 3).
+!Happens(BuildInterior(Vasile), 4).
+!Happens(BuildInterior(Vasile), 5).
+!Happens(BuildInterior(Vasile), 6).
+!Happens(BuildInterior(Vasile), 7).
+!Happens(BuildInterior(Vasile), 8).
+!Happens(BuildRoof(Ion), 0).
+!Happens(BuildRoof(Ion), 1).
+!Happens(BuildRoof(Ion), 2).
+!Happens(BuildRoof(Ion), 4).
+!Happens(BuildRoof(Ion), 5).
+!Happens(BuildRoof(Ion), 6).
+!Happens(BuildRoof(Ion), 7).
+!Happens(BuildRoof(Ion), 8).
+!Happens(BuildRoof(Vasile), 0).
+!Happens(BuildRoof(Vasile), 1).
+!Happens(BuildRoof(Vasile), 2).
+!Happens(BuildRoof(Vasile), 3).
+!Happens(BuildRoof(Vasile), 4).
+!Happens(BuildRoof(Vasile), 5).
+!Happens(BuildRoof(Vasile), 6).
+!Happens(BuildRoof(Vasile), 7).
+!Happens(BuildRoof(Vasile), 8).
+!Happens(BuildStructure(Ion), 0).
+!Happens(BuildStructure(Ion), 2).
+!Happens(BuildStructure(Ion), 3).
+!Happens(BuildStructure(Ion), 4).
+!Happens(BuildStructure(Ion), 5).
+!Happens(BuildStructure(Ion), 6).
+!Happens(BuildStructure(Ion), 7).
+!Happens(BuildStructure(Ion), 8).
+!Happens(BuildStructure(Vasile), 0).
+!Happens(BuildStructure(Vasile), 1).
+!Happens(BuildStructure(Vasile), 2).
+!Happens(BuildStructure(Vasile), 3).
+!Happens(BuildStructure(Vasile), 4).
+!Happens(BuildStructure(Vasile), 5).
+!Happens(BuildStructure(Vasile), 6).
+!Happens(BuildStructure(Vasile), 7).
+!Happens(BuildStructure(Vasile), 8).
+!Happens(BuildWalls(Ion), 0).
+!Happens(BuildWalls(Ion), 1).
+!Happens(BuildWalls(Ion), 3).
+!Happens(BuildWalls(Ion), 4).
+!Happens(BuildWalls(Ion), 5).
+!Happens(BuildWalls(Ion), 6).
+!Happens(BuildWalls(Ion), 7).
+!Happens(BuildWalls(Ion), 8).
+!Happens(BuildWalls(Vasile), 0).
+!Happens(BuildWalls(Vasile), 1).
+!Happens(BuildWalls(Vasile), 2).
+!Happens(BuildWalls(Vasile), 3).
+!Happens(BuildWalls(Vasile), 4).
+!Happens(BuildWalls(Vasile), 5).
+!Happens(BuildWalls(Vasile), 6).
+!Happens(BuildWalls(Vasile), 7).
+!Happens(BuildWalls(Vasile), 8).
+!Happens(InstallWindows(Ion), 0).
+!Happens(InstallWindows(Ion), 1).
+!Happens(InstallWindows(Ion), 2).
+!Happens(InstallWindows(Ion), 3).
+!Happens(InstallWindows(Ion), 5).
+!Happens(InstallWindows(Ion), 6).
+!Happens(InstallWindows(Ion), 7).
+!Happens(InstallWindows(Ion), 8).
+!Happens(InstallWindows(Vasile), 0).
+!Happens(InstallWindows(Vasile), 1).
+!Happens(InstallWindows(Vasile), 2).
+!Happens(InstallWindows(Vasile), 3).
+!Happens(InstallWindows(Vasile), 4).
+!Happens(InstallWindows(Vasile), 5).
+!Happens(InstallWindows(Vasile), 6).
+!Happens(InstallWindows(Vasile), 7).
+!Happens(InstallWindows(Vasile), 8).
+!Happens(IsolateHouse(Ion), 0).
+!Happens(IsolateHouse(Ion), 1).
+!Happens(IsolateHouse(Ion), 2).
+!Happens(IsolateHouse(Ion), 3).
+!Happens(IsolateHouse(Ion), 4).
+!Happens(IsolateHouse(Ion), 5).
+!Happens(IsolateHouse(Ion), 6).
+!Happens(IsolateHouse(Ion), 7).
+!Happens(IsolateHouse(Ion), 8).
+!Happens(IsolateHouse(Vasile), 0).
+!Happens(IsolateHouse(Vasile), 1).
+!Happens(IsolateHouse(Vasile), 2).
+!Happens(IsolateHouse(Vasile), 3).
+!Happens(IsolateHouse(Vasile), 4).
+!Happens(IsolateHouse(Vasile), 6).
+!Happens(IsolateHouse(Vasile), 7).
+!Happens(IsolateHouse(Vasile), 8).
+!Happens(PaintHouse(Ion), 0).
+!Happens(PaintHouse(Ion), 1).
+!Happens(PaintHouse(Ion), 2).
+!Happens(PaintHouse(Ion), 3).
+!Happens(PaintHouse(Ion), 4).
+!Happens(PaintHouse(Ion), 5).
+!Happens(PaintHouse(Ion), 6).
+!Happens(PaintHouse(Ion), 8).
+!Happens(PaintHouse(Vasile), 0).
+!Happens(PaintHouse(Vasile), 1).
+!Happens(PaintHouse(Vasile), 2).
+!Happens(PaintHouse(Vasile), 3).
+!Happens(PaintHouse(Vasile), 4).
+!Happens(PaintHouse(Vasile), 5).
+!Happens(PaintHouse(Vasile), 6).
+!Happens(PaintHouse(Vasile), 7).
+!Happens(PaintHouse(Vasile), 8).
+!ReleasedAt(Floor(Ion), 0).
+!ReleasedAt(Floor(Ion), 1).
+!ReleasedAt(Floor(Ion), 2).
+!ReleasedAt(Floor(Ion), 3).
+!ReleasedAt(Floor(Ion), 4).
+!ReleasedAt(Floor(Ion), 5).
+!ReleasedAt(Floor(Ion), 6).
+!ReleasedAt(Floor(Ion), 7).
+!ReleasedAt(Floor(Ion), 8).
+!ReleasedAt(Floor(Ion), 9).
+!ReleasedAt(Floor(Vasile), 0).
+!ReleasedAt(Floor(Vasile), 1).
+!ReleasedAt(Floor(Vasile), 2).
+!ReleasedAt(Floor(Vasile), 3).
+!ReleasedAt(Floor(Vasile), 4).
+!ReleasedAt(Floor(Vasile), 5).
+!ReleasedAt(Floor(Vasile), 6).
+!ReleasedAt(Floor(Vasile), 7).
+!ReleasedAt(Floor(Vasile), 8).
+!ReleasedAt(Floor(Vasile), 9).
+!ReleasedAt(Foundation(Ion), 0).
+!ReleasedAt(Foundation(Ion), 1).
+!ReleasedAt(Foundation(Ion), 2).
+!ReleasedAt(Foundation(Ion), 3).
+!ReleasedAt(Foundation(Ion), 4).
+!ReleasedAt(Foundation(Ion), 5).
+!ReleasedAt(Foundation(Ion), 6).
+!ReleasedAt(Foundation(Ion), 7).
+!ReleasedAt(Foundation(Ion), 8).
+!ReleasedAt(Foundation(Ion), 9).
+!ReleasedAt(Foundation(Vasile), 0).
+!ReleasedAt(Foundation(Vasile), 1).
+!ReleasedAt(Foundation(Vasile), 2).
+!ReleasedAt(Foundation(Vasile), 3).
+!ReleasedAt(Foundation(Vasile), 4).
+!ReleasedAt(Foundation(Vasile), 5).
+!ReleasedAt(Foundation(Vasile), 6).
+!ReleasedAt(Foundation(Vasile), 7).
+!ReleasedAt(Foundation(Vasile), 8).
+!ReleasedAt(Foundation(Vasile), 9).
+!ReleasedAt(Interior(Ion), 0).
+!ReleasedAt(Interior(Ion), 1).
+!ReleasedAt(Interior(Ion), 2).
+!ReleasedAt(Interior(Ion), 3).
+!ReleasedAt(Interior(Ion), 4).
+!ReleasedAt(Interior(Ion), 5).
+!ReleasedAt(Interior(Ion), 6).
+!ReleasedAt(Interior(Ion), 7).
+!ReleasedAt(Interior(Ion), 8).
+!ReleasedAt(Interior(Ion), 9).
+!ReleasedAt(Interior(Vasile), 0).
+!ReleasedAt(Interior(Vasile), 1).
+!ReleasedAt(Interior(Vasile), 2).
+!ReleasedAt(Interior(Vasile), 3).
+!ReleasedAt(Interior(Vasile), 4).
+!ReleasedAt(Interior(Vasile), 5).
+!ReleasedAt(Interior(Vasile), 6).
+!ReleasedAt(Interior(Vasile), 7).
+!ReleasedAt(Interior(Vasile), 8).
+!ReleasedAt(Interior(Vasile), 9).
+!ReleasedAt(Isolation(Ion), 0).
+!ReleasedAt(Isolation(Ion), 1).
+!ReleasedAt(Isolation(Ion), 2).
+!ReleasedAt(Isolation(Ion), 3).
+!ReleasedAt(Isolation(Ion), 4).
+!ReleasedAt(Isolation(Ion), 5).
+!ReleasedAt(Isolation(Ion), 6).
+!ReleasedAt(Isolation(Ion), 7).
+!ReleasedAt(Isolation(Ion), 8).
+!ReleasedAt(Isolation(Ion), 9).
+!ReleasedAt(Isolation(Vasile), 0).
+!ReleasedAt(Isolation(Vasile), 1).
+!ReleasedAt(Isolation(Vasile), 2).
+!ReleasedAt(Isolation(Vasile), 3).
+!ReleasedAt(Isolation(Vasile), 4).
+!ReleasedAt(Isolation(Vasile), 5).
+!ReleasedAt(Isolation(Vasile), 6).
+!ReleasedAt(Isolation(Vasile), 7).
+!ReleasedAt(Isolation(Vasile), 8).
+!ReleasedAt(Isolation(Vasile), 9).
+!ReleasedAt(Paint(Ion), 0).
+!ReleasedAt(Paint(Ion), 1).
+!ReleasedAt(Paint(Ion), 2).
+!ReleasedAt(Paint(Ion), 3).
+!ReleasedAt(Paint(Ion), 4).
+!ReleasedAt(Paint(Ion), 5).
+!ReleasedAt(Paint(Ion), 6).
+!ReleasedAt(Paint(Ion), 7).
+!ReleasedAt(Paint(Ion), 8).
+!ReleasedAt(Paint(Ion), 9).
+!ReleasedAt(Paint(Vasile), 0).
+!ReleasedAt(Paint(Vasile), 1).
+!ReleasedAt(Paint(Vasile), 2).
+!ReleasedAt(Paint(Vasile), 3).
+!ReleasedAt(Paint(Vasile), 4).
+!ReleasedAt(Paint(Vasile), 5).
+!ReleasedAt(Paint(Vasile), 6).
+!ReleasedAt(Paint(Vasile), 7).
+!ReleasedAt(Paint(Vasile), 8).
+!ReleasedAt(Paint(Vasile), 9).
+!ReleasedAt(Roof(Ion), 0).
+!ReleasedAt(Roof(Ion), 1).
+!ReleasedAt(Roof(Ion), 2).
+!ReleasedAt(Roof(Ion), 3).
+!ReleasedAt(Roof(Ion), 4).
+!ReleasedAt(Roof(Ion), 5).
+!ReleasedAt(Roof(Ion), 6).
+!ReleasedAt(Roof(Ion), 7).
+!ReleasedAt(Roof(Ion), 8).
+!ReleasedAt(Roof(Ion), 9).
+!ReleasedAt(Roof(Vasile), 0).
+!ReleasedAt(Roof(Vasile), 1).
+!ReleasedAt(Roof(Vasile), 2).
+!ReleasedAt(Roof(Vasile), 3).
+!ReleasedAt(Roof(Vasile), 4).
+!ReleasedAt(Roof(Vasile), 5).
+!ReleasedAt(Roof(Vasile), 6).
+!ReleasedAt(Roof(Vasile), 7).
+!ReleasedAt(Roof(Vasile), 8).
+!ReleasedAt(Roof(Vasile), 9).
+!ReleasedAt(Structure(Ion), 0).
+!ReleasedAt(Structure(Ion), 1).
+!ReleasedAt(Structure(Ion), 2).
+!ReleasedAt(Structure(Ion), 3).
+!ReleasedAt(Structure(Ion), 4).
+!ReleasedAt(Structure(Ion), 5).
+!ReleasedAt(Structure(Ion), 6).
+!ReleasedAt(Structure(Ion), 7).
+!ReleasedAt(Structure(Ion), 8).
+!ReleasedAt(Structure(Ion), 9).
+!ReleasedAt(Structure(Vasile), 0).
+!ReleasedAt(Structure(Vasile), 1).
+!ReleasedAt(Structure(Vasile), 2).
+!ReleasedAt(Structure(Vasile), 3).
+!ReleasedAt(Structure(Vasile), 4).
+!ReleasedAt(Structure(Vasile), 5).
+!ReleasedAt(Structure(Vasile), 6).
+!ReleasedAt(Structure(Vasile), 7).
+!ReleasedAt(Structure(Vasile), 8).
+!ReleasedAt(Structure(Vasile), 9).
+!ReleasedAt(Wall(Ion), 0).
+!ReleasedAt(Wall(Ion), 1).
+!ReleasedAt(Wall(Ion), 2).
+!ReleasedAt(Wall(Ion), 3).
+!ReleasedAt(Wall(Ion), 4).
+!ReleasedAt(Wall(Ion), 5).
+!ReleasedAt(Wall(Ion), 6).
+!ReleasedAt(Wall(Ion), 7).
+!ReleasedAt(Wall(Ion), 8).
+!ReleasedAt(Wall(Ion), 9).
+!ReleasedAt(Wall(Vasile), 0).
+!ReleasedAt(Wall(Vasile), 1).
+!ReleasedAt(Wall(Vasile), 2).
+!ReleasedAt(Wall(Vasile), 3).
+!ReleasedAt(Wall(Vasile), 4).
+!ReleasedAt(Wall(Vasile), 5).
+!ReleasedAt(Wall(Vasile), 6).
+!ReleasedAt(Wall(Vasile), 7).
+!ReleasedAt(Wall(Vasile), 8).
+!ReleasedAt(Wall(Vasile), 9).
+!ReleasedAt(Windows(Ion), 0).
+!ReleasedAt(Windows(Ion), 1).
+!ReleasedAt(Windows(Ion), 2).
+!ReleasedAt(Windows(Ion), 3).
+!ReleasedAt(Windows(Ion), 4).
+!ReleasedAt(Windows(Ion), 5).
+!ReleasedAt(Windows(Ion), 6).
+!ReleasedAt(Windows(Ion), 7).
+!ReleasedAt(Windows(Ion), 8).
+!ReleasedAt(Windows(Ion), 9).
+!ReleasedAt(Windows(Vasile), 0).
+!ReleasedAt(Windows(Vasile), 1).
+!ReleasedAt(Windows(Vasile), 2).
+!ReleasedAt(Windows(Vasile), 3).
+!ReleasedAt(Windows(Vasile), 4).
+!ReleasedAt(Windows(Vasile), 5).
+!ReleasedAt(Windows(Vasile), 6).
+!ReleasedAt(Windows(Vasile), 7).
+!ReleasedAt(Windows(Vasile), 8).
+!ReleasedAt(Windows(Vasile), 9).
+---
+model 5:
+0
+AtWork(Ion).
+OnVacantion(Vasile).
+Happens(BuildFoundation(Ion), 0).
+1
+-OnVacantion(Vasile).
++AtWork(Vasile).
++Foundation(Ion).
+Happens(BuildStructure(Ion), 1).
+2
++Structure(Ion).
+Happens(BuildWalls(Ion), 2).
+3
++Wall(Ion).
+Happens(BuildRoof(Ion), 3).
+4
+-AtWork(Vasile).
++OnVacantion(Vasile).
++Roof(Ion).
+Happens(InstallWindows(Ion), 4).
+5
+-OnVacantion(Vasile).
++AtWork(Vasile).
++Windows(Ion).
+Happens(IsolateHouse(Vasile), 5).
+6
++Isolation(Vasile).
+Happens(BuildFloor(Vasile), 6).
+Happens(BuildInterior(Ion), 6).
+7
++Floor(Vasile).
++Interior(Ion).
+Happens(PaintHouse(Ion), 7).
+Happens(PaintHouse(Vasile), 7).
+8
+-AtWork(Ion).
+-AtWork(Vasile).
++OnVacantion(Ion).
++OnVacantion(Vasile).
++Paint(Ion).
++Paint(Vasile).
+9
+-OnVacantion(Ion).
+-OnVacantion(Vasile).
++AtWork(Ion).
++AtWork(Vasile).
+P
+ReleasedAt(AtWork(Ion), 0).
+ReleasedAt(AtWork(Ion), 1).
+ReleasedAt(AtWork(Ion), 2).
+ReleasedAt(AtWork(Ion), 3).
+ReleasedAt(AtWork(Ion), 4).
+ReleasedAt(AtWork(Ion), 5).
+ReleasedAt(AtWork(Ion), 6).
+ReleasedAt(AtWork(Ion), 7).
+ReleasedAt(AtWork(Ion), 8).
+ReleasedAt(AtWork(Ion), 9).
+ReleasedAt(AtWork(Vasile), 0).
+ReleasedAt(AtWork(Vasile), 1).
+ReleasedAt(AtWork(Vasile), 2).
+ReleasedAt(AtWork(Vasile), 3).
+ReleasedAt(AtWork(Vasile), 4).
+ReleasedAt(AtWork(Vasile), 5).
+ReleasedAt(AtWork(Vasile), 6).
+ReleasedAt(AtWork(Vasile), 7).
+ReleasedAt(AtWork(Vasile), 8).
+ReleasedAt(AtWork(Vasile), 9).
+ReleasedAt(OnVacantion(Ion), 0).
+ReleasedAt(OnVacantion(Ion), 1).
+ReleasedAt(OnVacantion(Ion), 2).
+ReleasedAt(OnVacantion(Ion), 3).
+ReleasedAt(OnVacantion(Ion), 4).
+ReleasedAt(OnVacantion(Ion), 5).
+ReleasedAt(OnVacantion(Ion), 6).
+ReleasedAt(OnVacantion(Ion), 7).
+ReleasedAt(OnVacantion(Ion), 8).
+ReleasedAt(OnVacantion(Ion), 9).
+ReleasedAt(OnVacantion(Vasile), 0).
+ReleasedAt(OnVacantion(Vasile), 1).
+ReleasedAt(OnVacantion(Vasile), 2).
+ReleasedAt(OnVacantion(Vasile), 3).
+ReleasedAt(OnVacantion(Vasile), 4).
+ReleasedAt(OnVacantion(Vasile), 5).
+ReleasedAt(OnVacantion(Vasile), 6).
+ReleasedAt(OnVacantion(Vasile), 7).
+ReleasedAt(OnVacantion(Vasile), 8).
+ReleasedAt(OnVacantion(Vasile), 9).
+!Happens(BuildFloor(Ion), 0).
+!Happens(BuildFloor(Ion), 1).
+!Happens(BuildFloor(Ion), 2).
+!Happens(BuildFloor(Ion), 3).
+!Happens(BuildFloor(Ion), 4).
+!Happens(BuildFloor(Ion), 5).
+!Happens(BuildFloor(Ion), 6).
+!Happens(BuildFloor(Ion), 7).
+!Happens(BuildFloor(Ion), 8).
+!Happens(BuildFloor(Vasile), 0).
+!Happens(BuildFloor(Vasile), 1).
+!Happens(BuildFloor(Vasile), 2).
+!Happens(BuildFloor(Vasile), 3).
+!Happens(BuildFloor(Vasile), 4).
+!Happens(BuildFloor(Vasile), 5).
+!Happens(BuildFloor(Vasile), 7).
+!Happens(BuildFloor(Vasile), 8).
+!Happens(BuildFoundation(Ion), 1).
+!Happens(BuildFoundation(Ion), 2).
+!Happens(BuildFoundation(Ion), 3).
+!Happens(BuildFoundation(Ion), 4).
+!Happens(BuildFoundation(Ion), 5).
+!Happens(BuildFoundation(Ion), 6).
+!Happens(BuildFoundation(Ion), 7).
+!Happens(BuildFoundation(Ion), 8).
+!Happens(BuildFoundation(Vasile), 0).
+!Happens(BuildFoundation(Vasile), 1).
+!Happens(BuildFoundation(Vasile), 2).
+!Happens(BuildFoundation(Vasile), 3).
+!Happens(BuildFoundation(Vasile), 4).
+!Happens(BuildFoundation(Vasile), 5).
+!Happens(BuildFoundation(Vasile), 6).
+!Happens(BuildFoundation(Vasile), 7).
+!Happens(BuildFoundation(Vasile), 8).
+!Happens(BuildInterior(Ion), 0).
+!Happens(BuildInterior(Ion), 1).
+!Happens(BuildInterior(Ion), 2).
+!Happens(BuildInterior(Ion), 3).
+!Happens(BuildInterior(Ion), 4).
+!Happens(BuildInterior(Ion), 5).
+!Happens(BuildInterior(Ion), 7).
+!Happens(BuildInterior(Ion), 8).
+!Happens(BuildInterior(Vasile), 0).
+!Happens(BuildInterior(Vasile), 1).
+!Happens(BuildInterior(Vasile), 2).
+!Happens(BuildInterior(Vasile), 3).
+!Happens(BuildInterior(Vasile), 4).
+!Happens(BuildInterior(Vasile), 5).
+!Happens(BuildInterior(Vasile), 6).
+!Happens(BuildInterior(Vasile), 7).
+!Happens(BuildInterior(Vasile), 8).
+!Happens(BuildRoof(Ion), 0).
+!Happens(BuildRoof(Ion), 1).
+!Happens(BuildRoof(Ion), 2).
+!Happens(BuildRoof(Ion), 4).
+!Happens(BuildRoof(Ion), 5).
+!Happens(BuildRoof(Ion), 6).
+!Happens(BuildRoof(Ion), 7).
+!Happens(BuildRoof(Ion), 8).
+!Happens(BuildRoof(Vasile), 0).
+!Happens(BuildRoof(Vasile), 1).
+!Happens(BuildRoof(Vasile), 2).
+!Happens(BuildRoof(Vasile), 3).
+!Happens(BuildRoof(Vasile), 4).
+!Happens(BuildRoof(Vasile), 5).
+!Happens(BuildRoof(Vasile), 6).
+!Happens(BuildRoof(Vasile), 7).
+!Happens(BuildRoof(Vasile), 8).
+!Happens(BuildStructure(Ion), 0).
+!Happens(BuildStructure(Ion), 2).
+!Happens(BuildStructure(Ion), 3).
+!Happens(BuildStructure(Ion), 4).
+!Happens(BuildStructure(Ion), 5).
+!Happens(BuildStructure(Ion), 6).
+!Happens(BuildStructure(Ion), 7).
+!Happens(BuildStructure(Ion), 8).
+!Happens(BuildStructure(Vasile), 0).
+!Happens(BuildStructure(Vasile), 1).
+!Happens(BuildStructure(Vasile), 2).
+!Happens(BuildStructure(Vasile), 3).
+!Happens(BuildStructure(Vasile), 4).
+!Happens(BuildStructure(Vasile), 5).
+!Happens(BuildStructure(Vasile), 6).
+!Happens(BuildStructure(Vasile), 7).
+!Happens(BuildStructure(Vasile), 8).
+!Happens(BuildWalls(Ion), 0).
+!Happens(BuildWalls(Ion), 1).
+!Happens(BuildWalls(Ion), 3).
+!Happens(BuildWalls(Ion), 4).
+!Happens(BuildWalls(Ion), 5).
+!Happens(BuildWalls(Ion), 6).
+!Happens(BuildWalls(Ion), 7).
+!Happens(BuildWalls(Ion), 8).
+!Happens(BuildWalls(Vasile), 0).
+!Happens(BuildWalls(Vasile), 1).
+!Happens(BuildWalls(Vasile), 2).
+!Happens(BuildWalls(Vasile), 3).
+!Happens(BuildWalls(Vasile), 4).
+!Happens(BuildWalls(Vasile), 5).
+!Happens(BuildWalls(Vasile), 6).
+!Happens(BuildWalls(Vasile), 7).
+!Happens(BuildWalls(Vasile), 8).
+!Happens(InstallWindows(Ion), 0).
+!Happens(InstallWindows(Ion), 1).
+!Happens(InstallWindows(Ion), 2).
+!Happens(InstallWindows(Ion), 3).
+!Happens(InstallWindows(Ion), 5).
+!Happens(InstallWindows(Ion), 6).
+!Happens(InstallWindows(Ion), 7).
+!Happens(InstallWindows(Ion), 8).
+!Happens(InstallWindows(Vasile), 0).
+!Happens(InstallWindows(Vasile), 1).
+!Happens(InstallWindows(Vasile), 2).
+!Happens(InstallWindows(Vasile), 3).
+!Happens(InstallWindows(Vasile), 4).
+!Happens(InstallWindows(Vasile), 5).
+!Happens(InstallWindows(Vasile), 6).
+!Happens(InstallWindows(Vasile), 7).
+!Happens(InstallWindows(Vasile), 8).
+!Happens(IsolateHouse(Ion), 0).
+!Happens(IsolateHouse(Ion), 1).
+!Happens(IsolateHouse(Ion), 2).
+!Happens(IsolateHouse(Ion), 3).
+!Happens(IsolateHouse(Ion), 4).
+!Happens(IsolateHouse(Ion), 5).
+!Happens(IsolateHouse(Ion), 6).
+!Happens(IsolateHouse(Ion), 7).
+!Happens(IsolateHouse(Ion), 8).
+!Happens(IsolateHouse(Vasile), 0).
+!Happens(IsolateHouse(Vasile), 1).
+!Happens(IsolateHouse(Vasile), 2).
+!Happens(IsolateHouse(Vasile), 3).
+!Happens(IsolateHouse(Vasile), 4).
+!Happens(IsolateHouse(Vasile), 6).
+!Happens(IsolateHouse(Vasile), 7).
+!Happens(IsolateHouse(Vasile), 8).
+!Happens(PaintHouse(Ion), 0).
+!Happens(PaintHouse(Ion), 1).
+!Happens(PaintHouse(Ion), 2).
+!Happens(PaintHouse(Ion), 3).
+!Happens(PaintHouse(Ion), 4).
+!Happens(PaintHouse(Ion), 5).
+!Happens(PaintHouse(Ion), 6).
+!Happens(PaintHouse(Ion), 8).
+!Happens(PaintHouse(Vasile), 0).
+!Happens(PaintHouse(Vasile), 1).
+!Happens(PaintHouse(Vasile), 2).
+!Happens(PaintHouse(Vasile), 3).
+!Happens(PaintHouse(Vasile), 4).
+!Happens(PaintHouse(Vasile), 5).
+!Happens(PaintHouse(Vasile), 6).
+!Happens(PaintHouse(Vasile), 8).
+!ReleasedAt(Floor(Ion), 0).
+!ReleasedAt(Floor(Ion), 1).
+!ReleasedAt(Floor(Ion), 2).
+!ReleasedAt(Floor(Ion), 3).
+!ReleasedAt(Floor(Ion), 4).
+!ReleasedAt(Floor(Ion), 5).
+!ReleasedAt(Floor(Ion), 6).
+!ReleasedAt(Floor(Ion), 7).
+!ReleasedAt(Floor(Ion), 8).
+!ReleasedAt(Floor(Ion), 9).
+!ReleasedAt(Floor(Vasile), 0).
+!ReleasedAt(Floor(Vasile), 1).
+!ReleasedAt(Floor(Vasile), 2).
+!ReleasedAt(Floor(Vasile), 3).
+!ReleasedAt(Floor(Vasile), 4).
+!ReleasedAt(Floor(Vasile), 5).
+!ReleasedAt(Floor(Vasile), 6).
+!ReleasedAt(Floor(Vasile), 7).
+!ReleasedAt(Floor(Vasile), 8).
+!ReleasedAt(Floor(Vasile), 9).
+!ReleasedAt(Foundation(Ion), 0).
+!ReleasedAt(Foundation(Ion), 1).
+!ReleasedAt(Foundation(Ion), 2).
+!ReleasedAt(Foundation(Ion), 3).
+!ReleasedAt(Foundation(Ion), 4).
+!ReleasedAt(Foundation(Ion), 5).
+!ReleasedAt(Foundation(Ion), 6).
+!ReleasedAt(Foundation(Ion), 7).
+!ReleasedAt(Foundation(Ion), 8).
+!ReleasedAt(Foundation(Ion), 9).
+!ReleasedAt(Foundation(Vasile), 0).
+!ReleasedAt(Foundation(Vasile), 1).
+!ReleasedAt(Foundation(Vasile), 2).
+!ReleasedAt(Foundation(Vasile), 3).
+!ReleasedAt(Foundation(Vasile), 4).
+!ReleasedAt(Foundation(Vasile), 5).
+!ReleasedAt(Foundation(Vasile), 6).
+!ReleasedAt(Foundation(Vasile), 7).
+!ReleasedAt(Foundation(Vasile), 8).
+!ReleasedAt(Foundation(Vasile), 9).
+!ReleasedAt(Interior(Ion), 0).
+!ReleasedAt(Interior(Ion), 1).
+!ReleasedAt(Interior(Ion), 2).
+!ReleasedAt(Interior(Ion), 3).
+!ReleasedAt(Interior(Ion), 4).
+!ReleasedAt(Interior(Ion), 5).
+!ReleasedAt(Interior(Ion), 6).
+!ReleasedAt(Interior(Ion), 7).
+!ReleasedAt(Interior(Ion), 8).
+!ReleasedAt(Interior(Ion), 9).
+!ReleasedAt(Interior(Vasile), 0).
+!ReleasedAt(Interior(Vasile), 1).
+!ReleasedAt(Interior(Vasile), 2).
+!ReleasedAt(Interior(Vasile), 3).
+!ReleasedAt(Interior(Vasile), 4).
+!ReleasedAt(Interior(Vasile), 5).
+!ReleasedAt(Interior(Vasile), 6).
+!ReleasedAt(Interior(Vasile), 7).
+!ReleasedAt(Interior(Vasile), 8).
+!ReleasedAt(Interior(Vasile), 9).
+!ReleasedAt(Isolation(Ion), 0).
+!ReleasedAt(Isolation(Ion), 1).
+!ReleasedAt(Isolation(Ion), 2).
+!ReleasedAt(Isolation(Ion), 3).
+!ReleasedAt(Isolation(Ion), 4).
+!ReleasedAt(Isolation(Ion), 5).
+!ReleasedAt(Isolation(Ion), 6).
+!ReleasedAt(Isolation(Ion), 7).
+!ReleasedAt(Isolation(Ion), 8).
+!ReleasedAt(Isolation(Ion), 9).
+!ReleasedAt(Isolation(Vasile), 0).
+!ReleasedAt(Isolation(Vasile), 1).
+!ReleasedAt(Isolation(Vasile), 2).
+!ReleasedAt(Isolation(Vasile), 3).
+!ReleasedAt(Isolation(Vasile), 4).
+!ReleasedAt(Isolation(Vasile), 5).
+!ReleasedAt(Isolation(Vasile), 6).
+!ReleasedAt(Isolation(Vasile), 7).
+!ReleasedAt(Isolation(Vasile), 8).
+!ReleasedAt(Isolation(Vasile), 9).
+!ReleasedAt(Paint(Ion), 0).
+!ReleasedAt(Paint(Ion), 1).
+!ReleasedAt(Paint(Ion), 2).
+!ReleasedAt(Paint(Ion), 3).
+!ReleasedAt(Paint(Ion), 4).
+!ReleasedAt(Paint(Ion), 5).
+!ReleasedAt(Paint(Ion), 6).
+!ReleasedAt(Paint(Ion), 7).
+!ReleasedAt(Paint(Ion), 8).
+!ReleasedAt(Paint(Ion), 9).
+!ReleasedAt(Paint(Vasile), 0).
+!ReleasedAt(Paint(Vasile), 1).
+!ReleasedAt(Paint(Vasile), 2).
+!ReleasedAt(Paint(Vasile), 3).
+!ReleasedAt(Paint(Vasile), 4).
+!ReleasedAt(Paint(Vasile), 5).
+!ReleasedAt(Paint(Vasile), 6).
+!ReleasedAt(Paint(Vasile), 7).
+!ReleasedAt(Paint(Vasile), 8).
+!ReleasedAt(Paint(Vasile), 9).
+!ReleasedAt(Roof(Ion), 0).
+!ReleasedAt(Roof(Ion), 1).
+!ReleasedAt(Roof(Ion), 2).
+!ReleasedAt(Roof(Ion), 3).
+!ReleasedAt(Roof(Ion), 4).
+!ReleasedAt(Roof(Ion), 5).
+!ReleasedAt(Roof(Ion), 6).
+!ReleasedAt(Roof(Ion), 7).
+!ReleasedAt(Roof(Ion), 8).
+!ReleasedAt(Roof(Ion), 9).
+!ReleasedAt(Roof(Vasile), 0).
+!ReleasedAt(Roof(Vasile), 1).
+!ReleasedAt(Roof(Vasile), 2).
+!ReleasedAt(Roof(Vasile), 3).
+!ReleasedAt(Roof(Vasile), 4).
+!ReleasedAt(Roof(Vasile), 5).
+!ReleasedAt(Roof(Vasile), 6).
+!ReleasedAt(Roof(Vasile), 7).
+!ReleasedAt(Roof(Vasile), 8).
+!ReleasedAt(Roof(Vasile), 9).
+!ReleasedAt(Structure(Ion), 0).
+!ReleasedAt(Structure(Ion), 1).
+!ReleasedAt(Structure(Ion), 2).
+!ReleasedAt(Structure(Ion), 3).
+!ReleasedAt(Structure(Ion), 4).
+!ReleasedAt(Structure(Ion), 5).
+!ReleasedAt(Structure(Ion), 6).
+!ReleasedAt(Structure(Ion), 7).
+!ReleasedAt(Structure(Ion), 8).
+!ReleasedAt(Structure(Ion), 9).
+!ReleasedAt(Structure(Vasile), 0).
+!ReleasedAt(Structure(Vasile), 1).
+!ReleasedAt(Structure(Vasile), 2).
+!ReleasedAt(Structure(Vasile), 3).
+!ReleasedAt(Structure(Vasile), 4).
+!ReleasedAt(Structure(Vasile), 5).
+!ReleasedAt(Structure(Vasile), 6).
+!ReleasedAt(Structure(Vasile), 7).
+!ReleasedAt(Structure(Vasile), 8).
+!ReleasedAt(Structure(Vasile), 9).
+!ReleasedAt(Wall(Ion), 0).
+!ReleasedAt(Wall(Ion), 1).
+!ReleasedAt(Wall(Ion), 2).
+!ReleasedAt(Wall(Ion), 3).
+!ReleasedAt(Wall(Ion), 4).
+!ReleasedAt(Wall(Ion), 5).
+!ReleasedAt(Wall(Ion), 6).
+!ReleasedAt(Wall(Ion), 7).
+!ReleasedAt(Wall(Ion), 8).
+!ReleasedAt(Wall(Ion), 9).
+!ReleasedAt(Wall(Vasile), 0).
+!ReleasedAt(Wall(Vasile), 1).
+!ReleasedAt(Wall(Vasile), 2).
+!ReleasedAt(Wall(Vasile), 3).
+!ReleasedAt(Wall(Vasile), 4).
+!ReleasedAt(Wall(Vasile), 5).
+!ReleasedAt(Wall(Vasile), 6).
+!ReleasedAt(Wall(Vasile), 7).
+!ReleasedAt(Wall(Vasile), 8).
+!ReleasedAt(Wall(Vasile), 9).
+!ReleasedAt(Windows(Ion), 0).
+!ReleasedAt(Windows(Ion), 1).
+!ReleasedAt(Windows(Ion), 2).
+!ReleasedAt(Windows(Ion), 3).
+!ReleasedAt(Windows(Ion), 4).
+!ReleasedAt(Windows(Ion), 5).
+!ReleasedAt(Windows(Ion), 6).
+!ReleasedAt(Windows(Ion), 7).
+!ReleasedAt(Windows(Ion), 8).
+!ReleasedAt(Windows(Ion), 9).
+!ReleasedAt(Windows(Vasile), 0).
+!ReleasedAt(Windows(Vasile), 1).
+!ReleasedAt(Windows(Vasile), 2).
+!ReleasedAt(Windows(Vasile), 3).
+!ReleasedAt(Windows(Vasile), 4).
+!ReleasedAt(Windows(Vasile), 5).
+!ReleasedAt(Windows(Vasile), 6).
+!ReleasedAt(Windows(Vasile), 7).
+!ReleasedAt(Windows(Vasile), 8).
+!ReleasedAt(Windows(Vasile), 9).
+---
+model 6:
+0
+AtWork(Ion).
+OnVacantion(Vasile).
+Happens(BuildFoundation(Ion), 0).
+1
+-OnVacantion(Vasile).
++AtWork(Vasile).
++Foundation(Ion).
+Happens(BuildStructure(Ion), 1).
+2
++Structure(Ion).
+Happens(BuildWalls(Ion), 2).
+3
++Wall(Ion).
+Happens(BuildRoof(Ion), 3).
+4
+-AtWork(Vasile).
++OnVacantion(Vasile).
++Roof(Ion).
+Happens(InstallWindows(Ion), 4).
+5
+-AtWork(Ion).
+-OnVacantion(Vasile).
++AtWork(Vasile).
++OnVacantion(Ion).
++Windows(Ion).
+Happens(IsolateHouse(Vasile), 5).
+6
+-OnVacantion(Ion).
++AtWork(Ion).
++Isolation(Vasile).
+Happens(BuildFloor(Vasile), 6).
+Happens(BuildInterior(Ion), 6).
+7
++Floor(Vasile).
++Interior(Ion).
+Happens(PaintHouse(Ion), 7).
+Happens(PaintHouse(Vasile), 7).
+8
+-AtWork(Ion).
+-AtWork(Vasile).
++OnVacantion(Ion).
++OnVacantion(Vasile).
++Paint(Ion).
++Paint(Vasile).
+9
+-OnVacantion(Ion).
+-OnVacantion(Vasile).
++AtWork(Ion).
++AtWork(Vasile).
+P
+ReleasedAt(AtWork(Ion), 0).
+ReleasedAt(AtWork(Ion), 1).
+ReleasedAt(AtWork(Ion), 2).
+ReleasedAt(AtWork(Ion), 3).
+ReleasedAt(AtWork(Ion), 4).
+ReleasedAt(AtWork(Ion), 5).
+ReleasedAt(AtWork(Ion), 6).
+ReleasedAt(AtWork(Ion), 7).
+ReleasedAt(AtWork(Ion), 8).
+ReleasedAt(AtWork(Ion), 9).
+ReleasedAt(AtWork(Vasile), 0).
+ReleasedAt(AtWork(Vasile), 1).
+ReleasedAt(AtWork(Vasile), 2).
+ReleasedAt(AtWork(Vasile), 3).
+ReleasedAt(AtWork(Vasile), 4).
+ReleasedAt(AtWork(Vasile), 5).
+ReleasedAt(AtWork(Vasile), 6).
+ReleasedAt(AtWork(Vasile), 7).
+ReleasedAt(AtWork(Vasile), 8).
+ReleasedAt(AtWork(Vasile), 9).
+ReleasedAt(OnVacantion(Ion), 0).
+ReleasedAt(OnVacantion(Ion), 1).
+ReleasedAt(OnVacantion(Ion), 2).
+ReleasedAt(OnVacantion(Ion), 3).
+ReleasedAt(OnVacantion(Ion), 4).
+ReleasedAt(OnVacantion(Ion), 5).
+ReleasedAt(OnVacantion(Ion), 6).
+ReleasedAt(OnVacantion(Ion), 7).
+ReleasedAt(OnVacantion(Ion), 8).
+ReleasedAt(OnVacantion(Ion), 9).
+ReleasedAt(OnVacantion(Vasile), 0).
+ReleasedAt(OnVacantion(Vasile), 1).
+ReleasedAt(OnVacantion(Vasile), 2).
+ReleasedAt(OnVacantion(Vasile), 3).
+ReleasedAt(OnVacantion(Vasile), 4).
+ReleasedAt(OnVacantion(Vasile), 5).
+ReleasedAt(OnVacantion(Vasile), 6).
+ReleasedAt(OnVacantion(Vasile), 7).
+ReleasedAt(OnVacantion(Vasile), 8).
+ReleasedAt(OnVacantion(Vasile), 9).
+!Happens(BuildFloor(Ion), 0).
+!Happens(BuildFloor(Ion), 1).
+!Happens(BuildFloor(Ion), 2).
+!Happens(BuildFloor(Ion), 3).
+!Happens(BuildFloor(Ion), 4).
+!Happens(BuildFloor(Ion), 5).
+!Happens(BuildFloor(Ion), 6).
+!Happens(BuildFloor(Ion), 7).
+!Happens(BuildFloor(Ion), 8).
+!Happens(BuildFloor(Vasile), 0).
+!Happens(BuildFloor(Vasile), 1).
+!Happens(BuildFloor(Vasile), 2).
+!Happens(BuildFloor(Vasile), 3).
+!Happens(BuildFloor(Vasile), 4).
+!Happens(BuildFloor(Vasile), 5).
+!Happens(BuildFloor(Vasile), 7).
+!Happens(BuildFloor(Vasile), 8).
+!Happens(BuildFoundation(Ion), 1).
+!Happens(BuildFoundation(Ion), 2).
+!Happens(BuildFoundation(Ion), 3).
+!Happens(BuildFoundation(Ion), 4).
+!Happens(BuildFoundation(Ion), 5).
+!Happens(BuildFoundation(Ion), 6).
+!Happens(BuildFoundation(Ion), 7).
+!Happens(BuildFoundation(Ion), 8).
+!Happens(BuildFoundation(Vasile), 0).
+!Happens(BuildFoundation(Vasile), 1).
+!Happens(BuildFoundation(Vasile), 2).
+!Happens(BuildFoundation(Vasile), 3).
+!Happens(BuildFoundation(Vasile), 4).
+!Happens(BuildFoundation(Vasile), 5).
+!Happens(BuildFoundation(Vasile), 6).
+!Happens(BuildFoundation(Vasile), 7).
+!Happens(BuildFoundation(Vasile), 8).
+!Happens(BuildInterior(Ion), 0).
+!Happens(BuildInterior(Ion), 1).
+!Happens(BuildInterior(Ion), 2).
+!Happens(BuildInterior(Ion), 3).
+!Happens(BuildInterior(Ion), 4).
+!Happens(BuildInterior(Ion), 5).
+!Happens(BuildInterior(Ion), 7).
+!Happens(BuildInterior(Ion), 8).
+!Happens(BuildInterior(Vasile), 0).
+!Happens(BuildInterior(Vasile), 1).
+!Happens(BuildInterior(Vasile), 2).
+!Happens(BuildInterior(Vasile), 3).
+!Happens(BuildInterior(Vasile), 4).
+!Happens(BuildInterior(Vasile), 5).
+!Happens(BuildInterior(Vasile), 6).
+!Happens(BuildInterior(Vasile), 7).
+!Happens(BuildInterior(Vasile), 8).
+!Happens(BuildRoof(Ion), 0).
+!Happens(BuildRoof(Ion), 1).
+!Happens(BuildRoof(Ion), 2).
+!Happens(BuildRoof(Ion), 4).
+!Happens(BuildRoof(Ion), 5).
+!Happens(BuildRoof(Ion), 6).
+!Happens(BuildRoof(Ion), 7).
+!Happens(BuildRoof(Ion), 8).
+!Happens(BuildRoof(Vasile), 0).
+!Happens(BuildRoof(Vasile), 1).
+!Happens(BuildRoof(Vasile), 2).
+!Happens(BuildRoof(Vasile), 3).
+!Happens(BuildRoof(Vasile), 4).
+!Happens(BuildRoof(Vasile), 5).
+!Happens(BuildRoof(Vasile), 6).
+!Happens(BuildRoof(Vasile), 7).
+!Happens(BuildRoof(Vasile), 8).
+!Happens(BuildStructure(Ion), 0).
+!Happens(BuildStructure(Ion), 2).
+!Happens(BuildStructure(Ion), 3).
+!Happens(BuildStructure(Ion), 4).
+!Happens(BuildStructure(Ion), 5).
+!Happens(BuildStructure(Ion), 6).
+!Happens(BuildStructure(Ion), 7).
+!Happens(BuildStructure(Ion), 8).
+!Happens(BuildStructure(Vasile), 0).
+!Happens(BuildStructure(Vasile), 1).
+!Happens(BuildStructure(Vasile), 2).
+!Happens(BuildStructure(Vasile), 3).
+!Happens(BuildStructure(Vasile), 4).
+!Happens(BuildStructure(Vasile), 5).
+!Happens(BuildStructure(Vasile), 6).
+!Happens(BuildStructure(Vasile), 7).
+!Happens(BuildStructure(Vasile), 8).
+!Happens(BuildWalls(Ion), 0).
+!Happens(BuildWalls(Ion), 1).
+!Happens(BuildWalls(Ion), 3).
+!Happens(BuildWalls(Ion), 4).
+!Happens(BuildWalls(Ion), 5).
+!Happens(BuildWalls(Ion), 6).
+!Happens(BuildWalls(Ion), 7).
+!Happens(BuildWalls(Ion), 8).
+!Happens(BuildWalls(Vasile), 0).
+!Happens(BuildWalls(Vasile), 1).
+!Happens(BuildWalls(Vasile), 2).
+!Happens(BuildWalls(Vasile), 3).
+!Happens(BuildWalls(Vasile), 4).
+!Happens(BuildWalls(Vasile), 5).
+!Happens(BuildWalls(Vasile), 6).
+!Happens(BuildWalls(Vasile), 7).
+!Happens(BuildWalls(Vasile), 8).
+!Happens(InstallWindows(Ion), 0).
+!Happens(InstallWindows(Ion), 1).
+!Happens(InstallWindows(Ion), 2).
+!Happens(InstallWindows(Ion), 3).
+!Happens(InstallWindows(Ion), 5).
+!Happens(InstallWindows(Ion), 6).
+!Happens(InstallWindows(Ion), 7).
+!Happens(InstallWindows(Ion), 8).
+!Happens(InstallWindows(Vasile), 0).
+!Happens(InstallWindows(Vasile), 1).
+!Happens(InstallWindows(Vasile), 2).
+!Happens(InstallWindows(Vasile), 3).
+!Happens(InstallWindows(Vasile), 4).
+!Happens(InstallWindows(Vasile), 5).
+!Happens(InstallWindows(Vasile), 6).
+!Happens(InstallWindows(Vasile), 7).
+!Happens(InstallWindows(Vasile), 8).
+!Happens(IsolateHouse(Ion), 0).
+!Happens(IsolateHouse(Ion), 1).
+!Happens(IsolateHouse(Ion), 2).
+!Happens(IsolateHouse(Ion), 3).
+!Happens(IsolateHouse(Ion), 4).
+!Happens(IsolateHouse(Ion), 5).
+!Happens(IsolateHouse(Ion), 6).
+!Happens(IsolateHouse(Ion), 7).
+!Happens(IsolateHouse(Ion), 8).
+!Happens(IsolateHouse(Vasile), 0).
+!Happens(IsolateHouse(Vasile), 1).
+!Happens(IsolateHouse(Vasile), 2).
+!Happens(IsolateHouse(Vasile), 3).
+!Happens(IsolateHouse(Vasile), 4).
+!Happens(IsolateHouse(Vasile), 6).
+!Happens(IsolateHouse(Vasile), 7).
+!Happens(IsolateHouse(Vasile), 8).
+!Happens(PaintHouse(Ion), 0).
+!Happens(PaintHouse(Ion), 1).
+!Happens(PaintHouse(Ion), 2).
+!Happens(PaintHouse(Ion), 3).
+!Happens(PaintHouse(Ion), 4).
+!Happens(PaintHouse(Ion), 5).
+!Happens(PaintHouse(Ion), 6).
+!Happens(PaintHouse(Ion), 8).
+!Happens(PaintHouse(Vasile), 0).
+!Happens(PaintHouse(Vasile), 1).
+!Happens(PaintHouse(Vasile), 2).
+!Happens(PaintHouse(Vasile), 3).
+!Happens(PaintHouse(Vasile), 4).
+!Happens(PaintHouse(Vasile), 5).
+!Happens(PaintHouse(Vasile), 6).
+!Happens(PaintHouse(Vasile), 8).
+!ReleasedAt(Floor(Ion), 0).
+!ReleasedAt(Floor(Ion), 1).
+!ReleasedAt(Floor(Ion), 2).
+!ReleasedAt(Floor(Ion), 3).
+!ReleasedAt(Floor(Ion), 4).
+!ReleasedAt(Floor(Ion), 5).
+!ReleasedAt(Floor(Ion), 6).
+!ReleasedAt(Floor(Ion), 7).
+!ReleasedAt(Floor(Ion), 8).
+!ReleasedAt(Floor(Ion), 9).
+!ReleasedAt(Floor(Vasile), 0).
+!ReleasedAt(Floor(Vasile), 1).
+!ReleasedAt(Floor(Vasile), 2).
+!ReleasedAt(Floor(Vasile), 3).
+!ReleasedAt(Floor(Vasile), 4).
+!ReleasedAt(Floor(Vasile), 5).
+!ReleasedAt(Floor(Vasile), 6).
+!ReleasedAt(Floor(Vasile), 7).
+!ReleasedAt(Floor(Vasile), 8).
+!ReleasedAt(Floor(Vasile), 9).
+!ReleasedAt(Foundation(Ion), 0).
+!ReleasedAt(Foundation(Ion), 1).
+!ReleasedAt(Foundation(Ion), 2).
+!ReleasedAt(Foundation(Ion), 3).
+!ReleasedAt(Foundation(Ion), 4).
+!ReleasedAt(Foundation(Ion), 5).
+!ReleasedAt(Foundation(Ion), 6).
+!ReleasedAt(Foundation(Ion), 7).
+!ReleasedAt(Foundation(Ion), 8).
+!ReleasedAt(Foundation(Ion), 9).
+!ReleasedAt(Foundation(Vasile), 0).
+!ReleasedAt(Foundation(Vasile), 1).
+!ReleasedAt(Foundation(Vasile), 2).
+!ReleasedAt(Foundation(Vasile), 3).
+!ReleasedAt(Foundation(Vasile), 4).
+!ReleasedAt(Foundation(Vasile), 5).
+!ReleasedAt(Foundation(Vasile), 6).
+!ReleasedAt(Foundation(Vasile), 7).
+!ReleasedAt(Foundation(Vasile), 8).
+!ReleasedAt(Foundation(Vasile), 9).
+!ReleasedAt(Interior(Ion), 0).
+!ReleasedAt(Interior(Ion), 1).
+!ReleasedAt(Interior(Ion), 2).
+!ReleasedAt(Interior(Ion), 3).
+!ReleasedAt(Interior(Ion), 4).
+!ReleasedAt(Interior(Ion), 5).
+!ReleasedAt(Interior(Ion), 6).
+!ReleasedAt(Interior(Ion), 7).
+!ReleasedAt(Interior(Ion), 8).
+!ReleasedAt(Interior(Ion), 9).
+!ReleasedAt(Interior(Vasile), 0).
+!ReleasedAt(Interior(Vasile), 1).
+!ReleasedAt(Interior(Vasile), 2).
+!ReleasedAt(Interior(Vasile), 3).
+!ReleasedAt(Interior(Vasile), 4).
+!ReleasedAt(Interior(Vasile), 5).
+!ReleasedAt(Interior(Vasile), 6).
+!ReleasedAt(Interior(Vasile), 7).
+!ReleasedAt(Interior(Vasile), 8).
+!ReleasedAt(Interior(Vasile), 9).
+!ReleasedAt(Isolation(Ion), 0).
+!ReleasedAt(Isolation(Ion), 1).
+!ReleasedAt(Isolation(Ion), 2).
+!ReleasedAt(Isolation(Ion), 3).
+!ReleasedAt(Isolation(Ion), 4).
+!ReleasedAt(Isolation(Ion), 5).
+!ReleasedAt(Isolation(Ion), 6).
+!ReleasedAt(Isolation(Ion), 7).
+!ReleasedAt(Isolation(Ion), 8).
+!ReleasedAt(Isolation(Ion), 9).
+!ReleasedAt(Isolation(Vasile), 0).
+!ReleasedAt(Isolation(Vasile), 1).
+!ReleasedAt(Isolation(Vasile), 2).
+!ReleasedAt(Isolation(Vasile), 3).
+!ReleasedAt(Isolation(Vasile), 4).
+!ReleasedAt(Isolation(Vasile), 5).
+!ReleasedAt(Isolation(Vasile), 6).
+!ReleasedAt(Isolation(Vasile), 7).
+!ReleasedAt(Isolation(Vasile), 8).
+!ReleasedAt(Isolation(Vasile), 9).
+!ReleasedAt(Paint(Ion), 0).
+!ReleasedAt(Paint(Ion), 1).
+!ReleasedAt(Paint(Ion), 2).
+!ReleasedAt(Paint(Ion), 3).
+!ReleasedAt(Paint(Ion), 4).
+!ReleasedAt(Paint(Ion), 5).
+!ReleasedAt(Paint(Ion), 6).
+!ReleasedAt(Paint(Ion), 7).
+!ReleasedAt(Paint(Ion), 8).
+!ReleasedAt(Paint(Ion), 9).
+!ReleasedAt(Paint(Vasile), 0).
+!ReleasedAt(Paint(Vasile), 1).
+!ReleasedAt(Paint(Vasile), 2).
+!ReleasedAt(Paint(Vasile), 3).
+!ReleasedAt(Paint(Vasile), 4).
+!ReleasedAt(Paint(Vasile), 5).
+!ReleasedAt(Paint(Vasile), 6).
+!ReleasedAt(Paint(Vasile), 7).
+!ReleasedAt(Paint(Vasile), 8).
+!ReleasedAt(Paint(Vasile), 9).
+!ReleasedAt(Roof(Ion), 0).
+!ReleasedAt(Roof(Ion), 1).
+!ReleasedAt(Roof(Ion), 2).
+!ReleasedAt(Roof(Ion), 3).
+!ReleasedAt(Roof(Ion), 4).
+!ReleasedAt(Roof(Ion), 5).
+!ReleasedAt(Roof(Ion), 6).
+!ReleasedAt(Roof(Ion), 7).
+!ReleasedAt(Roof(Ion), 8).
+!ReleasedAt(Roof(Ion), 9).
+!ReleasedAt(Roof(Vasile), 0).
+!ReleasedAt(Roof(Vasile), 1).
+!ReleasedAt(Roof(Vasile), 2).
+!ReleasedAt(Roof(Vasile), 3).
+!ReleasedAt(Roof(Vasile), 4).
+!ReleasedAt(Roof(Vasile), 5).
+!ReleasedAt(Roof(Vasile), 6).
+!ReleasedAt(Roof(Vasile), 7).
+!ReleasedAt(Roof(Vasile), 8).
+!ReleasedAt(Roof(Vasile), 9).
+!ReleasedAt(Structure(Ion), 0).
+!ReleasedAt(Structure(Ion), 1).
+!ReleasedAt(Structure(Ion), 2).
+!ReleasedAt(Structure(Ion), 3).
+!ReleasedAt(Structure(Ion), 4).
+!ReleasedAt(Structure(Ion), 5).
+!ReleasedAt(Structure(Ion), 6).
+!ReleasedAt(Structure(Ion), 7).
+!ReleasedAt(Structure(Ion), 8).
+!ReleasedAt(Structure(Ion), 9).
+!ReleasedAt(Structure(Vasile), 0).
+!ReleasedAt(Structure(Vasile), 1).
+!ReleasedAt(Structure(Vasile), 2).
+!ReleasedAt(Structure(Vasile), 3).
+!ReleasedAt(Structure(Vasile), 4).
+!ReleasedAt(Structure(Vasile), 5).
+!ReleasedAt(Structure(Vasile), 6).
+!ReleasedAt(Structure(Vasile), 7).
+!ReleasedAt(Structure(Vasile), 8).
+!ReleasedAt(Structure(Vasile), 9).
+!ReleasedAt(Wall(Ion), 0).
+!ReleasedAt(Wall(Ion), 1).
+!ReleasedAt(Wall(Ion), 2).
+!ReleasedAt(Wall(Ion), 3).
+!ReleasedAt(Wall(Ion), 4).
+!ReleasedAt(Wall(Ion), 5).
+!ReleasedAt(Wall(Ion), 6).
+!ReleasedAt(Wall(Ion), 7).
+!ReleasedAt(Wall(Ion), 8).
+!ReleasedAt(Wall(Ion), 9).
+!ReleasedAt(Wall(Vasile), 0).
+!ReleasedAt(Wall(Vasile), 1).
+!ReleasedAt(Wall(Vasile), 2).
+!ReleasedAt(Wall(Vasile), 3).
+!ReleasedAt(Wall(Vasile), 4).
+!ReleasedAt(Wall(Vasile), 5).
+!ReleasedAt(Wall(Vasile), 6).
+!ReleasedAt(Wall(Vasile), 7).
+!ReleasedAt(Wall(Vasile), 8).
+!ReleasedAt(Wall(Vasile), 9).
+!ReleasedAt(Windows(Ion), 0).
+!ReleasedAt(Windows(Ion), 1).
+!ReleasedAt(Windows(Ion), 2).
+!ReleasedAt(Windows(Ion), 3).
+!ReleasedAt(Windows(Ion), 4).
+!ReleasedAt(Windows(Ion), 5).
+!ReleasedAt(Windows(Ion), 6).
+!ReleasedAt(Windows(Ion), 7).
+!ReleasedAt(Windows(Ion), 8).
+!ReleasedAt(Windows(Ion), 9).
+!ReleasedAt(Windows(Vasile), 0).
+!ReleasedAt(Windows(Vasile), 1).
+!ReleasedAt(Windows(Vasile), 2).
+!ReleasedAt(Windows(Vasile), 3).
+!ReleasedAt(Windows(Vasile), 4).
+!ReleasedAt(Windows(Vasile), 5).
+!ReleasedAt(Windows(Vasile), 6).
+!ReleasedAt(Windows(Vasile), 7).
+!ReleasedAt(Windows(Vasile), 8).
+!ReleasedAt(Windows(Vasile), 9).
+---
+model 7:
+0
+AtWork(Ion).
+OnVacantion(Vasile).
+Happens(BuildFoundation(Ion), 0).
+1
+-OnVacantion(Vasile).
++AtWork(Vasile).
++Foundation(Ion).
+Happens(BuildStructure(Ion), 1).
+2
+-AtWork(Vasile).
++OnVacantion(Vasile).
++Structure(Ion).
+Happens(BuildWalls(Ion), 2).
+3
+-OnVacantion(Vasile).
++AtWork(Vasile).
++Wall(Ion).
+Happens(BuildRoof(Ion), 3).
+4
+-AtWork(Vasile).
++OnVacantion(Vasile).
++Roof(Ion).
+Happens(InstallWindows(Ion), 4).
+5
+-AtWork(Ion).
+-OnVacantion(Vasile).
++AtWork(Vasile).
++OnVacantion(Ion).
++Windows(Ion).
+Happens(IsolateHouse(Vasile), 5).
+6
+-OnVacantion(Ion).
++AtWork(Ion).
++Isolation(Vasile).
+Happens(BuildFloor(Vasile), 6).
+Happens(BuildInterior(Ion), 6).
+7
++Floor(Vasile).
++Interior(Ion).
+Happens(PaintHouse(Ion), 7).
+Happens(PaintHouse(Vasile), 7).
+8
+-AtWork(Ion).
+-AtWork(Vasile).
++OnVacantion(Ion).
++OnVacantion(Vasile).
++Paint(Ion).
++Paint(Vasile).
+9
+-OnVacantion(Ion).
+-OnVacantion(Vasile).
++AtWork(Ion).
++AtWork(Vasile).
+P
+ReleasedAt(AtWork(Ion), 0).
+ReleasedAt(AtWork(Ion), 1).
+ReleasedAt(AtWork(Ion), 2).
+ReleasedAt(AtWork(Ion), 3).
+ReleasedAt(AtWork(Ion), 4).
+ReleasedAt(AtWork(Ion), 5).
+ReleasedAt(AtWork(Ion), 6).
+ReleasedAt(AtWork(Ion), 7).
+ReleasedAt(AtWork(Ion), 8).
+ReleasedAt(AtWork(Ion), 9).
+ReleasedAt(AtWork(Vasile), 0).
+ReleasedAt(AtWork(Vasile), 1).
+ReleasedAt(AtWork(Vasile), 2).
+ReleasedAt(AtWork(Vasile), 3).
+ReleasedAt(AtWork(Vasile), 4).
+ReleasedAt(AtWork(Vasile), 5).
+ReleasedAt(AtWork(Vasile), 6).
+ReleasedAt(AtWork(Vasile), 7).
+ReleasedAt(AtWork(Vasile), 8).
+ReleasedAt(AtWork(Vasile), 9).
+ReleasedAt(OnVacantion(Ion), 0).
+ReleasedAt(OnVacantion(Ion), 1).
+ReleasedAt(OnVacantion(Ion), 2).
+ReleasedAt(OnVacantion(Ion), 3).
+ReleasedAt(OnVacantion(Ion), 4).
+ReleasedAt(OnVacantion(Ion), 5).
+ReleasedAt(OnVacantion(Ion), 6).
+ReleasedAt(OnVacantion(Ion), 7).
+ReleasedAt(OnVacantion(Ion), 8).
+ReleasedAt(OnVacantion(Ion), 9).
+ReleasedAt(OnVacantion(Vasile), 0).
+ReleasedAt(OnVacantion(Vasile), 1).
+ReleasedAt(OnVacantion(Vasile), 2).
+ReleasedAt(OnVacantion(Vasile), 3).
+ReleasedAt(OnVacantion(Vasile), 4).
+ReleasedAt(OnVacantion(Vasile), 5).
+ReleasedAt(OnVacantion(Vasile), 6).
+ReleasedAt(OnVacantion(Vasile), 7).
+ReleasedAt(OnVacantion(Vasile), 8).
+ReleasedAt(OnVacantion(Vasile), 9).
+!Happens(BuildFloor(Ion), 0).
+!Happens(BuildFloor(Ion), 1).
+!Happens(BuildFloor(Ion), 2).
+!Happens(BuildFloor(Ion), 3).
+!Happens(BuildFloor(Ion), 4).
+!Happens(BuildFloor(Ion), 5).
+!Happens(BuildFloor(Ion), 6).
+!Happens(BuildFloor(Ion), 7).
+!Happens(BuildFloor(Ion), 8).
+!Happens(BuildFloor(Vasile), 0).
+!Happens(BuildFloor(Vasile), 1).
+!Happens(BuildFloor(Vasile), 2).
+!Happens(BuildFloor(Vasile), 3).
+!Happens(BuildFloor(Vasile), 4).
+!Happens(BuildFloor(Vasile), 5).
+!Happens(BuildFloor(Vasile), 7).
+!Happens(BuildFloor(Vasile), 8).
+!Happens(BuildFoundation(Ion), 1).
+!Happens(BuildFoundation(Ion), 2).
+!Happens(BuildFoundation(Ion), 3).
+!Happens(BuildFoundation(Ion), 4).
+!Happens(BuildFoundation(Ion), 5).
+!Happens(BuildFoundation(Ion), 6).
+!Happens(BuildFoundation(Ion), 7).
+!Happens(BuildFoundation(Ion), 8).
+!Happens(BuildFoundation(Vasile), 0).
+!Happens(BuildFoundation(Vasile), 1).
+!Happens(BuildFoundation(Vasile), 2).
+!Happens(BuildFoundation(Vasile), 3).
+!Happens(BuildFoundation(Vasile), 4).
+!Happens(BuildFoundation(Vasile), 5).
+!Happens(BuildFoundation(Vasile), 6).
+!Happens(BuildFoundation(Vasile), 7).
+!Happens(BuildFoundation(Vasile), 8).
+!Happens(BuildInterior(Ion), 0).
+!Happens(BuildInterior(Ion), 1).
+!Happens(BuildInterior(Ion), 2).
+!Happens(BuildInterior(Ion), 3).
+!Happens(BuildInterior(Ion), 4).
+!Happens(BuildInterior(Ion), 5).
+!Happens(BuildInterior(Ion), 7).
+!Happens(BuildInterior(Ion), 8).
+!Happens(BuildInterior(Vasile), 0).
+!Happens(BuildInterior(Vasile), 1).
+!Happens(BuildInterior(Vasile), 2).
+!Happens(BuildInterior(Vasile), 3).
+!Happens(BuildInterior(Vasile), 4).
+!Happens(BuildInterior(Vasile), 5).
+!Happens(BuildInterior(Vasile), 6).
+!Happens(BuildInterior(Vasile), 7).
+!Happens(BuildInterior(Vasile), 8).
+!Happens(BuildRoof(Ion), 0).
+!Happens(BuildRoof(Ion), 1).
+!Happens(BuildRoof(Ion), 2).
+!Happens(BuildRoof(Ion), 4).
+!Happens(BuildRoof(Ion), 5).
+!Happens(BuildRoof(Ion), 6).
+!Happens(BuildRoof(Ion), 7).
+!Happens(BuildRoof(Ion), 8).
+!Happens(BuildRoof(Vasile), 0).
+!Happens(BuildRoof(Vasile), 1).
+!Happens(BuildRoof(Vasile), 2).
+!Happens(BuildRoof(Vasile), 3).
+!Happens(BuildRoof(Vasile), 4).
+!Happens(BuildRoof(Vasile), 5).
+!Happens(BuildRoof(Vasile), 6).
+!Happens(BuildRoof(Vasile), 7).
+!Happens(BuildRoof(Vasile), 8).
+!Happens(BuildStructure(Ion), 0).
+!Happens(BuildStructure(Ion), 2).
+!Happens(BuildStructure(Ion), 3).
+!Happens(BuildStructure(Ion), 4).
+!Happens(BuildStructure(Ion), 5).
+!Happens(BuildStructure(Ion), 6).
+!Happens(BuildStructure(Ion), 7).
+!Happens(BuildStructure(Ion), 8).
+!Happens(BuildStructure(Vasile), 0).
+!Happens(BuildStructure(Vasile), 1).
+!Happens(BuildStructure(Vasile), 2).
+!Happens(BuildStructure(Vasile), 3).
+!Happens(BuildStructure(Vasile), 4).
+!Happens(BuildStructure(Vasile), 5).
+!Happens(BuildStructure(Vasile), 6).
+!Happens(BuildStructure(Vasile), 7).
+!Happens(BuildStructure(Vasile), 8).
+!Happens(BuildWalls(Ion), 0).
+!Happens(BuildWalls(Ion), 1).
+!Happens(BuildWalls(Ion), 3).
+!Happens(BuildWalls(Ion), 4).
+!Happens(BuildWalls(Ion), 5).
+!Happens(BuildWalls(Ion), 6).
+!Happens(BuildWalls(Ion), 7).
+!Happens(BuildWalls(Ion), 8).
+!Happens(BuildWalls(Vasile), 0).
+!Happens(BuildWalls(Vasile), 1).
+!Happens(BuildWalls(Vasile), 2).
+!Happens(BuildWalls(Vasile), 3).
+!Happens(BuildWalls(Vasile), 4).
+!Happens(BuildWalls(Vasile), 5).
+!Happens(BuildWalls(Vasile), 6).
+!Happens(BuildWalls(Vasile), 7).
+!Happens(BuildWalls(Vasile), 8).
+!Happens(InstallWindows(Ion), 0).
+!Happens(InstallWindows(Ion), 1).
+!Happens(InstallWindows(Ion), 2).
+!Happens(InstallWindows(Ion), 3).
+!Happens(InstallWindows(Ion), 5).
+!Happens(InstallWindows(Ion), 6).
+!Happens(InstallWindows(Ion), 7).
+!Happens(InstallWindows(Ion), 8).
+!Happens(InstallWindows(Vasile), 0).
+!Happens(InstallWindows(Vasile), 1).
+!Happens(InstallWindows(Vasile), 2).
+!Happens(InstallWindows(Vasile), 3).
+!Happens(InstallWindows(Vasile), 4).
+!Happens(InstallWindows(Vasile), 5).
+!Happens(InstallWindows(Vasile), 6).
+!Happens(InstallWindows(Vasile), 7).
+!Happens(InstallWindows(Vasile), 8).
+!Happens(IsolateHouse(Ion), 0).
+!Happens(IsolateHouse(Ion), 1).
+!Happens(IsolateHouse(Ion), 2).
+!Happens(IsolateHouse(Ion), 3).
+!Happens(IsolateHouse(Ion), 4).
+!Happens(IsolateHouse(Ion), 5).
+!Happens(IsolateHouse(Ion), 6).
+!Happens(IsolateHouse(Ion), 7).
+!Happens(IsolateHouse(Ion), 8).
+!Happens(IsolateHouse(Vasile), 0).
+!Happens(IsolateHouse(Vasile), 1).
+!Happens(IsolateHouse(Vasile), 2).
+!Happens(IsolateHouse(Vasile), 3).
+!Happens(IsolateHouse(Vasile), 4).
+!Happens(IsolateHouse(Vasile), 6).
+!Happens(IsolateHouse(Vasile), 7).
+!Happens(IsolateHouse(Vasile), 8).
+!Happens(PaintHouse(Ion), 0).
+!Happens(PaintHouse(Ion), 1).
+!Happens(PaintHouse(Ion), 2).
+!Happens(PaintHouse(Ion), 3).
+!Happens(PaintHouse(Ion), 4).
+!Happens(PaintHouse(Ion), 5).
+!Happens(PaintHouse(Ion), 6).
+!Happens(PaintHouse(Ion), 8).
+!Happens(PaintHouse(Vasile), 0).
+!Happens(PaintHouse(Vasile), 1).
+!Happens(PaintHouse(Vasile), 2).
+!Happens(PaintHouse(Vasile), 3).
+!Happens(PaintHouse(Vasile), 4).
+!Happens(PaintHouse(Vasile), 5).
+!Happens(PaintHouse(Vasile), 6).
+!Happens(PaintHouse(Vasile), 8).
+!ReleasedAt(Floor(Ion), 0).
+!ReleasedAt(Floor(Ion), 1).
+!ReleasedAt(Floor(Ion), 2).
+!ReleasedAt(Floor(Ion), 3).
+!ReleasedAt(Floor(Ion), 4).
+!ReleasedAt(Floor(Ion), 5).
+!ReleasedAt(Floor(Ion), 6).
+!ReleasedAt(Floor(Ion), 7).
+!ReleasedAt(Floor(Ion), 8).
+!ReleasedAt(Floor(Ion), 9).
+!ReleasedAt(Floor(Vasile), 0).
+!ReleasedAt(Floor(Vasile), 1).
+!ReleasedAt(Floor(Vasile), 2).
+!ReleasedAt(Floor(Vasile), 3).
+!ReleasedAt(Floor(Vasile), 4).
+!ReleasedAt(Floor(Vasile), 5).
+!ReleasedAt(Floor(Vasile), 6).
+!ReleasedAt(Floor(Vasile), 7).
+!ReleasedAt(Floor(Vasile), 8).
+!ReleasedAt(Floor(Vasile), 9).
+!ReleasedAt(Foundation(Ion), 0).
+!ReleasedAt(Foundation(Ion), 1).
+!ReleasedAt(Foundation(Ion), 2).
+!ReleasedAt(Foundation(Ion), 3).
+!ReleasedAt(Foundation(Ion), 4).
+!ReleasedAt(Foundation(Ion), 5).
+!ReleasedAt(Foundation(Ion), 6).
+!ReleasedAt(Foundation(Ion), 7).
+!ReleasedAt(Foundation(Ion), 8).
+!ReleasedAt(Foundation(Ion), 9).
+!ReleasedAt(Foundation(Vasile), 0).
+!ReleasedAt(Foundation(Vasile), 1).
+!ReleasedAt(Foundation(Vasile), 2).
+!ReleasedAt(Foundation(Vasile), 3).
+!ReleasedAt(Foundation(Vasile), 4).
+!ReleasedAt(Foundation(Vasile), 5).
+!ReleasedAt(Foundation(Vasile), 6).
+!ReleasedAt(Foundation(Vasile), 7).
+!ReleasedAt(Foundation(Vasile), 8).
+!ReleasedAt(Foundation(Vasile), 9).
+!ReleasedAt(Interior(Ion), 0).
+!ReleasedAt(Interior(Ion), 1).
+!ReleasedAt(Interior(Ion), 2).
+!ReleasedAt(Interior(Ion), 3).
+!ReleasedAt(Interior(Ion), 4).
+!ReleasedAt(Interior(Ion), 5).
+!ReleasedAt(Interior(Ion), 6).
+!ReleasedAt(Interior(Ion), 7).
+!ReleasedAt(Interior(Ion), 8).
+!ReleasedAt(Interior(Ion), 9).
+!ReleasedAt(Interior(Vasile), 0).
+!ReleasedAt(Interior(Vasile), 1).
+!ReleasedAt(Interior(Vasile), 2).
+!ReleasedAt(Interior(Vasile), 3).
+!ReleasedAt(Interior(Vasile), 4).
+!ReleasedAt(Interior(Vasile), 5).
+!ReleasedAt(Interior(Vasile), 6).
+!ReleasedAt(Interior(Vasile), 7).
+!ReleasedAt(Interior(Vasile), 8).
+!ReleasedAt(Interior(Vasile), 9).
+!ReleasedAt(Isolation(Ion), 0).
+!ReleasedAt(Isolation(Ion), 1).
+!ReleasedAt(Isolation(Ion), 2).
+!ReleasedAt(Isolation(Ion), 3).
+!ReleasedAt(Isolation(Ion), 4).
+!ReleasedAt(Isolation(Ion), 5).
+!ReleasedAt(Isolation(Ion), 6).
+!ReleasedAt(Isolation(Ion), 7).
+!ReleasedAt(Isolation(Ion), 8).
+!ReleasedAt(Isolation(Ion), 9).
+!ReleasedAt(Isolation(Vasile), 0).
+!ReleasedAt(Isolation(Vasile), 1).
+!ReleasedAt(Isolation(Vasile), 2).
+!ReleasedAt(Isolation(Vasile), 3).
+!ReleasedAt(Isolation(Vasile), 4).
+!ReleasedAt(Isolation(Vasile), 5).
+!ReleasedAt(Isolation(Vasile), 6).
+!ReleasedAt(Isolation(Vasile), 7).
+!ReleasedAt(Isolation(Vasile), 8).
+!ReleasedAt(Isolation(Vasile), 9).
+!ReleasedAt(Paint(Ion), 0).
+!ReleasedAt(Paint(Ion), 1).
+!ReleasedAt(Paint(Ion), 2).
+!ReleasedAt(Paint(Ion), 3).
+!ReleasedAt(Paint(Ion), 4).
+!ReleasedAt(Paint(Ion), 5).
+!ReleasedAt(Paint(Ion), 6).
+!ReleasedAt(Paint(Ion), 7).
+!ReleasedAt(Paint(Ion), 8).
+!ReleasedAt(Paint(Ion), 9).
+!ReleasedAt(Paint(Vasile), 0).
+!ReleasedAt(Paint(Vasile), 1).
+!ReleasedAt(Paint(Vasile), 2).
+!ReleasedAt(Paint(Vasile), 3).
+!ReleasedAt(Paint(Vasile), 4).
+!ReleasedAt(Paint(Vasile), 5).
+!ReleasedAt(Paint(Vasile), 6).
+!ReleasedAt(Paint(Vasile), 7).
+!ReleasedAt(Paint(Vasile), 8).
+!ReleasedAt(Paint(Vasile), 9).
+!ReleasedAt(Roof(Ion), 0).
+!ReleasedAt(Roof(Ion), 1).
+!ReleasedAt(Roof(Ion), 2).
+!ReleasedAt(Roof(Ion), 3).
+!ReleasedAt(Roof(Ion), 4).
+!ReleasedAt(Roof(Ion), 5).
+!ReleasedAt(Roof(Ion), 6).
+!ReleasedAt(Roof(Ion), 7).
+!ReleasedAt(Roof(Ion), 8).
+!ReleasedAt(Roof(Ion), 9).
+!ReleasedAt(Roof(Vasile), 0).
+!ReleasedAt(Roof(Vasile), 1).
+!ReleasedAt(Roof(Vasile), 2).
+!ReleasedAt(Roof(Vasile), 3).
+!ReleasedAt(Roof(Vasile), 4).
+!ReleasedAt(Roof(Vasile), 5).
+!ReleasedAt(Roof(Vasile), 6).
+!ReleasedAt(Roof(Vasile), 7).
+!ReleasedAt(Roof(Vasile), 8).
+!ReleasedAt(Roof(Vasile), 9).
+!ReleasedAt(Structure(Ion), 0).
+!ReleasedAt(Structure(Ion), 1).
+!ReleasedAt(Structure(Ion), 2).
+!ReleasedAt(Structure(Ion), 3).
+!ReleasedAt(Structure(Ion), 4).
+!ReleasedAt(Structure(Ion), 5).
+!ReleasedAt(Structure(Ion), 6).
+!ReleasedAt(Structure(Ion), 7).
+!ReleasedAt(Structure(Ion), 8).
+!ReleasedAt(Structure(Ion), 9).
+!ReleasedAt(Structure(Vasile), 0).
+!ReleasedAt(Structure(Vasile), 1).
+!ReleasedAt(Structure(Vasile), 2).
+!ReleasedAt(Structure(Vasile), 3).
+!ReleasedAt(Structure(Vasile), 4).
+!ReleasedAt(Structure(Vasile), 5).
+!ReleasedAt(Structure(Vasile), 6).
+!ReleasedAt(Structure(Vasile), 7).
+!ReleasedAt(Structure(Vasile), 8).
+!ReleasedAt(Structure(Vasile), 9).
+!ReleasedAt(Wall(Ion), 0).
+!ReleasedAt(Wall(Ion), 1).
+!ReleasedAt(Wall(Ion), 2).
+!ReleasedAt(Wall(Ion), 3).
+!ReleasedAt(Wall(Ion), 4).
+!ReleasedAt(Wall(Ion), 5).
+!ReleasedAt(Wall(Ion), 6).
+!ReleasedAt(Wall(Ion), 7).
+!ReleasedAt(Wall(Ion), 8).
+!ReleasedAt(Wall(Ion), 9).
+!ReleasedAt(Wall(Vasile), 0).
+!ReleasedAt(Wall(Vasile), 1).
+!ReleasedAt(Wall(Vasile), 2).
+!ReleasedAt(Wall(Vasile), 3).
+!ReleasedAt(Wall(Vasile), 4).
+!ReleasedAt(Wall(Vasile), 5).
+!ReleasedAt(Wall(Vasile), 6).
+!ReleasedAt(Wall(Vasile), 7).
+!ReleasedAt(Wall(Vasile), 8).
+!ReleasedAt(Wall(Vasile), 9).
+!ReleasedAt(Windows(Ion), 0).
+!ReleasedAt(Windows(Ion), 1).
+!ReleasedAt(Windows(Ion), 2).
+!ReleasedAt(Windows(Ion), 3).
+!ReleasedAt(Windows(Ion), 4).
+!ReleasedAt(Windows(Ion), 5).
+!ReleasedAt(Windows(Ion), 6).
+!ReleasedAt(Windows(Ion), 7).
+!ReleasedAt(Windows(Ion), 8).
+!ReleasedAt(Windows(Ion), 9).
+!ReleasedAt(Windows(Vasile), 0).
+!ReleasedAt(Windows(Vasile), 1).
+!ReleasedAt(Windows(Vasile), 2).
+!ReleasedAt(Windows(Vasile), 3).
+!ReleasedAt(Windows(Vasile), 4).
+!ReleasedAt(Windows(Vasile), 5).
+!ReleasedAt(Windows(Vasile), 6).
+!ReleasedAt(Windows(Vasile), 7).
+!ReleasedAt(Windows(Vasile), 8).
+!ReleasedAt(Windows(Vasile), 9).
+---
+model 8:
+0
+AtWork(Ion).
+OnVacantion(Vasile).
+Happens(BuildFoundation(Ion), 0).
+1
+-OnVacantion(Vasile).
++AtWork(Vasile).
++Foundation(Ion).
+Happens(BuildStructure(Ion), 1).
+2
+-AtWork(Vasile).
++OnVacantion(Vasile).
++Structure(Ion).
+Happens(BuildWalls(Ion), 2).
+3
+-OnVacantion(Vasile).
++AtWork(Vasile).
++Wall(Ion).
+Happens(BuildRoof(Ion), 3).
+4
+-AtWork(Vasile).
++OnVacantion(Vasile).
++Roof(Ion).
+Happens(InstallWindows(Ion), 4).
+5
+-AtWork(Ion).
+-OnVacantion(Vasile).
++AtWork(Vasile).
++OnVacantion(Ion).
++Windows(Ion).
+Happens(IsolateHouse(Vasile), 5).
+6
+-OnVacantion(Ion).
++AtWork(Ion).
++Isolation(Vasile).
+Happens(BuildFloor(Vasile), 6).
+Happens(BuildInterior(Ion), 6).
+7
++Floor(Vasile).
++Interior(Ion).
+Happens(PaintHouse(Ion), 7).
+8
+-AtWork(Ion).
+-AtWork(Vasile).
++OnVacantion(Ion).
++OnVacantion(Vasile).
++Paint(Ion).
+9
+-OnVacantion(Ion).
+-OnVacantion(Vasile).
++AtWork(Ion).
++AtWork(Vasile).
+P
+ReleasedAt(AtWork(Ion), 0).
+ReleasedAt(AtWork(Ion), 1).
+ReleasedAt(AtWork(Ion), 2).
+ReleasedAt(AtWork(Ion), 3).
+ReleasedAt(AtWork(Ion), 4).
+ReleasedAt(AtWork(Ion), 5).
+ReleasedAt(AtWork(Ion), 6).
+ReleasedAt(AtWork(Ion), 7).
+ReleasedAt(AtWork(Ion), 8).
+ReleasedAt(AtWork(Ion), 9).
+ReleasedAt(AtWork(Vasile), 0).
+ReleasedAt(AtWork(Vasile), 1).
+ReleasedAt(AtWork(Vasile), 2).
+ReleasedAt(AtWork(Vasile), 3).
+ReleasedAt(AtWork(Vasile), 4).
+ReleasedAt(AtWork(Vasile), 5).
+ReleasedAt(AtWork(Vasile), 6).
+ReleasedAt(AtWork(Vasile), 7).
+ReleasedAt(AtWork(Vasile), 8).
+ReleasedAt(AtWork(Vasile), 9).
+ReleasedAt(OnVacantion(Ion), 0).
+ReleasedAt(OnVacantion(Ion), 1).
+ReleasedAt(OnVacantion(Ion), 2).
+ReleasedAt(OnVacantion(Ion), 3).
+ReleasedAt(OnVacantion(Ion), 4).
+ReleasedAt(OnVacantion(Ion), 5).
+ReleasedAt(OnVacantion(Ion), 6).
+ReleasedAt(OnVacantion(Ion), 7).
+ReleasedAt(OnVacantion(Ion), 8).
+ReleasedAt(OnVacantion(Ion), 9).
+ReleasedAt(OnVacantion(Vasile), 0).
+ReleasedAt(OnVacantion(Vasile), 1).
+ReleasedAt(OnVacantion(Vasile), 2).
+ReleasedAt(OnVacantion(Vasile), 3).
+ReleasedAt(OnVacantion(Vasile), 4).
+ReleasedAt(OnVacantion(Vasile), 5).
+ReleasedAt(OnVacantion(Vasile), 6).
+ReleasedAt(OnVacantion(Vasile), 7).
+ReleasedAt(OnVacantion(Vasile), 8).
+ReleasedAt(OnVacantion(Vasile), 9).
+!Happens(BuildFloor(Ion), 0).
+!Happens(BuildFloor(Ion), 1).
+!Happens(BuildFloor(Ion), 2).
+!Happens(BuildFloor(Ion), 3).
+!Happens(BuildFloor(Ion), 4).
+!Happens(BuildFloor(Ion), 5).
+!Happens(BuildFloor(Ion), 6).
+!Happens(BuildFloor(Ion), 7).
+!Happens(BuildFloor(Ion), 8).
+!Happens(BuildFloor(Vasile), 0).
+!Happens(BuildFloor(Vasile), 1).
+!Happens(BuildFloor(Vasile), 2).
+!Happens(BuildFloor(Vasile), 3).
+!Happens(BuildFloor(Vasile), 4).
+!Happens(BuildFloor(Vasile), 5).
+!Happens(BuildFloor(Vasile), 7).
+!Happens(BuildFloor(Vasile), 8).
+!Happens(BuildFoundation(Ion), 1).
+!Happens(BuildFoundation(Ion), 2).
+!Happens(BuildFoundation(Ion), 3).
+!Happens(BuildFoundation(Ion), 4).
+!Happens(BuildFoundation(Ion), 5).
+!Happens(BuildFoundation(Ion), 6).
+!Happens(BuildFoundation(Ion), 7).
+!Happens(BuildFoundation(Ion), 8).
+!Happens(BuildFoundation(Vasile), 0).
+!Happens(BuildFoundation(Vasile), 1).
+!Happens(BuildFoundation(Vasile), 2).
+!Happens(BuildFoundation(Vasile), 3).
+!Happens(BuildFoundation(Vasile), 4).
+!Happens(BuildFoundation(Vasile), 5).
+!Happens(BuildFoundation(Vasile), 6).
+!Happens(BuildFoundation(Vasile), 7).
+!Happens(BuildFoundation(Vasile), 8).
+!Happens(BuildInterior(Ion), 0).
+!Happens(BuildInterior(Ion), 1).
+!Happens(BuildInterior(Ion), 2).
+!Happens(BuildInterior(Ion), 3).
+!Happens(BuildInterior(Ion), 4).
+!Happens(BuildInterior(Ion), 5).
+!Happens(BuildInterior(Ion), 7).
+!Happens(BuildInterior(Ion), 8).
+!Happens(BuildInterior(Vasile), 0).
+!Happens(BuildInterior(Vasile), 1).
+!Happens(BuildInterior(Vasile), 2).
+!Happens(BuildInterior(Vasile), 3).
+!Happens(BuildInterior(Vasile), 4).
+!Happens(BuildInterior(Vasile), 5).
+!Happens(BuildInterior(Vasile), 6).
+!Happens(BuildInterior(Vasile), 7).
+!Happens(BuildInterior(Vasile), 8).
+!Happens(BuildRoof(Ion), 0).
+!Happens(BuildRoof(Ion), 1).
+!Happens(BuildRoof(Ion), 2).
+!Happens(BuildRoof(Ion), 4).
+!Happens(BuildRoof(Ion), 5).
+!Happens(BuildRoof(Ion), 6).
+!Happens(BuildRoof(Ion), 7).
+!Happens(BuildRoof(Ion), 8).
+!Happens(BuildRoof(Vasile), 0).
+!Happens(BuildRoof(Vasile), 1).
+!Happens(BuildRoof(Vasile), 2).
+!Happens(BuildRoof(Vasile), 3).
+!Happens(BuildRoof(Vasile), 4).
+!Happens(BuildRoof(Vasile), 5).
+!Happens(BuildRoof(Vasile), 6).
+!Happens(BuildRoof(Vasile), 7).
+!Happens(BuildRoof(Vasile), 8).
+!Happens(BuildStructure(Ion), 0).
+!Happens(BuildStructure(Ion), 2).
+!Happens(BuildStructure(Ion), 3).
+!Happens(BuildStructure(Ion), 4).
+!Happens(BuildStructure(Ion), 5).
+!Happens(BuildStructure(Ion), 6).
+!Happens(BuildStructure(Ion), 7).
+!Happens(BuildStructure(Ion), 8).
+!Happens(BuildStructure(Vasile), 0).
+!Happens(BuildStructure(Vasile), 1).
+!Happens(BuildStructure(Vasile), 2).
+!Happens(BuildStructure(Vasile), 3).
+!Happens(BuildStructure(Vasile), 4).
+!Happens(BuildStructure(Vasile), 5).
+!Happens(BuildStructure(Vasile), 6).
+!Happens(BuildStructure(Vasile), 7).
+!Happens(BuildStructure(Vasile), 8).
+!Happens(BuildWalls(Ion), 0).
+!Happens(BuildWalls(Ion), 1).
+!Happens(BuildWalls(Ion), 3).
+!Happens(BuildWalls(Ion), 4).
+!Happens(BuildWalls(Ion), 5).
+!Happens(BuildWalls(Ion), 6).
+!Happens(BuildWalls(Ion), 7).
+!Happens(BuildWalls(Ion), 8).
+!Happens(BuildWalls(Vasile), 0).
+!Happens(BuildWalls(Vasile), 1).
+!Happens(BuildWalls(Vasile), 2).
+!Happens(BuildWalls(Vasile), 3).
+!Happens(BuildWalls(Vasile), 4).
+!Happens(BuildWalls(Vasile), 5).
+!Happens(BuildWalls(Vasile), 6).
+!Happens(BuildWalls(Vasile), 7).
+!Happens(BuildWalls(Vasile), 8).
+!Happens(InstallWindows(Ion), 0).
+!Happens(InstallWindows(Ion), 1).
+!Happens(InstallWindows(Ion), 2).
+!Happens(InstallWindows(Ion), 3).
+!Happens(InstallWindows(Ion), 5).
+!Happens(InstallWindows(Ion), 6).
+!Happens(InstallWindows(Ion), 7).
+!Happens(InstallWindows(Ion), 8).
+!Happens(InstallWindows(Vasile), 0).
+!Happens(InstallWindows(Vasile), 1).
+!Happens(InstallWindows(Vasile), 2).
+!Happens(InstallWindows(Vasile), 3).
+!Happens(InstallWindows(Vasile), 4).
+!Happens(InstallWindows(Vasile), 5).
+!Happens(InstallWindows(Vasile), 6).
+!Happens(InstallWindows(Vasile), 7).
+!Happens(InstallWindows(Vasile), 8).
+!Happens(IsolateHouse(Ion), 0).
+!Happens(IsolateHouse(Ion), 1).
+!Happens(IsolateHouse(Ion), 2).
+!Happens(IsolateHouse(Ion), 3).
+!Happens(IsolateHouse(Ion), 4).
+!Happens(IsolateHouse(Ion), 5).
+!Happens(IsolateHouse(Ion), 6).
+!Happens(IsolateHouse(Ion), 7).
+!Happens(IsolateHouse(Ion), 8).
+!Happens(IsolateHouse(Vasile), 0).
+!Happens(IsolateHouse(Vasile), 1).
+!Happens(IsolateHouse(Vasile), 2).
+!Happens(IsolateHouse(Vasile), 3).
+!Happens(IsolateHouse(Vasile), 4).
+!Happens(IsolateHouse(Vasile), 6).
+!Happens(IsolateHouse(Vasile), 7).
+!Happens(IsolateHouse(Vasile), 8).
+!Happens(PaintHouse(Ion), 0).
+!Happens(PaintHouse(Ion), 1).
+!Happens(PaintHouse(Ion), 2).
+!Happens(PaintHouse(Ion), 3).
+!Happens(PaintHouse(Ion), 4).
+!Happens(PaintHouse(Ion), 5).
+!Happens(PaintHouse(Ion), 6).
+!Happens(PaintHouse(Ion), 8).
+!Happens(PaintHouse(Vasile), 0).
+!Happens(PaintHouse(Vasile), 1).
+!Happens(PaintHouse(Vasile), 2).
+!Happens(PaintHouse(Vasile), 3).
+!Happens(PaintHouse(Vasile), 4).
+!Happens(PaintHouse(Vasile), 5).
+!Happens(PaintHouse(Vasile), 6).
+!Happens(PaintHouse(Vasile), 7).
+!Happens(PaintHouse(Vasile), 8).
+!ReleasedAt(Floor(Ion), 0).
+!ReleasedAt(Floor(Ion), 1).
+!ReleasedAt(Floor(Ion), 2).
+!ReleasedAt(Floor(Ion), 3).
+!ReleasedAt(Floor(Ion), 4).
+!ReleasedAt(Floor(Ion), 5).
+!ReleasedAt(Floor(Ion), 6).
+!ReleasedAt(Floor(Ion), 7).
+!ReleasedAt(Floor(Ion), 8).
+!ReleasedAt(Floor(Ion), 9).
+!ReleasedAt(Floor(Vasile), 0).
+!ReleasedAt(Floor(Vasile), 1).
+!ReleasedAt(Floor(Vasile), 2).
+!ReleasedAt(Floor(Vasile), 3).
+!ReleasedAt(Floor(Vasile), 4).
+!ReleasedAt(Floor(Vasile), 5).
+!ReleasedAt(Floor(Vasile), 6).
+!ReleasedAt(Floor(Vasile), 7).
+!ReleasedAt(Floor(Vasile), 8).
+!ReleasedAt(Floor(Vasile), 9).
+!ReleasedAt(Foundation(Ion), 0).
+!ReleasedAt(Foundation(Ion), 1).
+!ReleasedAt(Foundation(Ion), 2).
+!ReleasedAt(Foundation(Ion), 3).
+!ReleasedAt(Foundation(Ion), 4).
+!ReleasedAt(Foundation(Ion), 5).
+!ReleasedAt(Foundation(Ion), 6).
+!ReleasedAt(Foundation(Ion), 7).
+!ReleasedAt(Foundation(Ion), 8).
+!ReleasedAt(Foundation(Ion), 9).
+!ReleasedAt(Foundation(Vasile), 0).
+!ReleasedAt(Foundation(Vasile), 1).
+!ReleasedAt(Foundation(Vasile), 2).
+!ReleasedAt(Foundation(Vasile), 3).
+!ReleasedAt(Foundation(Vasile), 4).
+!ReleasedAt(Foundation(Vasile), 5).
+!ReleasedAt(Foundation(Vasile), 6).
+!ReleasedAt(Foundation(Vasile), 7).
+!ReleasedAt(Foundation(Vasile), 8).
+!ReleasedAt(Foundation(Vasile), 9).
+!ReleasedAt(Interior(Ion), 0).
+!ReleasedAt(Interior(Ion), 1).
+!ReleasedAt(Interior(Ion), 2).
+!ReleasedAt(Interior(Ion), 3).
+!ReleasedAt(Interior(Ion), 4).
+!ReleasedAt(Interior(Ion), 5).
+!ReleasedAt(Interior(Ion), 6).
+!ReleasedAt(Interior(Ion), 7).
+!ReleasedAt(Interior(Ion), 8).
+!ReleasedAt(Interior(Ion), 9).
+!ReleasedAt(Interior(Vasile), 0).
+!ReleasedAt(Interior(Vasile), 1).
+!ReleasedAt(Interior(Vasile), 2).
+!ReleasedAt(Interior(Vasile), 3).
+!ReleasedAt(Interior(Vasile), 4).
+!ReleasedAt(Interior(Vasile), 5).
+!ReleasedAt(Interior(Vasile), 6).
+!ReleasedAt(Interior(Vasile), 7).
+!ReleasedAt(Interior(Vasile), 8).
+!ReleasedAt(Interior(Vasile), 9).
+!ReleasedAt(Isolation(Ion), 0).
+!ReleasedAt(Isolation(Ion), 1).
+!ReleasedAt(Isolation(Ion), 2).
+!ReleasedAt(Isolation(Ion), 3).
+!ReleasedAt(Isolation(Ion), 4).
+!ReleasedAt(Isolation(Ion), 5).
+!ReleasedAt(Isolation(Ion), 6).
+!ReleasedAt(Isolation(Ion), 7).
+!ReleasedAt(Isolation(Ion), 8).
+!ReleasedAt(Isolation(Ion), 9).
+!ReleasedAt(Isolation(Vasile), 0).
+!ReleasedAt(Isolation(Vasile), 1).
+!ReleasedAt(Isolation(Vasile), 2).
+!ReleasedAt(Isolation(Vasile), 3).
+!ReleasedAt(Isolation(Vasile), 4).
+!ReleasedAt(Isolation(Vasile), 5).
+!ReleasedAt(Isolation(Vasile), 6).
+!ReleasedAt(Isolation(Vasile), 7).
+!ReleasedAt(Isolation(Vasile), 8).
+!ReleasedAt(Isolation(Vasile), 9).
+!ReleasedAt(Paint(Ion), 0).
+!ReleasedAt(Paint(Ion), 1).
+!ReleasedAt(Paint(Ion), 2).
+!ReleasedAt(Paint(Ion), 3).
+!ReleasedAt(Paint(Ion), 4).
+!ReleasedAt(Paint(Ion), 5).
+!ReleasedAt(Paint(Ion), 6).
+!ReleasedAt(Paint(Ion), 7).
+!ReleasedAt(Paint(Ion), 8).
+!ReleasedAt(Paint(Ion), 9).
+!ReleasedAt(Paint(Vasile), 0).
+!ReleasedAt(Paint(Vasile), 1).
+!ReleasedAt(Paint(Vasile), 2).
+!ReleasedAt(Paint(Vasile), 3).
+!ReleasedAt(Paint(Vasile), 4).
+!ReleasedAt(Paint(Vasile), 5).
+!ReleasedAt(Paint(Vasile), 6).
+!ReleasedAt(Paint(Vasile), 7).
+!ReleasedAt(Paint(Vasile), 8).
+!ReleasedAt(Paint(Vasile), 9).
+!ReleasedAt(Roof(Ion), 0).
+!ReleasedAt(Roof(Ion), 1).
+!ReleasedAt(Roof(Ion), 2).
+!ReleasedAt(Roof(Ion), 3).
+!ReleasedAt(Roof(Ion), 4).
+!ReleasedAt(Roof(Ion), 5).
+!ReleasedAt(Roof(Ion), 6).
+!ReleasedAt(Roof(Ion), 7).
+!ReleasedAt(Roof(Ion), 8).
+!ReleasedAt(Roof(Ion), 9).
+!ReleasedAt(Roof(Vasile), 0).
+!ReleasedAt(Roof(Vasile), 1).
+!ReleasedAt(Roof(Vasile), 2).
+!ReleasedAt(Roof(Vasile), 3).
+!ReleasedAt(Roof(Vasile), 4).
+!ReleasedAt(Roof(Vasile), 5).
+!ReleasedAt(Roof(Vasile), 6).
+!ReleasedAt(Roof(Vasile), 7).
+!ReleasedAt(Roof(Vasile), 8).
+!ReleasedAt(Roof(Vasile), 9).
+!ReleasedAt(Structure(Ion), 0).
+!ReleasedAt(Structure(Ion), 1).
+!ReleasedAt(Structure(Ion), 2).
+!ReleasedAt(Structure(Ion), 3).
+!ReleasedAt(Structure(Ion), 4).
+!ReleasedAt(Structure(Ion), 5).
+!ReleasedAt(Structure(Ion), 6).
+!ReleasedAt(Structure(Ion), 7).
+!ReleasedAt(Structure(Ion), 8).
+!ReleasedAt(Structure(Ion), 9).
+!ReleasedAt(Structure(Vasile), 0).
+!ReleasedAt(Structure(Vasile), 1).
+!ReleasedAt(Structure(Vasile), 2).
+!ReleasedAt(Structure(Vasile), 3).
+!ReleasedAt(Structure(Vasile), 4).
+!ReleasedAt(Structure(Vasile), 5).
+!ReleasedAt(Structure(Vasile), 6).
+!ReleasedAt(Structure(Vasile), 7).
+!ReleasedAt(Structure(Vasile), 8).
+!ReleasedAt(Structure(Vasile), 9).
+!ReleasedAt(Wall(Ion), 0).
+!ReleasedAt(Wall(Ion), 1).
+!ReleasedAt(Wall(Ion), 2).
+!ReleasedAt(Wall(Ion), 3).
+!ReleasedAt(Wall(Ion), 4).
+!ReleasedAt(Wall(Ion), 5).
+!ReleasedAt(Wall(Ion), 6).
+!ReleasedAt(Wall(Ion), 7).
+!ReleasedAt(Wall(Ion), 8).
+!ReleasedAt(Wall(Ion), 9).
+!ReleasedAt(Wall(Vasile), 0).
+!ReleasedAt(Wall(Vasile), 1).
+!ReleasedAt(Wall(Vasile), 2).
+!ReleasedAt(Wall(Vasile), 3).
+!ReleasedAt(Wall(Vasile), 4).
+!ReleasedAt(Wall(Vasile), 5).
+!ReleasedAt(Wall(Vasile), 6).
+!ReleasedAt(Wall(Vasile), 7).
+!ReleasedAt(Wall(Vasile), 8).
+!ReleasedAt(Wall(Vasile), 9).
+!ReleasedAt(Windows(Ion), 0).
+!ReleasedAt(Windows(Ion), 1).
+!ReleasedAt(Windows(Ion), 2).
+!ReleasedAt(Windows(Ion), 3).
+!ReleasedAt(Windows(Ion), 4).
+!ReleasedAt(Windows(Ion), 5).
+!ReleasedAt(Windows(Ion), 6).
+!ReleasedAt(Windows(Ion), 7).
+!ReleasedAt(Windows(Ion), 8).
+!ReleasedAt(Windows(Ion), 9).
+!ReleasedAt(Windows(Vasile), 0).
+!ReleasedAt(Windows(Vasile), 1).
+!ReleasedAt(Windows(Vasile), 2).
+!ReleasedAt(Windows(Vasile), 3).
+!ReleasedAt(Windows(Vasile), 4).
+!ReleasedAt(Windows(Vasile), 5).
+!ReleasedAt(Windows(Vasile), 6).
+!ReleasedAt(Windows(Vasile), 7).
+!ReleasedAt(Windows(Vasile), 8).
+!ReleasedAt(Windows(Vasile), 9).
+---
+model 9:
+0
+AtWork(Ion).
+OnVacantion(Vasile).
+Happens(BuildFoundation(Ion), 0).
+1
+-OnVacantion(Vasile).
++AtWork(Vasile).
++Foundation(Ion).
+Happens(BuildStructure(Ion), 1).
+2
+-AtWork(Vasile).
++OnVacantion(Vasile).
++Structure(Ion).
+Happens(BuildWalls(Ion), 2).
+3
+-OnVacantion(Vasile).
++AtWork(Vasile).
++Wall(Ion).
+Happens(BuildRoof(Ion), 3).
+4
+-AtWork(Vasile).
++OnVacantion(Vasile).
++Roof(Ion).
+Happens(InstallWindows(Ion), 4).
+5
+-AtWork(Ion).
+-OnVacantion(Vasile).
++AtWork(Vasile).
++OnVacantion(Ion).
++Windows(Ion).
+Happens(IsolateHouse(Vasile), 5).
+6
+-OnVacantion(Ion).
++AtWork(Ion).
++Isolation(Vasile).
+Happens(BuildFloor(Vasile), 6).
+Happens(BuildInterior(Ion), 6).
+7
++Floor(Vasile).
++Interior(Ion).
+Happens(BuildFloor(Vasile), 7).
+Happens(PaintHouse(Ion), 7).
+8
+-AtWork(Ion).
+-AtWork(Vasile).
++OnVacantion(Ion).
++OnVacantion(Vasile).
++Paint(Ion).
+9
+-OnVacantion(Ion).
+-OnVacantion(Vasile).
++AtWork(Ion).
++AtWork(Vasile).
+P
+ReleasedAt(AtWork(Ion), 0).
+ReleasedAt(AtWork(Ion), 1).
+ReleasedAt(AtWork(Ion), 2).
+ReleasedAt(AtWork(Ion), 3).
+ReleasedAt(AtWork(Ion), 4).
+ReleasedAt(AtWork(Ion), 5).
+ReleasedAt(AtWork(Ion), 6).
+ReleasedAt(AtWork(Ion), 7).
+ReleasedAt(AtWork(Ion), 8).
+ReleasedAt(AtWork(Ion), 9).
+ReleasedAt(AtWork(Vasile), 0).
+ReleasedAt(AtWork(Vasile), 1).
+ReleasedAt(AtWork(Vasile), 2).
+ReleasedAt(AtWork(Vasile), 3).
+ReleasedAt(AtWork(Vasile), 4).
+ReleasedAt(AtWork(Vasile), 5).
+ReleasedAt(AtWork(Vasile), 6).
+ReleasedAt(AtWork(Vasile), 7).
+ReleasedAt(AtWork(Vasile), 8).
+ReleasedAt(AtWork(Vasile), 9).
+ReleasedAt(OnVacantion(Ion), 0).
+ReleasedAt(OnVacantion(Ion), 1).
+ReleasedAt(OnVacantion(Ion), 2).
+ReleasedAt(OnVacantion(Ion), 3).
+ReleasedAt(OnVacantion(Ion), 4).
+ReleasedAt(OnVacantion(Ion), 5).
+ReleasedAt(OnVacantion(Ion), 6).
+ReleasedAt(OnVacantion(Ion), 7).
+ReleasedAt(OnVacantion(Ion), 8).
+ReleasedAt(OnVacantion(Ion), 9).
+ReleasedAt(OnVacantion(Vasile), 0).
+ReleasedAt(OnVacantion(Vasile), 1).
+ReleasedAt(OnVacantion(Vasile), 2).
+ReleasedAt(OnVacantion(Vasile), 3).
+ReleasedAt(OnVacantion(Vasile), 4).
+ReleasedAt(OnVacantion(Vasile), 5).
+ReleasedAt(OnVacantion(Vasile), 6).
+ReleasedAt(OnVacantion(Vasile), 7).
+ReleasedAt(OnVacantion(Vasile), 8).
+ReleasedAt(OnVacantion(Vasile), 9).
+!Happens(BuildFloor(Ion), 0).
+!Happens(BuildFloor(Ion), 1).
+!Happens(BuildFloor(Ion), 2).
+!Happens(BuildFloor(Ion), 3).
+!Happens(BuildFloor(Ion), 4).
+!Happens(BuildFloor(Ion), 5).
+!Happens(BuildFloor(Ion), 6).
+!Happens(BuildFloor(Ion), 7).
+!Happens(BuildFloor(Ion), 8).
+!Happens(BuildFloor(Vasile), 0).
+!Happens(BuildFloor(Vasile), 1).
+!Happens(BuildFloor(Vasile), 2).
+!Happens(BuildFloor(Vasile), 3).
+!Happens(BuildFloor(Vasile), 4).
+!Happens(BuildFloor(Vasile), 5).
+!Happens(BuildFloor(Vasile), 8).
+!Happens(BuildFoundation(Ion), 1).
+!Happens(BuildFoundation(Ion), 2).
+!Happens(BuildFoundation(Ion), 3).
+!Happens(BuildFoundation(Ion), 4).
+!Happens(BuildFoundation(Ion), 5).
+!Happens(BuildFoundation(Ion), 6).
+!Happens(BuildFoundation(Ion), 7).
+!Happens(BuildFoundation(Ion), 8).
+!Happens(BuildFoundation(Vasile), 0).
+!Happens(BuildFoundation(Vasile), 1).
+!Happens(BuildFoundation(Vasile), 2).
+!Happens(BuildFoundation(Vasile), 3).
+!Happens(BuildFoundation(Vasile), 4).
+!Happens(BuildFoundation(Vasile), 5).
+!Happens(BuildFoundation(Vasile), 6).
+!Happens(BuildFoundation(Vasile), 7).
+!Happens(BuildFoundation(Vasile), 8).
+!Happens(BuildInterior(Ion), 0).
+!Happens(BuildInterior(Ion), 1).
+!Happens(BuildInterior(Ion), 2).
+!Happens(BuildInterior(Ion), 3).
+!Happens(BuildInterior(Ion), 4).
+!Happens(BuildInterior(Ion), 5).
+!Happens(BuildInterior(Ion), 7).
+!Happens(BuildInterior(Ion), 8).
+!Happens(BuildInterior(Vasile), 0).
+!Happens(BuildInterior(Vasile), 1).
+!Happens(BuildInterior(Vasile), 2).
+!Happens(BuildInterior(Vasile), 3).
+!Happens(BuildInterior(Vasile), 4).
+!Happens(BuildInterior(Vasile), 5).
+!Happens(BuildInterior(Vasile), 6).
+!Happens(BuildInterior(Vasile), 7).
+!Happens(BuildInterior(Vasile), 8).
+!Happens(BuildRoof(Ion), 0).
+!Happens(BuildRoof(Ion), 1).
+!Happens(BuildRoof(Ion), 2).
+!Happens(BuildRoof(Ion), 4).
+!Happens(BuildRoof(Ion), 5).
+!Happens(BuildRoof(Ion), 6).
+!Happens(BuildRoof(Ion), 7).
+!Happens(BuildRoof(Ion), 8).
+!Happens(BuildRoof(Vasile), 0).
+!Happens(BuildRoof(Vasile), 1).
+!Happens(BuildRoof(Vasile), 2).
+!Happens(BuildRoof(Vasile), 3).
+!Happens(BuildRoof(Vasile), 4).
+!Happens(BuildRoof(Vasile), 5).
+!Happens(BuildRoof(Vasile), 6).
+!Happens(BuildRoof(Vasile), 7).
+!Happens(BuildRoof(Vasile), 8).
+!Happens(BuildStructure(Ion), 0).
+!Happens(BuildStructure(Ion), 2).
+!Happens(BuildStructure(Ion), 3).
+!Happens(BuildStructure(Ion), 4).
+!Happens(BuildStructure(Ion), 5).
+!Happens(BuildStructure(Ion), 6).
+!Happens(BuildStructure(Ion), 7).
+!Happens(BuildStructure(Ion), 8).
+!Happens(BuildStructure(Vasile), 0).
+!Happens(BuildStructure(Vasile), 1).
+!Happens(BuildStructure(Vasile), 2).
+!Happens(BuildStructure(Vasile), 3).
+!Happens(BuildStructure(Vasile), 4).
+!Happens(BuildStructure(Vasile), 5).
+!Happens(BuildStructure(Vasile), 6).
+!Happens(BuildStructure(Vasile), 7).
+!Happens(BuildStructure(Vasile), 8).
+!Happens(BuildWalls(Ion), 0).
+!Happens(BuildWalls(Ion), 1).
+!Happens(BuildWalls(Ion), 3).
+!Happens(BuildWalls(Ion), 4).
+!Happens(BuildWalls(Ion), 5).
+!Happens(BuildWalls(Ion), 6).
+!Happens(BuildWalls(Ion), 7).
+!Happens(BuildWalls(Ion), 8).
+!Happens(BuildWalls(Vasile), 0).
+!Happens(BuildWalls(Vasile), 1).
+!Happens(BuildWalls(Vasile), 2).
+!Happens(BuildWalls(Vasile), 3).
+!Happens(BuildWalls(Vasile), 4).
+!Happens(BuildWalls(Vasile), 5).
+!Happens(BuildWalls(Vasile), 6).
+!Happens(BuildWalls(Vasile), 7).
+!Happens(BuildWalls(Vasile), 8).
+!Happens(InstallWindows(Ion), 0).
+!Happens(InstallWindows(Ion), 1).
+!Happens(InstallWindows(Ion), 2).
+!Happens(InstallWindows(Ion), 3).
+!Happens(InstallWindows(Ion), 5).
+!Happens(InstallWindows(Ion), 6).
+!Happens(InstallWindows(Ion), 7).
+!Happens(InstallWindows(Ion), 8).
+!Happens(InstallWindows(Vasile), 0).
+!Happens(InstallWindows(Vasile), 1).
+!Happens(InstallWindows(Vasile), 2).
+!Happens(InstallWindows(Vasile), 3).
+!Happens(InstallWindows(Vasile), 4).
+!Happens(InstallWindows(Vasile), 5).
+!Happens(InstallWindows(Vasile), 6).
+!Happens(InstallWindows(Vasile), 7).
+!Happens(InstallWindows(Vasile), 8).
+!Happens(IsolateHouse(Ion), 0).
+!Happens(IsolateHouse(Ion), 1).
+!Happens(IsolateHouse(Ion), 2).
+!Happens(IsolateHouse(Ion), 3).
+!Happens(IsolateHouse(Ion), 4).
+!Happens(IsolateHouse(Ion), 5).
+!Happens(IsolateHouse(Ion), 6).
+!Happens(IsolateHouse(Ion), 7).
+!Happens(IsolateHouse(Ion), 8).
+!Happens(IsolateHouse(Vasile), 0).
+!Happens(IsolateHouse(Vasile), 1).
+!Happens(IsolateHouse(Vasile), 2).
+!Happens(IsolateHouse(Vasile), 3).
+!Happens(IsolateHouse(Vasile), 4).
+!Happens(IsolateHouse(Vasile), 6).
+!Happens(IsolateHouse(Vasile), 7).
+!Happens(IsolateHouse(Vasile), 8).
+!Happens(PaintHouse(Ion), 0).
+!Happens(PaintHouse(Ion), 1).
+!Happens(PaintHouse(Ion), 2).
+!Happens(PaintHouse(Ion), 3).
+!Happens(PaintHouse(Ion), 4).
+!Happens(PaintHouse(Ion), 5).
+!Happens(PaintHouse(Ion), 6).
+!Happens(PaintHouse(Ion), 8).
+!Happens(PaintHouse(Vasile), 0).
+!Happens(PaintHouse(Vasile), 1).
+!Happens(PaintHouse(Vasile), 2).
+!Happens(PaintHouse(Vasile), 3).
+!Happens(PaintHouse(Vasile), 4).
+!Happens(PaintHouse(Vasile), 5).
+!Happens(PaintHouse(Vasile), 6).
+!Happens(PaintHouse(Vasile), 7).
+!Happens(PaintHouse(Vasile), 8).
+!ReleasedAt(Floor(Ion), 0).
+!ReleasedAt(Floor(Ion), 1).
+!ReleasedAt(Floor(Ion), 2).
+!ReleasedAt(Floor(Ion), 3).
+!ReleasedAt(Floor(Ion), 4).
+!ReleasedAt(Floor(Ion), 5).
+!ReleasedAt(Floor(Ion), 6).
+!ReleasedAt(Floor(Ion), 7).
+!ReleasedAt(Floor(Ion), 8).
+!ReleasedAt(Floor(Ion), 9).
+!ReleasedAt(Floor(Vasile), 0).
+!ReleasedAt(Floor(Vasile), 1).
+!ReleasedAt(Floor(Vasile), 2).
+!ReleasedAt(Floor(Vasile), 3).
+!ReleasedAt(Floor(Vasile), 4).
+!ReleasedAt(Floor(Vasile), 5).
+!ReleasedAt(Floor(Vasile), 6).
+!ReleasedAt(Floor(Vasile), 7).
+!ReleasedAt(Floor(Vasile), 8).
+!ReleasedAt(Floor(Vasile), 9).
+!ReleasedAt(Foundation(Ion), 0).
+!ReleasedAt(Foundation(Ion), 1).
+!ReleasedAt(Foundation(Ion), 2).
+!ReleasedAt(Foundation(Ion), 3).
+!ReleasedAt(Foundation(Ion), 4).
+!ReleasedAt(Foundation(Ion), 5).
+!ReleasedAt(Foundation(Ion), 6).
+!ReleasedAt(Foundation(Ion), 7).
+!ReleasedAt(Foundation(Ion), 8).
+!ReleasedAt(Foundation(Ion), 9).
+!ReleasedAt(Foundation(Vasile), 0).
+!ReleasedAt(Foundation(Vasile), 1).
+!ReleasedAt(Foundation(Vasile), 2).
+!ReleasedAt(Foundation(Vasile), 3).
+!ReleasedAt(Foundation(Vasile), 4).
+!ReleasedAt(Foundation(Vasile), 5).
+!ReleasedAt(Foundation(Vasile), 6).
+!ReleasedAt(Foundation(Vasile), 7).
+!ReleasedAt(Foundation(Vasile), 8).
+!ReleasedAt(Foundation(Vasile), 9).
+!ReleasedAt(Interior(Ion), 0).
+!ReleasedAt(Interior(Ion), 1).
+!ReleasedAt(Interior(Ion), 2).
+!ReleasedAt(Interior(Ion), 3).
+!ReleasedAt(Interior(Ion), 4).
+!ReleasedAt(Interior(Ion), 5).
+!ReleasedAt(Interior(Ion), 6).
+!ReleasedAt(Interior(Ion), 7).
+!ReleasedAt(Interior(Ion), 8).
+!ReleasedAt(Interior(Ion), 9).
+!ReleasedAt(Interior(Vasile), 0).
+!ReleasedAt(Interior(Vasile), 1).
+!ReleasedAt(Interior(Vasile), 2).
+!ReleasedAt(Interior(Vasile), 3).
+!ReleasedAt(Interior(Vasile), 4).
+!ReleasedAt(Interior(Vasile), 5).
+!ReleasedAt(Interior(Vasile), 6).
+!ReleasedAt(Interior(Vasile), 7).
+!ReleasedAt(Interior(Vasile), 8).
+!ReleasedAt(Interior(Vasile), 9).
+!ReleasedAt(Isolation(Ion), 0).
+!ReleasedAt(Isolation(Ion), 1).
+!ReleasedAt(Isolation(Ion), 2).
+!ReleasedAt(Isolation(Ion), 3).
+!ReleasedAt(Isolation(Ion), 4).
+!ReleasedAt(Isolation(Ion), 5).
+!ReleasedAt(Isolation(Ion), 6).
+!ReleasedAt(Isolation(Ion), 7).
+!ReleasedAt(Isolation(Ion), 8).
+!ReleasedAt(Isolation(Ion), 9).
+!ReleasedAt(Isolation(Vasile), 0).
+!ReleasedAt(Isolation(Vasile), 1).
+!ReleasedAt(Isolation(Vasile), 2).
+!ReleasedAt(Isolation(Vasile), 3).
+!ReleasedAt(Isolation(Vasile), 4).
+!ReleasedAt(Isolation(Vasile), 5).
+!ReleasedAt(Isolation(Vasile), 6).
+!ReleasedAt(Isolation(Vasile), 7).
+!ReleasedAt(Isolation(Vasile), 8).
+!ReleasedAt(Isolation(Vasile), 9).
+!ReleasedAt(Paint(Ion), 0).
+!ReleasedAt(Paint(Ion), 1).
+!ReleasedAt(Paint(Ion), 2).
+!ReleasedAt(Paint(Ion), 3).
+!ReleasedAt(Paint(Ion), 4).
+!ReleasedAt(Paint(Ion), 5).
+!ReleasedAt(Paint(Ion), 6).
+!ReleasedAt(Paint(Ion), 7).
+!ReleasedAt(Paint(Ion), 8).
+!ReleasedAt(Paint(Ion), 9).
+!ReleasedAt(Paint(Vasile), 0).
+!ReleasedAt(Paint(Vasile), 1).
+!ReleasedAt(Paint(Vasile), 2).
+!ReleasedAt(Paint(Vasile), 3).
+!ReleasedAt(Paint(Vasile), 4).
+!ReleasedAt(Paint(Vasile), 5).
+!ReleasedAt(Paint(Vasile), 6).
+!ReleasedAt(Paint(Vasile), 7).
+!ReleasedAt(Paint(Vasile), 8).
+!ReleasedAt(Paint(Vasile), 9).
+!ReleasedAt(Roof(Ion), 0).
+!ReleasedAt(Roof(Ion), 1).
+!ReleasedAt(Roof(Ion), 2).
+!ReleasedAt(Roof(Ion), 3).
+!ReleasedAt(Roof(Ion), 4).
+!ReleasedAt(Roof(Ion), 5).
+!ReleasedAt(Roof(Ion), 6).
+!ReleasedAt(Roof(Ion), 7).
+!ReleasedAt(Roof(Ion), 8).
+!ReleasedAt(Roof(Ion), 9).
+!ReleasedAt(Roof(Vasile), 0).
+!ReleasedAt(Roof(Vasile), 1).
+!ReleasedAt(Roof(Vasile), 2).
+!ReleasedAt(Roof(Vasile), 3).
+!ReleasedAt(Roof(Vasile), 4).
+!ReleasedAt(Roof(Vasile), 5).
+!ReleasedAt(Roof(Vasile), 6).
+!ReleasedAt(Roof(Vasile), 7).
+!ReleasedAt(Roof(Vasile), 8).
+!ReleasedAt(Roof(Vasile), 9).
+!ReleasedAt(Structure(Ion), 0).
+!ReleasedAt(Structure(Ion), 1).
+!ReleasedAt(Structure(Ion), 2).
+!ReleasedAt(Structure(Ion), 3).
+!ReleasedAt(Structure(Ion), 4).
+!ReleasedAt(Structure(Ion), 5).
+!ReleasedAt(Structure(Ion), 6).
+!ReleasedAt(Structure(Ion), 7).
+!ReleasedAt(Structure(Ion), 8).
+!ReleasedAt(Structure(Ion), 9).
+!ReleasedAt(Structure(Vasile), 0).
+!ReleasedAt(Structure(Vasile), 1).
+!ReleasedAt(Structure(Vasile), 2).
+!ReleasedAt(Structure(Vasile), 3).
+!ReleasedAt(Structure(Vasile), 4).
+!ReleasedAt(Structure(Vasile), 5).
+!ReleasedAt(Structure(Vasile), 6).
+!ReleasedAt(Structure(Vasile), 7).
+!ReleasedAt(Structure(Vasile), 8).
+!ReleasedAt(Structure(Vasile), 9).
+!ReleasedAt(Wall(Ion), 0).
+!ReleasedAt(Wall(Ion), 1).
+!ReleasedAt(Wall(Ion), 2).
+!ReleasedAt(Wall(Ion), 3).
+!ReleasedAt(Wall(Ion), 4).
+!ReleasedAt(Wall(Ion), 5).
+!ReleasedAt(Wall(Ion), 6).
+!ReleasedAt(Wall(Ion), 7).
+!ReleasedAt(Wall(Ion), 8).
+!ReleasedAt(Wall(Ion), 9).
+!ReleasedAt(Wall(Vasile), 0).
+!ReleasedAt(Wall(Vasile), 1).
+!ReleasedAt(Wall(Vasile), 2).
+!ReleasedAt(Wall(Vasile), 3).
+!ReleasedAt(Wall(Vasile), 4).
+!ReleasedAt(Wall(Vasile), 5).
+!ReleasedAt(Wall(Vasile), 6).
+!ReleasedAt(Wall(Vasile), 7).
+!ReleasedAt(Wall(Vasile), 8).
+!ReleasedAt(Wall(Vasile), 9).
+!ReleasedAt(Windows(Ion), 0).
+!ReleasedAt(Windows(Ion), 1).
+!ReleasedAt(Windows(Ion), 2).
+!ReleasedAt(Windows(Ion), 3).
+!ReleasedAt(Windows(Ion), 4).
+!ReleasedAt(Windows(Ion), 5).
+!ReleasedAt(Windows(Ion), 6).
+!ReleasedAt(Windows(Ion), 7).
+!ReleasedAt(Windows(Ion), 8).
+!ReleasedAt(Windows(Ion), 9).
+!ReleasedAt(Windows(Vasile), 0).
+!ReleasedAt(Windows(Vasile), 1).
+!ReleasedAt(Windows(Vasile), 2).
+!ReleasedAt(Windows(Vasile), 3).
+!ReleasedAt(Windows(Vasile), 4).
+!ReleasedAt(Windows(Vasile), 5).
+!ReleasedAt(Windows(Vasile), 6).
+!ReleasedAt(Windows(Vasile), 7).
+!ReleasedAt(Windows(Vasile), 8).
+!ReleasedAt(Windows(Vasile), 9).
+---
+model 10:
+0
+AtWork(Ion).
+OnVacantion(Vasile).
+Happens(BuildFoundation(Ion), 0).
+1
+-OnVacantion(Vasile).
++AtWork(Vasile).
++Foundation(Ion).
+Happens(BuildStructure(Ion), 1).
+2
+-AtWork(Vasile).
++OnVacantion(Vasile).
++Structure(Ion).
+Happens(BuildWalls(Ion), 2).
+3
+-OnVacantion(Vasile).
++AtWork(Vasile).
++Wall(Ion).
+Happens(BuildRoof(Ion), 3).
+4
+-AtWork(Vasile).
++OnVacantion(Vasile).
++Roof(Ion).
+Happens(InstallWindows(Ion), 4).
+5
+-OnVacantion(Vasile).
++AtWork(Vasile).
++Windows(Ion).
+Happens(IsolateHouse(Vasile), 5).
+6
++Isolation(Vasile).
+Happens(BuildFloor(Vasile), 6).
+Happens(BuildInterior(Ion), 6).
+7
++Floor(Vasile).
++Interior(Ion).
+Happens(PaintHouse(Ion), 7).
+Happens(PaintHouse(Vasile), 7).
+8
+-AtWork(Ion).
+-AtWork(Vasile).
++OnVacantion(Ion).
++OnVacantion(Vasile).
++Paint(Ion).
++Paint(Vasile).
+9
+-OnVacantion(Ion).
+-OnVacantion(Vasile).
++AtWork(Ion).
++AtWork(Vasile).
+P
+ReleasedAt(AtWork(Ion), 0).
+ReleasedAt(AtWork(Ion), 1).
+ReleasedAt(AtWork(Ion), 2).
+ReleasedAt(AtWork(Ion), 3).
+ReleasedAt(AtWork(Ion), 4).
+ReleasedAt(AtWork(Ion), 5).
+ReleasedAt(AtWork(Ion), 6).
+ReleasedAt(AtWork(Ion), 7).
+ReleasedAt(AtWork(Ion), 8).
+ReleasedAt(AtWork(Ion), 9).
+ReleasedAt(AtWork(Vasile), 0).
+ReleasedAt(AtWork(Vasile), 1).
+ReleasedAt(AtWork(Vasile), 2).
+ReleasedAt(AtWork(Vasile), 3).
+ReleasedAt(AtWork(Vasile), 4).
+ReleasedAt(AtWork(Vasile), 5).
+ReleasedAt(AtWork(Vasile), 6).
+ReleasedAt(AtWork(Vasile), 7).
+ReleasedAt(AtWork(Vasile), 8).
+ReleasedAt(AtWork(Vasile), 9).
+ReleasedAt(OnVacantion(Ion), 0).
+ReleasedAt(OnVacantion(Ion), 1).
+ReleasedAt(OnVacantion(Ion), 2).
+ReleasedAt(OnVacantion(Ion), 3).
+ReleasedAt(OnVacantion(Ion), 4).
+ReleasedAt(OnVacantion(Ion), 5).
+ReleasedAt(OnVacantion(Ion), 6).
+ReleasedAt(OnVacantion(Ion), 7).
+ReleasedAt(OnVacantion(Ion), 8).
+ReleasedAt(OnVacantion(Ion), 9).
+ReleasedAt(OnVacantion(Vasile), 0).
+ReleasedAt(OnVacantion(Vasile), 1).
+ReleasedAt(OnVacantion(Vasile), 2).
+ReleasedAt(OnVacantion(Vasile), 3).
+ReleasedAt(OnVacantion(Vasile), 4).
+ReleasedAt(OnVacantion(Vasile), 5).
+ReleasedAt(OnVacantion(Vasile), 6).
+ReleasedAt(OnVacantion(Vasile), 7).
+ReleasedAt(OnVacantion(Vasile), 8).
+ReleasedAt(OnVacantion(Vasile), 9).
+!Happens(BuildFloor(Ion), 0).
+!Happens(BuildFloor(Ion), 1).
+!Happens(BuildFloor(Ion), 2).
+!Happens(BuildFloor(Ion), 3).
+!Happens(BuildFloor(Ion), 4).
+!Happens(BuildFloor(Ion), 5).
+!Happens(BuildFloor(Ion), 6).
+!Happens(BuildFloor(Ion), 7).
+!Happens(BuildFloor(Ion), 8).
+!Happens(BuildFloor(Vasile), 0).
+!Happens(BuildFloor(Vasile), 1).
+!Happens(BuildFloor(Vasile), 2).
+!Happens(BuildFloor(Vasile), 3).
+!Happens(BuildFloor(Vasile), 4).
+!Happens(BuildFloor(Vasile), 5).
+!Happens(BuildFloor(Vasile), 7).
+!Happens(BuildFloor(Vasile), 8).
+!Happens(BuildFoundation(Ion), 1).
+!Happens(BuildFoundation(Ion), 2).
+!Happens(BuildFoundation(Ion), 3).
+!Happens(BuildFoundation(Ion), 4).
+!Happens(BuildFoundation(Ion), 5).
+!Happens(BuildFoundation(Ion), 6).
+!Happens(BuildFoundation(Ion), 7).
+!Happens(BuildFoundation(Ion), 8).
+!Happens(BuildFoundation(Vasile), 0).
+!Happens(BuildFoundation(Vasile), 1).
+!Happens(BuildFoundation(Vasile), 2).
+!Happens(BuildFoundation(Vasile), 3).
+!Happens(BuildFoundation(Vasile), 4).
+!Happens(BuildFoundation(Vasile), 5).
+!Happens(BuildFoundation(Vasile), 6).
+!Happens(BuildFoundation(Vasile), 7).
+!Happens(BuildFoundation(Vasile), 8).
+!Happens(BuildInterior(Ion), 0).
+!Happens(BuildInterior(Ion), 1).
+!Happens(BuildInterior(Ion), 2).
+!Happens(BuildInterior(Ion), 3).
+!Happens(BuildInterior(Ion), 4).
+!Happens(BuildInterior(Ion), 5).
+!Happens(BuildInterior(Ion), 7).
+!Happens(BuildInterior(Ion), 8).
+!Happens(BuildInterior(Vasile), 0).
+!Happens(BuildInterior(Vasile), 1).
+!Happens(BuildInterior(Vasile), 2).
+!Happens(BuildInterior(Vasile), 3).
+!Happens(BuildInterior(Vasile), 4).
+!Happens(BuildInterior(Vasile), 5).
+!Happens(BuildInterior(Vasile), 6).
+!Happens(BuildInterior(Vasile), 7).
+!Happens(BuildInterior(Vasile), 8).
+!Happens(BuildRoof(Ion), 0).
+!Happens(BuildRoof(Ion), 1).
+!Happens(BuildRoof(Ion), 2).
+!Happens(BuildRoof(Ion), 4).
+!Happens(BuildRoof(Ion), 5).
+!Happens(BuildRoof(Ion), 6).
+!Happens(BuildRoof(Ion), 7).
+!Happens(BuildRoof(Ion), 8).
+!Happens(BuildRoof(Vasile), 0).
+!Happens(BuildRoof(Vasile), 1).
+!Happens(BuildRoof(Vasile), 2).
+!Happens(BuildRoof(Vasile), 3).
+!Happens(BuildRoof(Vasile), 4).
+!Happens(BuildRoof(Vasile), 5).
+!Happens(BuildRoof(Vasile), 6).
+!Happens(BuildRoof(Vasile), 7).
+!Happens(BuildRoof(Vasile), 8).
+!Happens(BuildStructure(Ion), 0).
+!Happens(BuildStructure(Ion), 2).
+!Happens(BuildStructure(Ion), 3).
+!Happens(BuildStructure(Ion), 4).
+!Happens(BuildStructure(Ion), 5).
+!Happens(BuildStructure(Ion), 6).
+!Happens(BuildStructure(Ion), 7).
+!Happens(BuildStructure(Ion), 8).
+!Happens(BuildStructure(Vasile), 0).
+!Happens(BuildStructure(Vasile), 1).
+!Happens(BuildStructure(Vasile), 2).
+!Happens(BuildStructure(Vasile), 3).
+!Happens(BuildStructure(Vasile), 4).
+!Happens(BuildStructure(Vasile), 5).
+!Happens(BuildStructure(Vasile), 6).
+!Happens(BuildStructure(Vasile), 7).
+!Happens(BuildStructure(Vasile), 8).
+!Happens(BuildWalls(Ion), 0).
+!Happens(BuildWalls(Ion), 1).
+!Happens(BuildWalls(Ion), 3).
+!Happens(BuildWalls(Ion), 4).
+!Happens(BuildWalls(Ion), 5).
+!Happens(BuildWalls(Ion), 6).
+!Happens(BuildWalls(Ion), 7).
+!Happens(BuildWalls(Ion), 8).
+!Happens(BuildWalls(Vasile), 0).
+!Happens(BuildWalls(Vasile), 1).
+!Happens(BuildWalls(Vasile), 2).
+!Happens(BuildWalls(Vasile), 3).
+!Happens(BuildWalls(Vasile), 4).
+!Happens(BuildWalls(Vasile), 5).
+!Happens(BuildWalls(Vasile), 6).
+!Happens(BuildWalls(Vasile), 7).
+!Happens(BuildWalls(Vasile), 8).
+!Happens(InstallWindows(Ion), 0).
+!Happens(InstallWindows(Ion), 1).
+!Happens(InstallWindows(Ion), 2).
+!Happens(InstallWindows(Ion), 3).
+!Happens(InstallWindows(Ion), 5).
+!Happens(InstallWindows(Ion), 6).
+!Happens(InstallWindows(Ion), 7).
+!Happens(InstallWindows(Ion), 8).
+!Happens(InstallWindows(Vasile), 0).
+!Happens(InstallWindows(Vasile), 1).
+!Happens(InstallWindows(Vasile), 2).
+!Happens(InstallWindows(Vasile), 3).
+!Happens(InstallWindows(Vasile), 4).
+!Happens(InstallWindows(Vasile), 5).
+!Happens(InstallWindows(Vasile), 6).
+!Happens(InstallWindows(Vasile), 7).
+!Happens(InstallWindows(Vasile), 8).
+!Happens(IsolateHouse(Ion), 0).
+!Happens(IsolateHouse(Ion), 1).
+!Happens(IsolateHouse(Ion), 2).
+!Happens(IsolateHouse(Ion), 3).
+!Happens(IsolateHouse(Ion), 4).
+!Happens(IsolateHouse(Ion), 5).
+!Happens(IsolateHouse(Ion), 6).
+!Happens(IsolateHouse(Ion), 7).
+!Happens(IsolateHouse(Ion), 8).
+!Happens(IsolateHouse(Vasile), 0).
+!Happens(IsolateHouse(Vasile), 1).
+!Happens(IsolateHouse(Vasile), 2).
+!Happens(IsolateHouse(Vasile), 3).
+!Happens(IsolateHouse(Vasile), 4).
+!Happens(IsolateHouse(Vasile), 6).
+!Happens(IsolateHouse(Vasile), 7).
+!Happens(IsolateHouse(Vasile), 8).
+!Happens(PaintHouse(Ion), 0).
+!Happens(PaintHouse(Ion), 1).
+!Happens(PaintHouse(Ion), 2).
+!Happens(PaintHouse(Ion), 3).
+!Happens(PaintHouse(Ion), 4).
+!Happens(PaintHouse(Ion), 5).
+!Happens(PaintHouse(Ion), 6).
+!Happens(PaintHouse(Ion), 8).
+!Happens(PaintHouse(Vasile), 0).
+!Happens(PaintHouse(Vasile), 1).
+!Happens(PaintHouse(Vasile), 2).
+!Happens(PaintHouse(Vasile), 3).
+!Happens(PaintHouse(Vasile), 4).
+!Happens(PaintHouse(Vasile), 5).
+!Happens(PaintHouse(Vasile), 6).
+!Happens(PaintHouse(Vasile), 8).
+!ReleasedAt(Floor(Ion), 0).
+!ReleasedAt(Floor(Ion), 1).
+!ReleasedAt(Floor(Ion), 2).
+!ReleasedAt(Floor(Ion), 3).
+!ReleasedAt(Floor(Ion), 4).
+!ReleasedAt(Floor(Ion), 5).
+!ReleasedAt(Floor(Ion), 6).
+!ReleasedAt(Floor(Ion), 7).
+!ReleasedAt(Floor(Ion), 8).
+!ReleasedAt(Floor(Ion), 9).
+!ReleasedAt(Floor(Vasile), 0).
+!ReleasedAt(Floor(Vasile), 1).
+!ReleasedAt(Floor(Vasile), 2).
+!ReleasedAt(Floor(Vasile), 3).
+!ReleasedAt(Floor(Vasile), 4).
+!ReleasedAt(Floor(Vasile), 5).
+!ReleasedAt(Floor(Vasile), 6).
+!ReleasedAt(Floor(Vasile), 7).
+!ReleasedAt(Floor(Vasile), 8).
+!ReleasedAt(Floor(Vasile), 9).
+!ReleasedAt(Foundation(Ion), 0).
+!ReleasedAt(Foundation(Ion), 1).
+!ReleasedAt(Foundation(Ion), 2).
+!ReleasedAt(Foundation(Ion), 3).
+!ReleasedAt(Foundation(Ion), 4).
+!ReleasedAt(Foundation(Ion), 5).
+!ReleasedAt(Foundation(Ion), 6).
+!ReleasedAt(Foundation(Ion), 7).
+!ReleasedAt(Foundation(Ion), 8).
+!ReleasedAt(Foundation(Ion), 9).
+!ReleasedAt(Foundation(Vasile), 0).
+!ReleasedAt(Foundation(Vasile), 1).
+!ReleasedAt(Foundation(Vasile), 2).
+!ReleasedAt(Foundation(Vasile), 3).
+!ReleasedAt(Foundation(Vasile), 4).
+!ReleasedAt(Foundation(Vasile), 5).
+!ReleasedAt(Foundation(Vasile), 6).
+!ReleasedAt(Foundation(Vasile), 7).
+!ReleasedAt(Foundation(Vasile), 8).
+!ReleasedAt(Foundation(Vasile), 9).
+!ReleasedAt(Interior(Ion), 0).
+!ReleasedAt(Interior(Ion), 1).
+!ReleasedAt(Interior(Ion), 2).
+!ReleasedAt(Interior(Ion), 3).
+!ReleasedAt(Interior(Ion), 4).
+!ReleasedAt(Interior(Ion), 5).
+!ReleasedAt(Interior(Ion), 6).
+!ReleasedAt(Interior(Ion), 7).
+!ReleasedAt(Interior(Ion), 8).
+!ReleasedAt(Interior(Ion), 9).
+!ReleasedAt(Interior(Vasile), 0).
+!ReleasedAt(Interior(Vasile), 1).
+!ReleasedAt(Interior(Vasile), 2).
+!ReleasedAt(Interior(Vasile), 3).
+!ReleasedAt(Interior(Vasile), 4).
+!ReleasedAt(Interior(Vasile), 5).
+!ReleasedAt(Interior(Vasile), 6).
+!ReleasedAt(Interior(Vasile), 7).
+!ReleasedAt(Interior(Vasile), 8).
+!ReleasedAt(Interior(Vasile), 9).
+!ReleasedAt(Isolation(Ion), 0).
+!ReleasedAt(Isolation(Ion), 1).
+!ReleasedAt(Isolation(Ion), 2).
+!ReleasedAt(Isolation(Ion), 3).
+!ReleasedAt(Isolation(Ion), 4).
+!ReleasedAt(Isolation(Ion), 5).
+!ReleasedAt(Isolation(Ion), 6).
+!ReleasedAt(Isolation(Ion), 7).
+!ReleasedAt(Isolation(Ion), 8).
+!ReleasedAt(Isolation(Ion), 9).
+!ReleasedAt(Isolation(Vasile), 0).
+!ReleasedAt(Isolation(Vasile), 1).
+!ReleasedAt(Isolation(Vasile), 2).
+!ReleasedAt(Isolation(Vasile), 3).
+!ReleasedAt(Isolation(Vasile), 4).
+!ReleasedAt(Isolation(Vasile), 5).
+!ReleasedAt(Isolation(Vasile), 6).
+!ReleasedAt(Isolation(Vasile), 7).
+!ReleasedAt(Isolation(Vasile), 8).
+!ReleasedAt(Isolation(Vasile), 9).
+!ReleasedAt(Paint(Ion), 0).
+!ReleasedAt(Paint(Ion), 1).
+!ReleasedAt(Paint(Ion), 2).
+!ReleasedAt(Paint(Ion), 3).
+!ReleasedAt(Paint(Ion), 4).
+!ReleasedAt(Paint(Ion), 5).
+!ReleasedAt(Paint(Ion), 6).
+!ReleasedAt(Paint(Ion), 7).
+!ReleasedAt(Paint(Ion), 8).
+!ReleasedAt(Paint(Ion), 9).
+!ReleasedAt(Paint(Vasile), 0).
+!ReleasedAt(Paint(Vasile), 1).
+!ReleasedAt(Paint(Vasile), 2).
+!ReleasedAt(Paint(Vasile), 3).
+!ReleasedAt(Paint(Vasile), 4).
+!ReleasedAt(Paint(Vasile), 5).
+!ReleasedAt(Paint(Vasile), 6).
+!ReleasedAt(Paint(Vasile), 7).
+!ReleasedAt(Paint(Vasile), 8).
+!ReleasedAt(Paint(Vasile), 9).
+!ReleasedAt(Roof(Ion), 0).
+!ReleasedAt(Roof(Ion), 1).
+!ReleasedAt(Roof(Ion), 2).
+!ReleasedAt(Roof(Ion), 3).
+!ReleasedAt(Roof(Ion), 4).
+!ReleasedAt(Roof(Ion), 5).
+!ReleasedAt(Roof(Ion), 6).
+!ReleasedAt(Roof(Ion), 7).
+!ReleasedAt(Roof(Ion), 8).
+!ReleasedAt(Roof(Ion), 9).
+!ReleasedAt(Roof(Vasile), 0).
+!ReleasedAt(Roof(Vasile), 1).
+!ReleasedAt(Roof(Vasile), 2).
+!ReleasedAt(Roof(Vasile), 3).
+!ReleasedAt(Roof(Vasile), 4).
+!ReleasedAt(Roof(Vasile), 5).
+!ReleasedAt(Roof(Vasile), 6).
+!ReleasedAt(Roof(Vasile), 7).
+!ReleasedAt(Roof(Vasile), 8).
+!ReleasedAt(Roof(Vasile), 9).
+!ReleasedAt(Structure(Ion), 0).
+!ReleasedAt(Structure(Ion), 1).
+!ReleasedAt(Structure(Ion), 2).
+!ReleasedAt(Structure(Ion), 3).
+!ReleasedAt(Structure(Ion), 4).
+!ReleasedAt(Structure(Ion), 5).
+!ReleasedAt(Structure(Ion), 6).
+!ReleasedAt(Structure(Ion), 7).
+!ReleasedAt(Structure(Ion), 8).
+!ReleasedAt(Structure(Ion), 9).
+!ReleasedAt(Structure(Vasile), 0).
+!ReleasedAt(Structure(Vasile), 1).
+!ReleasedAt(Structure(Vasile), 2).
+!ReleasedAt(Structure(Vasile), 3).
+!ReleasedAt(Structure(Vasile), 4).
+!ReleasedAt(Structure(Vasile), 5).
+!ReleasedAt(Structure(Vasile), 6).
+!ReleasedAt(Structure(Vasile), 7).
+!ReleasedAt(Structure(Vasile), 8).
+!ReleasedAt(Structure(Vasile), 9).
+!ReleasedAt(Wall(Ion), 0).
+!ReleasedAt(Wall(Ion), 1).
+!ReleasedAt(Wall(Ion), 2).
+!ReleasedAt(Wall(Ion), 3).
+!ReleasedAt(Wall(Ion), 4).
+!ReleasedAt(Wall(Ion), 5).
+!ReleasedAt(Wall(Ion), 6).
+!ReleasedAt(Wall(Ion), 7).
+!ReleasedAt(Wall(Ion), 8).
+!ReleasedAt(Wall(Ion), 9).
+!ReleasedAt(Wall(Vasile), 0).
+!ReleasedAt(Wall(Vasile), 1).
+!ReleasedAt(Wall(Vasile), 2).
+!ReleasedAt(Wall(Vasile), 3).
+!ReleasedAt(Wall(Vasile), 4).
+!ReleasedAt(Wall(Vasile), 5).
+!ReleasedAt(Wall(Vasile), 6).
+!ReleasedAt(Wall(Vasile), 7).
+!ReleasedAt(Wall(Vasile), 8).
+!ReleasedAt(Wall(Vasile), 9).
+!ReleasedAt(Windows(Ion), 0).
+!ReleasedAt(Windows(Ion), 1).
+!ReleasedAt(Windows(Ion), 2).
+!ReleasedAt(Windows(Ion), 3).
+!ReleasedAt(Windows(Ion), 4).
+!ReleasedAt(Windows(Ion), 5).
+!ReleasedAt(Windows(Ion), 6).
+!ReleasedAt(Windows(Ion), 7).
+!ReleasedAt(Windows(Ion), 8).
+!ReleasedAt(Windows(Ion), 9).
+!ReleasedAt(Windows(Vasile), 0).
+!ReleasedAt(Windows(Vasile), 1).
+!ReleasedAt(Windows(Vasile), 2).
+!ReleasedAt(Windows(Vasile), 3).
+!ReleasedAt(Windows(Vasile), 4).
+!ReleasedAt(Windows(Vasile), 5).
+!ReleasedAt(Windows(Vasile), 6).
+!ReleasedAt(Windows(Vasile), 7).
+!ReleasedAt(Windows(Vasile), 8).
+!ReleasedAt(Windows(Vasile), 9).
+EC: 7 predicates, 0 functions, 0 fluents, 0 events, 0 axioms
+Root: 0 predicates, 0 functions, 0 fluents, 0 events, 0 axioms
+proiect.: 0 predicates, 0 functions, 11 fluents, 9 events, 63 axioms
+encoding 0.3s
+solution 0.0s
+total 0.9s

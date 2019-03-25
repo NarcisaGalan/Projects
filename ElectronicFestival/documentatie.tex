@@ -1,0 +1,200 @@
+﻿\documentclass[a4paper,12pt]{report}
+
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+
+\usepackage{graphicx} 
+\usepackage{color}
+\usepackage{hyperref}
+\graphicspath{ {./}}
+%\usepackage{mdframed}
+
+\newcommand{\currentdata}{30 Nov 2018}
+\newtheorem{example}{Example}
+
+\begin{document}
+\vspace{-5cm}
+\begin{center}
+Department of Computer Science\\
+Technical University of Cluj-Napoca\\
+
+\end{center}
+\vspace{1cm}
+%\maketitle
+\begin{center}
+\begin{Large}
+ \textbf{Introduction to Artificial Intelligence}\\
+\end{Large}
+\textit{Laboratory activity}\\
+\vspace{3cm}
+Name:Galan Narcisa\\
+Group: ----\\
+Email: g.narcisamaria@gmail.com\\
+\vspace{12cm}
+Assoc. Prof. dr. eng. Adrian Groza\\
+Adrian.Groza@cs.utcluj.ro\\
+\vspace{1cm}
+
+\end{center}
+\vspace{5cm}
+
+
+
+
+%\chapter{Laboratory works}
+
+
+\begin{center}
+\begin{Large}
+ \textbf{Logics}\\
+\end{Large}
+\end{center}
+\vspace{3cm}
+
+\begin{Large}
+ \textbf{Electronic Festival}\\
+\end{Large}
+
+\vspace{2cm}
+The five biggest DJs in the world are going to play in an electronic music festival,each \newline one in a specific stage. They are side by side waiting to play. Find out their nationalities, hobbies and which genre they play.
+\newline
+\newline
+Shirt: black, blue, green, red, white\newline
+Stage: Arcadia, Asgard, Shangri­la, Valhalla, Xibalba\newline
+Nationality: American, Canadian, Dutch, French,\newline
+Scottish 
+Age: 25 years, 30 years, 35 years, 40 years, 45 years\newline
+Hobby: camping, juggling, painting, singing, surfing\newline
+Genre: drum and bass, dubstep, EDM, house, trance\newline
+\newline
+We know that:
+\newline
+The Scottish is somewhere to the left of the DJ wearing the White shirt.\newline
+At the fourth position is the DJ who is going to play on the Arcadia stage.\newline
+The 30 years old DJ is at the first position.\newline
+The DJ that plays EDM is exactly to the right of the Canadian.\newline
+The one who likes Painting is next to the DJ who plays Dubstep.\newline
+The DJ wearing the Black shirt is somewhere between the Scottish and the Dubstep player,\newline in that order.\newline
+The French DJ is next to the one wearing the Blue shirt.\newline
+At one of the ends is the DJ that likes Camping.\newline
+The DJ who is going to play on the Asgard stage is wearing the Blue shirt.\newline
+The one that likes Painting is somewhere between the DJ wearing Green and the DJ \newline wearing Blue, in that order.\newline
+At the fifth position is the DJ who plays Drum and bass.\newline
+At the middle is the DJ who is going to play on the Asgard stage.\newline
+The one who plays Trance is next to the one who plays Dubstep.\newline
+The Canadian is exactly to the left of the DJ who likes Juggling.\newline
+The DJ whose hobby is Singing is exactly to the right of the DJ wearing the Black shirt.\newline
+The DJ in his Mid thirties is next to the DJ who is into Juggling.\newline
+The 40 years old DJ is at the fourth position.\newline
+The 40 years old DJ is somewhere between the Dutch and the youngest DJ, in that order.\newline
+The DJ wearing Blue is somewhere to the left of the DJ who is going to play on the \newline Xibalba stage.\newline
+The one who enjoys Surfing is going to play on the Valhalla stage.\newline
+The DJ wearing the Red shirt is somewhere to the right of the French.\newline
+
+
+\\
+\\
+\begin{Large}
+ \textbf{Implementation}\\
+\end{Large}
+
+As we need to write a huge amount of propositions to encode the available knowledge.\newline
+First Order Logic (FOL in short) offers us some more operators, which allow a more\newline compact way of writting the same knowledge.\newline
+We want to model this problem in FOL, then to ask Mace4 to find a model.We are going to \newline use several predicates of arity one,like:\newline \newline
+right-dj(x,y) : this is a predicate that tell us that y is the left neighbor of x\newline
+We know that the DJs are side by side, so we give to each one a position(0,1,2,3,4). I implemented the right neighbor assuming that the neighbor from the right has the \newline position of his neighbor from left plus one. \newline \newline
+neighbors(x,y) : means that x and y are neighbors\newline
+Two DJs are neighbors if their position is equal with the other position plus one.\newline \newline
+one-end(x) : means that x is placed in one of the and(position 0 or 4)\newline\newline
+somewhere-right(x,y) : means that y is placed somewhere in the right of y\newline
+Y being somewhere in the right of y means that y's position is x's position plus 1,or plus 2,\newline or plus 3\newline \newline
+between(x,y,z) : means that y is somewhere between x and z \newline
+Y being somewhere in the middle of x and z means that x is somewhere in the left of y and z is somewhere in the right of y. For this i used the somewhere-right predicate.\newline \newline
+\\
+\\
+\begin{Large}
+ \textbf{Solution}\\
+\end{Large}
+\newline
+I found this puzzle on brainzilla.com/zebra­puzzles. The advantage of this site was that \newline I was able to check if the model that mace4 is giving is correct.
+
+\includegraphics[width=160mm]{https://scontent.fsbz1-1.fna.fbcdn.net/v/t1.15752-9/47127692_2192552877659973_2107848397007355904_n.png?_nc_cat=110&_nc_ht=scontent.fsbz1-1.fna&oh=07ac7624d55fa0e8cc88e0c2af1773b4&oe=5CB25556}
+
+%\input{mycode}
+
+
+
+\bibliographystyle{plain}
+\bibliography{is}
+
+\appendix
+
+\chapter{Your original code}
+
+\begin{verbatim}
+
+set(arithmetic).         % For the "right dj" relation.
+assign(domain_size, 5).  % The five dj are {1,2,3,4,5}.
+
+list(distinct).          % Objects in each list are distinct.
+	[Scottish,Canadian,French,Dutch,American].        %nationalities 
+        [blue,black,green,red,pink].                 % shirts 
+	[drum,dubstep,EDM,house,trance].                  %genre
+	[Xibalba,Shangri,Asgard,Arcadia,Valhalla].        %stage
+	[age1,age2,age3,age4,age5].                       %age 25,30,35,40,45
+	[camping,juggling,painting,singing,surfing].      %hobby
+end_of_list.
+
+
+formulas(assumptions). 
+   % Definitions of "right_dj".
+   
+   %y se afla in dreapta lui x
+   right_dj(x,y) <-> x+1 = y.     
+   %y left/ right neighbor of x
+   neighbors(x,y) <-> right_dj(x,y) | right_dj(y,x). 
+   %x se afla la unul dintre capete
+   one_end(x) <-> (x = 4) | (x = 0).         
+   %y se afla undeva in partea dreapta a lui x
+   somewhere_right(x,y) <-> (x+1=y) | (x+2=y) | (x+3=y).  
+   %y se afla undeva intre x si z
+   between(x,y,z)<->somewhere_right(x,y) & somewhere_right(y,z). 
+
+
+   % The clues.
+	somewhere_right(Scottish,pink).
+	Arcadia = 3.
+	age2 = 0.
+	right_dj(Canadian,EDM).
+	neighbors(painting,dubstep).
+	between(Scottish,black,dubstep).
+	neighbors(French,blue).
+	one_end(camping).
+	Asgard = blue.
+	between(green,painting,blue).
+	drum = 4.
+	Asgard = 2.
+	neighbors(trance,dubstep).
+	right_dj(Canadian,jugglin). % left canadian & right juggling
+	right_dj(black,singing).    %left black & right singing
+	neighbors(age3,juggling).
+	age4 = 3.
+	between(Dutch,age4,age1).
+	somewhere_right(blue,Xibalba).
+	Valhalla=surfing.
+	somewhere_right(French,red).	
+end_of_list.
+
+
+\end{verbatim}
+
+\vspace{2cm}
+\begin{center}
+Intelligent Systems Group\\
+\includegraphics[width=10cm]{fig/footer}
+\end{center}
+
+
+
+\end{document}

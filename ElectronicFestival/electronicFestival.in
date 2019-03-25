@@ -1,0 +1,94 @@
+%
+%The five biggest DJs in the world are going to play in an electronic music festival, each one in a specific stage. They are side by side waiting to play. Find out their nationalities, hobbies and which genre they play.
+%
+%
+%The Scottish is somewhere to the left of the DJ wearing the White shirt.
+%At the fourth position is the DJ who is going to play on the Arcadia stage.
+%The 30 years old DJ is at the first position.
+%The DJ that plays EDM is exactly to the right of the Canadian.
+%The one who likes Painting is next to the DJ who plays Dubstep.
+%The DJ wearing the Black shirt is somewhere between the Scottish and the Dubstep player, in that order.
+%The French DJ is next to the one wearing the Blue shirt.
+%At one of the ends is the DJ that likes Camping.
+%The DJ who is going to play on the Asgard stage is wearing the Blue shirt.
+%The one that likes Painting is somewhere between the DJ wearing Green and the DJ wearing Blue, in that order.
+%At the fifth position is the DJ who plays Drum and bass.
+%At the middle is the DJ who is going to play on the Asgard stage
+%The one who plays Trance is next to the one who plays Dubstep.
+%The Canadian is exactly to the left of the DJ who likes Juggling.
+%The DJ whose hobby is Singing is exactly to the right of the DJ wearing the Black shirt.
+%The DJ in his Mid thirties is next to the DJ who is into Juggling.
+%The 40 years old DJ is at the fourth position.
+%The 40 years old DJ is somewhere between the Dutch and the youngest DJ, in that order.
+%The DJ wearing Blue is somewhere to the left of the DJ who is going to play on the Xibalba stage.
+%The one who enjoys Surfing is going to play on the Valhalla stage.
+%The DJ wearing the Red shirt is somewhere to the right of the French.
+
+
+set(arithmetic).         % For the "right dj" relation.
+assign(domain_size, 5).  % The five dj are {1,2,3,4,5}.
+
+list(distinct).          % Objects in each list are distinct.
+	[Scottish,Canadian,French,Dutch,American].        %nationalities 
+        [blue,black,green,red,pink].                      % shirts 
+	[drum,dubstep,EDM,house,trance].                  %genre
+	[Xibalba,Shangri,Asgard,Arcadia,Valhalla].%stage
+	[age1,age2,age3,age4,age5].                       %age 25,30,35,40,45
+	[camping,juggling,painting,singing,surfing].      %hobby
+end_of_list.
+
+
+formulas(assumptions). 
+   % Definitions of "right_dj".
+
+   right_dj(x,y) <-> x+1 = y.                                      %y se afla in dreapta lui x
+   neighbors(x,y) <-> right_dj(x,y) | right_dj(y,x).               %y left/ right neighbor of x
+   one_end(x) <-> (x = 4) | (x = 0).                               %x se afla la unul dintre capete
+   somewhere_right(x,y) <-> (x+1=y) | (x+2=y) | (x+3=y).           %y se afla undeva in partea dreapta a lui x
+   between(x,y,z)<->somewhere_right(x,y) & somewhere_right(y,z).  %y se afla undeva intre x si z
+
+
+   % The clues.
+	somewhere_right(Scottish,pink).
+	Arcadia = 3.
+	age2 = 0.
+	right_dj(Canadian,EDM).
+	neighbors(painting,dubstep).
+	between(Scottish,black,dubstep).
+	neighbors(French,blue).
+	one_end(camping).
+	Asgard = blue.
+	between(green,painting,blue).
+	drum = 4.
+	Asgard = 2.
+	neighbors(trance,dubstep).
+	right_dj(Canadian,jugglin). % left canadian & right juggling
+	right_dj(black,singing).    %left black & right singing
+	neighbors(age3,juggling).
+	age4 = 3.
+	between(Dutch,age4,age1).
+	somewhere_right(blue,Xibalba).
+	Valhalla=surfing.
+	somewhere_right(French,red).	
+end_of_list.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
