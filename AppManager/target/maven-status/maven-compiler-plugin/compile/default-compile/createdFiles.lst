@@ -1,0 +1,7 @@
+projects\appmanager\dao\UserController.class
+projects\appmanager\models\App.class
+projects\appmanager\AppmanagerApplication.class
+projects\appmanager\dao\AppController.class
+projects\appmanager\models\User.class
+projects\appmanager\dao\AppRepository.class
+projects\appmanager\dao\UserRepository.class
