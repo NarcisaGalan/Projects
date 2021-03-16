@@ -1,0 +1,7 @@
+
+.color-modal{
+    /* background: linear-gradient(90deg, rgba(127,121,232,1) 0%, rgba(202,172,242,0.9559174011401436) 71%, rgba(59,134,149,1) 100%); */
+    background: rgb(171,159,159);
+    background: linear-gradient(90deg, rgba(93,93,91,1) 0%, rgba(92,75,75,1) 47%, rgba(46,29,29,1) 100%);
+
+}

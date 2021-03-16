@@ -1,0 +1,32 @@
+#paragraph{
+    padding-top: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    font-style: italic;
+    text-align:center;
+    color: rgb(255, 255, 255);
+    position: left;
+    
+}
+
+#newsTitle{
+    padding-top: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    text-align:left;
+    color: rgb(255, 255, 255);
+    position: center;
+    
+}
+
+
+#newsImg{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: center;
+    width:300px;
+    height:300px ;
+    
+}

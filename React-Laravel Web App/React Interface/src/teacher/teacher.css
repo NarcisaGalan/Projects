@@ -1,0 +1,61 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.wrapper {
+    display: flex;
+    height: 120vh;
+}
+  
+.form {
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+  
+.right-img {
+    flex: 0 0 auto;
+    width: 50%;
+    margin-bottom: 0;
+   
+}
+  
+.right-img {
+    object-fit: cover;
+    object-position: right;
+}
+
+#titleT {
+    padding: 15px 20px 0px;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 20px;
+    color: #537C8E;
+    letter-spacing: 1px;
+    line-height: 25px;
+    border-bottom: 1px solid;
+    -webkit-border-image: -webkit-linear-gradient(
+        left,
+        rgba(255, 255, 255, 1) 1%,
+        rgba(46, 189, 189, 1) 50%,
+        rgba(83, 124, 142, 1) 100%
+) 0 0 100% 0/0 0 3px 0 stretch;
+-moz-border-image: -moz-linear-gradient(
+        left,
+        rgba(255, 255, 255, 1) 1%,
+        rgba(46, 189, 189, 1) 50%,
+        rgba(83, 124, 142, 1) 100%
+) 0 0 100% 0/0 0 3px 0 stretch;
+-o-border-image: -o-linear-gradient(
+        left,
+        rgba(255, 255, 255, 1) 1%,
+        rgba(46, 189, 189, 1) 50%,
+        rgba(83, 124, 142, 1) 100%
+) 0 0 100% 0/0 0 3px 0 stretch;
+border-image: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 1) 1%,
+        rgba(46, 189, 189, 1) 50%,
+        rgba(83, 124, 142, 1) 100%
+) 0 0 100% 0/0 0 3px 0 stretch;
+}

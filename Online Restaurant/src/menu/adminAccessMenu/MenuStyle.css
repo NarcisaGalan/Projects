@@ -1,0 +1,74 @@
+#card{
+    width:400px ;
+    height:470px; 
+    margin: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+#titleProduct {
+        background: -webkit-linear-gradient(rgb(207, 10, 10), rgb(8, 46, 214));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Sofia, cursive;
+        font-weight: bold;
+        word-spacing: -5px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        text-decoration: none;
+        font-style: normal;
+        font-variant: normal;
+        text-transform: none;
+        font-size:20px ; 
+       
+}
+
+#backProducts {
+    background-image: linear-gradient(to left top, #845EC2, #9B89B3, #FDF7FF, #D5CABD);
+    margin: 0;
+    size: 100%;
+    
+}
+
+#distance {
+   margin-left: 200px;
+}
+
+#img{
+    width:400px ;
+    height:280px;
+}
+
+
+#btn{
+    position: absolute;
+    right:    10px;
+    bottom:   10px;
+    background: rgb(78, 27, 94);
+} 
+#btn:focus{
+    position: absolute;
+    right:    10px;
+    bottom:   10px;
+    background: rgb(156, 14, 61);
+}
+
+/*  */
+
+.gray{border:5px solid gray;
+    height: 100px;
+
+
+  }
+  .green{border: 5px solid green;
+    height: 300px;
+ }
+
+    .orange{
+      border: 5px solid orange;
+      height: 350px;
+
+    }
+
+     .greenplus{border: 5px solid green;
+    height: 50px;
+   }

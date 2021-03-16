@@ -1,0 +1,24 @@
+
+.color-nav{
+    /* background: linear-gradient(90deg, rgba(127,121,232,1) 0%, rgba(202,172,242,0.9559174011401436) 71%, rgba(59,134,149,1) 100%); */
+    background: rgb(58,102,112);
+    background: linear-gradient(90deg, rgba(58,102,112,1) 0%, rgba(113,235,255,1) 50%, rgba(66,104,124,1) 100%);
+}
+
+.navbar-brand-right
+{
+    position: absolute;
+    width: 100%;
+    right: 0;
+}
+
+.navbar-brand-left
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.navbar-toggle {
+    z-index:3;
+}

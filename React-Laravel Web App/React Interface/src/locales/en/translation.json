@@ -1,0 +1,33 @@
+{
+
+"nav.news":"News",
+"nav.menu":"Menu",
+"nav.about":"About",
+"nav.student":"Student Profile",
+"nav.teacher":"Guiding Teacher",
+"nav.contact":"Contact",
+"home.msg":"WELCOME!",
+"home.button1":"Learn More",
+"news.title":"News",
+"news.robotDance":"First dance group made up of robots!♪♬Video below↓",
+"news.robotFood":"Breakfast at bed with Robo ☕🍏",
+"news.button1":"Learn More",
+"news.xmlTitle":"Artificial intelligence can surpass anti-bot security, thinking like a human being",
+"news.xmlDes":"Some of the most widespread security systems on the Internet that are meant to prevent non-humans from accessing sites have been defeated by a new type of artificial intelligence.",
+"student.technologies":"Technologies",
+"student.artificial":"Artificial Intelligence",
+"teacher.1":"Associate Professor",
+"teacher.2":"Technical University of Cluj-Napoca",
+"teacher.3":"Faculty of Automation and Computer Science",
+"teacher.4":"Computer Science Department",
+"teacher.button1":"Learn More",
+"contact.address":"Address",
+"contact.number":"Number",
+"contact.email":"E-mail",
+"contact.send":"Send us an email",
+"contact.message":"Enter here your message",
+"contact.button1":"Submit",
+"about.title":"Robotics",
+"about.des":"Robotics is an interdisciplinary reaseach area at the interface of computer science and engineering.Robotics involves design, construction, operation, and use of robots. The goal of robotics is to design intelligent machines that can help and assist humans in their day-to-day lives and keep everyone safe. Robotics draws on the achievement of information engineering, computer engineering, mechanical engineering, electronic engineering and others."
+
+}

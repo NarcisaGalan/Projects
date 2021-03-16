@@ -1,0 +1,33 @@
+{
+
+"nav.news":"Stiri",
+"nav.menu":"Meniu",
+"nav.about":"Despre",
+"nav.student":"Profil Student",
+"nav.teacher":"Profesor Indrumator",
+"nav.contact":"Contact",
+"home.msg":"Bine ati venit!",
+"home.button1":"Detalii",
+"news.title":"Stiri",
+"news.robotDance":"Primul grup de dans fromat din roboti!♪♬Video mai jos↓",
+"news.robotFood":"Mic dejun la pat cu Robo ☕🍏",
+"news.button1":"Detalii",
+"news.xmlTitle":"Inteligenta artificiala poate depasi securitatea anti-bot, gandind ca un om",
+"news.xmlDes":"Unele dintre cele mai raspandite sisteme de securitate de pe internet care are menirea de a preveni non-oamenii sa acceseze site-urile a fost infrant de un nou tip de inteligenta artificiala.",
+"student.technologies":"Tehnologii",
+"student.artificial":"Inteligenta artificiala",
+"teacher.1":"Profesor Asociat",
+"teacher.2":"Universitatea Tehnica din Cluj-Napoca",
+"teacher.3":"Faculatatea de Automatica si Calculatoare",
+"teacher.4":"Departamentul Calculatoare",
+"teacher.button1":"Detalii",
+"contact.address":"Adresa",
+"contact.number":"Numar",
+"contact.email":"E-mail",
+"contact.send":"Trimite-ne un email",
+"contact.message":"Introduceti aici mesajul dumneavoastra",
+"contact.button1":"Trimite",
+"about.title":"Robotica",
+"about.des":"Robotica este o zonă interdisciplinară de cercetare la interfața informatică și inginerie. Robotica implică proiectarea, construcția, operarea și utilizarea de roboți. Scopul roboticii este de a proiecta mașini inteligente care pot ajuta și ajuta oamenii în viața lor de zi cu zi și să-i păstreze pe toți în siguranță. Robotica se bazează pe realizarea informațiilor inginerie, inginerie computerizată, inginerie mecanică, inginerie electronică și altele. "
+
+}

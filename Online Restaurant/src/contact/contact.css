@@ -1,0 +1,68 @@
+#titleC {
+    margin-top: 10%;
+    font-size: 50px;
+    
+    background: -webkit-linear-gradient(#1a2a6c,#b21f1f , #fdbb2d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+#address {
+    padding: 15px 20px 0px;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 20px;
+    color: #537C8E;
+    letter-spacing: 1px;
+    line-height: 25px;
+    border-bottom: 1px solid;
+    -webkit-border-image: -webkit-linear-gradient(
+            left,
+            #a5231a 1%,
+            #cf6712 50%, 
+            #e08e14 50%
+    ) 0 0 100% 0/0 0 3px 0 stretch;
+    -moz-border-image: -moz-linear-gradient(
+            left,
+            #a5231a 1%,
+            #cf6712 50%, 
+            #e08e14 50%
+    ) 0 0 100% 0/0 0 3px 0 stretch;
+    -o-border-image: -o-linear-gradient(
+            left,
+            #a5231a 1%,
+            #cf6712 50%, 
+            #e08e14 50%
+    ) 0 0 100% 0/0 0 3px 0 stretch;
+    border-image: linear-gradient(
+            to left,
+            #a5231a 1%,
+            #cf6712 50%, 
+            #e08e14 50%
+    ) 0 0 100% 0/0 0 3px 0 stretch;
+}
+
+#paragraphC{
+    margin: 10px 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #537C8E;
+    letter-spacing: 1px;
+    width: 600px;
+}
+
+#imgC{
+    width: 100%;
+    height: 100%;
+   
+}
+
+#backContact {
+    background: #8e9eab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}

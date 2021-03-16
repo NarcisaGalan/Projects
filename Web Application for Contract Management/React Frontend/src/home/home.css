@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap');
+#subtitle{
+    font-family: 'Sansita Swashed', cursive;
+    margin-top: 200px;
+    padding-top: 20px;
+    font-weight: 300;
+    font-size: 25px;
+    text-align:center;
+    color: rgb(0, 0, 0);
+    
+   
+}
+#paragraph{
+    font-family: 'Sansita Swashed', cursive;
+        padding-top: 15px;
+        font-weight: 200;
+        font-size: 25px;
+        line-height: 25px;
+        text-align:center;
+        color: rgb(0, 0, 0);
+        margin-left: 50px;
+        
+}
+#backHome {
+    background-image: linear-gradient(to left top, #bbcbda, #e4d7e6, #fafafa, #d1e3f3);
+    margin: 0;
+    size: cover;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
+#titleHome {
+        background: -webkit-linear-gradient(rgb(144, 155, 194), rgb(204, 248, 199));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Merriweather', serif;
+        font-weight: bold;
+        word-spacing: -5px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        font-size:50px ; 
+        padding-inline-start: 10px;
+        margin-top: 180px;
+      
+}
+

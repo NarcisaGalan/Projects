@@ -1,0 +1,21 @@
+
+#login
+{  
+   margin-top: 150px;
+}
+
+#backgroundLogin{
+    
+    margin: 0;
+    size: 100%; 
+}
+
+#text{
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+   
+}

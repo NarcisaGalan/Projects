@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<News>
+   <Article id='1'>
+           <Title>Inteligenta artificiala poate depasi securitatea anti-bot, gandind ca un om</Title>
+           <Image>https://storage0.dms.mpinteractiv.ro/media/401/321/5107/16799896/1/33649712-ml.jpg?width=912</Image>
+           <Description>Unele dintre cele mai raspandite sisteme de securitate de pe internet care are menirea de a preveni non-oamenii sa acceseze site-urile a fost infrant de un nou tip de inteligenta artificiala.</Description>
+            <Link>https://www.descopera.ro/lumea-digitala/16799896-un-mare-pas-inainte-pentru-inteligenta-artificiala-si-un-mare-pas-inapoi-pentru-securitatea-digitala-un-nou-tip-de-inteligenta-artificiala-poate-depasi-securitatea-anti-bot-gandind-ca-un-om</Link>
+   </Article>
+   <Article id='2'>
+          <Title>Inteligenţa artificială dezvoltată de Google a reuşit să se creeze pe sine</Title>  
+           <Image>https://storage0.dms.mpinteractiv.ro/media/401/321/5107/16772338/1/22415317-ml.jpg?width=145</Image>
+           <Description>În mai anul acesta, Google a prezentat noul său proiect numit AutoML, unde inteligenţa artificială (AI) ajută la crearea altor programe care utilizează inteligenţă artificială.</Description>
+            <Link>https://www.descopera.ro/lumea-digitala/16772338-inteligenta-artificiala-dezvoltata-de-google-a-reusit-sa-se-creeze-pe-sine-si-asta-nu-e-tot-ai-ul-nou-creat-este-mai-eficient</Link>
+   </Article>
+   <Article id='3'>
+          <Title>Roboţii joaca fotbal la cel mai mare targ european de hi-tech</Title>
+           <Image>https://storage0.dms.mpinteractiv.ro/media/401/321/5109/5721526/1/robo1.jpg?width=912</Image>
+           <Description>În timp ce febra Cupei Mondiale din 2010 creşte, o mână de roboţi fotbalişti, de dimensiunea unor mere, a entuziasmat, marţi, publicul de la CeBIT, cel mai mare târg de tehnologie din Europa, jucând un meci care l-ar fi făcut să pălească de invidie şi pe Cristiano Ronaldo.</Description>
+           <Link>https://www.descopera.ro/dnews/5721526-robotii-joaca-fotbal-la-cel-mai-mare-targ-european-de-hi-tech</Link>
+   </Article>
+   <Article id='4'>
+           <Title>Armata de roboti ameninta suprematia umana?</Title>
+           <Image>https://storage0.dms.mpinteractiv.ro/media/401/321/5109/4059918/1/robot-militar.jpg?width=912</Image>
+           <Description>Nu este departe ziua in care armata Americana se va baza aproape in totalitate pe roboti care vor avea drept sarcini urmarirea inamicului, folosirea senzorilor pentru detectarea inamicilor si distrugerea instantanee a tintelor prin intermediul mitralierelor si rachetelor portabile.</Description>
+            <Link>https://www.descopera.ro/dnews/4059918-armata-de-roboti-ameninta-suprematia-umana</Link>
+   </Article>
+
+</News>

@@ -1,0 +1,48 @@
+#subtitle{
+    padding-top: 20px;
+    font-weight: 600;
+    font-size: 25px;
+    text-align:center;
+    color: rgb(0, 0, 0);
+   
+}
+#paragraph{
+        padding-top: 15px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        text-align:center;
+        color: rgb(0, 0, 0);
+        margin-left: 50px;
+        
+    }
+#backHome {
+    background-image: linear-gradient(to left top, #845EC2, #9B89B3, #FDF7FF, #D5CABD);
+    margin: 0;
+    size: cover;
+}
+
+#imagePizza{
+        width:1334px ;
+        height:500px;
+        
+}
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+#titleHome {
+        background: -webkit-linear-gradient(rgb(202, 29, 29), rgb(3, 15, 70));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Sofia, cursive;
+        font-weight: bold;
+        word-spacing: -5px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        text-decoration: none;
+        font-style: normal;
+        font-variant: normal;
+        text-transform: none;
+        font-size:70px ; 
+        color: rgb(122, 15, 15); 
+        text-emphasis-style: triangle ; 
+}
+

@@ -1,0 +1,72 @@
+#top
+{  
+   margin-top: 20px;
+   font-weight: bold;
+}
+#topButton
+{  
+   margin-top: 40px;
+   font-weight: bold;
+}
+#latime
+{  
+  width: 300px;
+}
+#silde{
+    text-align: center;
+}
+#labelStyle
+{
+    font-weight: bold;
+}
+
+#button-space{
+   margin-right: 80px;
+   margin-bottom: 20px;
+   
+}
+
+#button-space2{
+   margin-bottom: 20px;
+}
+
+#spaceslide{
+    margin-left: 0;
+ } 
+#backgroundContract{
+   background-image: linear-gradient(to left top, #95c8cf, #a2c9cf, #8eafce, #98bec4);
+   size: 100%; 
+   padding: 24 ;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+#title{
+        background: -webkit-linear-gradient(rgb(4, 34, 1), rgb(7, 80, 80));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Sofia, cursive;
+        font-weight: bold;
+        word-spacing: -5px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        text-decoration: none;
+        font-style: normal;
+        font-variant: normal;
+        text-transform: none;
+        font-size:40px ; 
+        margin:0;
+        text-align:center;
+       
+}
+
+#btn{
+   margin-top:10px;
+   background: #0e5c66;
+}
+
+#avForm{
+margin-left: 60px;
+
+float: center;
+  clear: both;
+}

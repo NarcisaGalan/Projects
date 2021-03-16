@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th ="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <script type="text/javascript" src="webjars/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script type="text/javascript" src="webjars/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" th:src="@{app.js}" src="../static/app.js"></script>
+    <link rel="stylesheet"
+          href="webjars/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" />
+    <title>Apps</title>
+</head>
+<body>
+
+<div class="container" >
+
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="/">Users</a>
+        <a class="navbar-brand" href="#">Apps</a>
+    </nav>
+
+    <div class="card">
+        <div class="card-block">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Technolgies</th>
+                    <th>Version</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!--/*@thymesVar id="dataApp" type="projects.appmanager.dao.AppController"*/-->
+                <!--/*@thymesVar id="content" type="projects.appmanager.models.App"*/-->
+                <tr th:each="app : ${dataApp.content}">
+
+                    <!--/* Workaround for bug https://youtrack.jetbrains.com/issue/IDEA-132738 -->
+                    <!--@thymesVar id="user" type="projects.appmanager.models.App"-->
+                    <!--@thymesVar id="id" type="int"-->
+                    <!--@thymesVar id="name" type="String"-->
+                    <!--@thymesVar id="technologies" type="String"-->
+                    <!--@thymesVar id="version" type="String"-->
+                    <!--*/-->
+                    <td th:text= "${app.id}"></td>
+                    <td th:text= "${app.name}"></td>
+                    <td th:text= "${app.technologies}"></td>
+                    <td th:text= "${app.version}"></td>
+                    <td>
+                        <a th:href="@{deleteApp/(id=${app.id})}" class="btn btn-danger deleteAppBtn">Delete</a>
+                        <a th:href="@{appById/(id=${app.id})}" class="btn btn-primary addAppBtn">Edit</a>
+                        <a th:href="@{appById/(id=${app.id})}" class="btn btn-primary seeUserBtn">Users</a>
+
+                    </td>
+
+                </tr>
+                </tbody>
+            </table>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"
+                    th:each="i : ${#numbers.sequence(0,dataApp.totalPages - 1)}">
+                    <a th:href="@{/(page=${i})}"
+                       th:text="${i}" class="nav-link"
+                       th:classappend="(${currentPage}==${i})? 'active' :''">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <div class="myForm">
+        <form th:action="@{/addApp}" method="post">
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Update or Create</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="id" class="form-control-label">ID:</label>
+                                <input type="text" class="form-control" id="id" name="id" value=""/>
+                            </div>
+                            <div class="form-group">
+                                <label for="name" class="form-control-label">Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" value=""/>
+                            </div>
+                            <div class="form-group">
+                                <label for="technologies" class="form-control-label">Technologies:</label>
+                                <input type="text" class="form-control" id="technologies" name="technologies" value=""/>
+                            </div>
+                            <div class="form-group">
+                                <label for="version" class="form-control-label">Version:</label>
+                                <input type="text" class="form-control" id="version" name="version" value=""/>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                    data-dismiss="modal">Close</button>
+                            <input type="submit" class="btn btn-primary" value="save"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Delete</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="alert alert-danger">
+                        Are you sure you want to delete this app?
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href="" class="btn btn-danger" id="delRef">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-success addAppBtn">New</button>
+
+</div>
+
+</body>
+</html>
