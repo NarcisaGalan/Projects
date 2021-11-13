@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body    {text-align: justify;}
+    </style>
+</head>
+
+<body>
+
+<div ><img  src="utcn.png" height="107" width="661"/></div>
+
+<h2 style="text-align:center;margin-bottom: 40px;top: 20px;">Contract de cercetare, dezvoltare, inovare
+    Contract prestari servicii de cercetare, dezvoltare,
+    inovare, servicii tehnologice
+</h2>
+
+<p style="text-align:center;margin-bottom: 40px;"> nr. <b th:text="${numarContract}"></b> data <b th:text="${dataContract}"></b>
+</p>
+<p>1. Parti contractante</p>
+<p>Universitatea Tehnica din <b th:text="${judetUniv}"></b> , cu sediul in <b th:text="${taraUniv}"></b> localitatea
+    <b th:text="${localitateUniv}"></b> , str. <b th:text="${stradaUniv}"></b> nr. <b
+            th:text="${numarStradaUniv}"></b>, cod postal <b th:text="${codPostalUniv}"></b> , telefon <b
+            th:text="${telefonUniv}"></b>, fax <b th:text="${faxUniv}"></b>,
+    cod fiscal TVA- <b th:text="${codFiscalUniv}"></b> , cont R035TREZ216502201X030575, deschise la Trezoreria Cluj,
+    reprezentata prin Rector <b th:text="${reprezentant1Univ}"></b> si Director Economic <b th:text="${reprezentant2Univ}"></b>, in calitate
+    de
+    Executant, pe de o parte
+    <br> si <b th:text="${denumireBeneficiar}"></b>
+    <br>(denumire operatorul economic)
+    <b th:text="${taraBeneficiar}"></b> <b th:text="${judetBeneficiar}"></b> <b
+            th:text="${localitateBeneficiar}"></b>
+    <b th:text="${stradaBeneficiar}"></b> adresa sediu <b th:text="${telefonBeneficiar}"></b>
+    telefon/fax
+    <b th:text="${cifCui}"></b> numar de inmatriculare cont bancar.
+    <b th:text="${contBeneficiar}"></b> cont bancar (numai pentru PFA sau Asociatii), reprezentat prin
+    <b th:text="${reprezentantBeneficiar}"></b> (denumirea
+    conducatorului) avand functia de <b th:text="${functieRepBeneficiar}"></b> in calitate deBeneficiar, pe de alta
+    parte.
+</p>
+<p><b>Art. 1 Obiectul contractului:</b>
+    <br><b>1.1.</b> Realizarea activitatilor sau serviciilor de cercetare, dezvoltare, inovare, sau tehnologice a
+    proiectului cu titlul:
+    <b th:text="${titluProiect}"></b>
+    <br><b>1.2.</b> Daca este cazul detaliile tehnice, financiare si de esalonare in timp pe ani calendaristici
+    (bugetari) sunt prezentate in propunerea tehnica anexa la contract.
+</p>
+
+<p><b>Art. 2 Valoarea contractului:</b>
+    <br><b>2.1.</b> Valoarea totala a contractului este de <b th:text="${valoareTotala}"></b> <b
+            th:text="${moneda}"></b> ,din care <b th:text="${tva}"></b> <b th:text="${moneda}"></b>
+    , reprezentand TVA.
+    <br><b>2.2.</b> Cheltuielile vor fi efectuate conform specificatiilor din devizul
+    de cheltuieli care este anexa la contract.
+</p>
+
+<p><b>Art. 3 Durata contractului:</b>
+    <br><b>3.1.</b> Data de incepere a executiei contactului coincide cu data semnarii acestuia. Executia completa a
+    activitatilor prevazute in prezentul contract se incheie la data de <b th:text="${dataInceput}"></b>.
+</p>
+<p><b>Art. 4 Decontarea lucrarilor:</b>
+    <br><b>4.1.</b> Decontarea lucrarilor se realizeaza la datele si in conditiile prevazute de prezentul contract si
+    anexele acestuia, in urma avizarii si semnarii de catre partile contractante a raportului mentionat la
+    alineatul </b>
+    <br><b>4.2.</b> Pentru decontarea lucrarilor,
+    Executantul are obligatia de a prezenta Beneficiarului un Proces verbal de receptie (intermediar sau final),
+    conform modelului anexat.</p>
+
+<p><b>Art. 5 Plati si modalitati de plata:</b>
+    <br><b>5.1.</b> Beneficiarul se obliga sa achite factura emisa de catre executant in termen de 30 zile de la data
+    primirii facturii.
+</p>
+<div style="margin-top: 20px">
+    <hr>
+    <div style="text-align: right">
+        Pagina 1
+    </div>
+</div>
+
+<div >
+
+    <div ><img  src="utcn.png" height="107" width="661"/></div>
+
+        <p>
+        <br><b>5.2.</b> In cazul in care lucrarile nu sunt predate la datele si in conditiile prevazute de prezentul
+        contract si anexele acestuia, Beneficiarul are dreptul de a percepe penalizari in cuantum de 0,1 % din
+        valoarea
+        neexecutata a contractului pentru fiecare zi de intarziere.
+        <br><b>5.4.</b> Pentru desfasurarea activitatilor prevazute in prezentul contract,
+        Executantul poate solicita, cu acordul Beneficiarului, un avans
+        de pana la 50% din valoarea contractului. In acest caz, avansul acordat se retine cu ocazia platii valorii
+        activitatilor / serviciilor prestate la decontarile ulterioare acordarii avansului.
+        <br><b>5.5.</b> Orice intarziere de la plata facturilor emise de catre executant se va penaliza cu 0,1 % din
+        valoarea facturii pentru fiecare zi de intarziere. Majorarile de intarziere se calculeaza pentru fiecare zi
+        de intarziere, incepand cu ziua imediat urmatoare termenului de scadenta si pana la data stingerii sumei
+        datorate inclusiv.
+    </p>
+
+    <p><b>Art. 6</b> Obligatiile Executantului:
+        <br><b>6.1.</b> Sa raspunda de desfasurarea activitatilor sau serviciilor ce fac obiectul prezentului contract
+
+        <br>in conformitate cu specificatiile, termenele si valoarea acestora, prevazute in contract sau in
+        propunerea tehnica, anexa la contract.
+
+        <br><b>6.2.</b> Sa intocmeasca la timp documentele necesare decontarii lucrarilor, conform prevederilor
+        prezentului contract.
+
+        <br><b>6.3.</b> Sa comunice in timp util Beneficiarului toate
+        problemele aparute pe parcursul executarii contractului.
+        <br><b>6.4.</b> Sa asigure secretul profesional si sa respecte prevederile prezentului contract si ale
+        legislatiei in vigoare privind confidentialitatea informatiilor utilizate in cadrul activitatilor ce fac
+        obiectul contractului.
+
+        <br><b>6.5.</b> Sa respecte normele deontologice ale cercetarii stiintifice precum si alte reglementari
+        aplicabile.
+    </p>
+
+    <p><b>Art. 7</b> Obligatiile <b>Beneficiarului</b>:
+        <br><b>7.1.</b> Sa faca plata catre Executant a
+        valorii lucrarilor avizate, la termenele prevazute, in conformitate cu prevederile contractuale.
+        <br><b>7.2.</b> Sa puna la dispozitia Executantului toate
+        materialele, echipamentele, informatia si documentatia necesare in vederea desfasurarii serviciilor ce fac
+        obiectul prezentului contract,
+        conform specificatiilor din planurile de desfasurare a activitatilor. Acestea vor fi returnate
+        Beneficiarului la finalizarea contractului.
+        <br><b>7.3.</b> Sa asigure secretul profesional si sa respecte prevederile prezentului contract si ale
+        legislatiei in vigoare privind confidentialitatea informatiilor utilizate in cadrul activitatilor ce fac
+        obiectul contractului.</b>
+
+        <br><b>7.4.</b> Sa analizeze cu operativitate documentele prezentate de
+        Executant, pentru derularea in conditiile si la termenele specificate in prezentul
+        contract a procedurilor de decontare si finalizare a lucrarilor ce fac obiectul contractului.
+    </p>
+
+    <p><b>Art. 8 Confidentialitatea informatiilor si drepturi de proprietate intelectuala:</b>
+        <br>Problemele de proprietate intelectuala se trateaza conform legilor in vigoare.
+        <br>Contractul de confidentialitate poate fi adaptat de Executant si Beneficiar in functie de natura
+        si situatia proiectului.
+    </p>
+    <p><b>Art. 9 Incetarea contractului:</b>
+        <br><b>9.1. Prezentul contract inceteaza in urmatoarele cazuri:</b>
+
+        <br><b>9.1.1.</b> Partile convin de comun acord incetarea contractului;
+
+        <br><b>9.1.2.</b> Expirarea duratei contractului;
+        <br><b>9.1.3.</b> Prin imposibilitate de executare, in conditiile Art. 10;
+    </p>
+
+</div>
+<div style="margin-top: 70px">
+    <hr>
+    <div style="text-align: right">
+        Pagina 2
+    </div>
+</div>
+
+<div >
+    <div ><img  src="utcn.png" height="107" width="661"/></div>
+
+
+        <p><b>9.1.4.</b> De plin drept, fara a mai fi necesara interventia tribunalului arbitral, in cazul in care una
+        dintre parti este declarata in stare de incapacitate de plati sau a fost declansata procedura falimentului
+        inainte de inceperea executarii prezentului contract.
+
+        <br><b>9.1.5.</b> Prin reziliere: oricare din parti isi rezerva dreptul de a rezilia unilateral contractul in
+        cazul in care cealalta parte nu isi indeplineste obligatiile contractuale sau le indeplineste
+        necorespunzator. Rezilierea va fi notificata celeilalte parti prin scrisoare recomandata cu confirmare de
+        primire, specificand totodata si data la care rezilierea intra in vigoare, dar nu mai devreme de 15 zile de
+        la data notificarii.
+
+        <br><b>9.2.</b> Rezilierea prezentului contract nu va avea nici un efect asupra obligatiilor deja scadente intre
+        partile contractante.
+
+        <br><b>9.3.</b> Prevederile prezentului articol nu inlatura raspunderea partii care in mod culpabil a cauzat
+        incetarea contractului.
+    </p>
+    <p><b>Art. 10 Forta majora: </b>
+        <br><b>10.1.</b> Orice imprejurare imprevizibila (cum ar fi incendiu, seceta, cutremur sau alta calamitate
+        naturala) independenta de vointa partilor, aflata dincolo de orice posibilitate de control si ale carei
+        consecinte sunt de neinlaturat, intervenita dupa data semnarii acestui contract si care impiedica executarea
+        acestuia, este considerata
+        Forta Majora.
+        <br><b>10.2.</b> Forta Majora este constatata de o
+        autoritate competenta.
+        <br><b>10.3.</b> Partea contractanta care invoca
+        >Forta Majora are obligatia de a notifica celorlalte parti, in termen de 5 zile,
+        producerea acesteia si de a lua orice masuri care ii stau la dispozitie, in vederea limitarii consecintelor.
+        De
+        asemenea, partea care invoca Forta Majora este obligata sa ii notifice de indata
+        celeilalte parti incetarea cazului de Forta Majora.</p>
+
+    <b>10.4.</b> Forta Majora exonereaza partile
+        contractante de indeplinirea obligatiilor asumate prin prezentul contract, pe toata perioada in care
+        actioneaza
+        aceasta.
+        <br><b>10.5.</b> Indeplinirea contractului va fi suspendata in perioada de actiune a Fortei Majore, dar fara a
+        prejudicia drepturile ce li se cuveneau partilor pana la
+        aparitia acesteia.
+        <br><b>10.6.</b> Daca Forta Majora actioneaza sau se estimeaza ca va actiona pe o perioada mai mare de 3 luni,
+        fiecare parte va avea dreptul sa notifice celorlalte parti incetarea de plin drept a prezentului contract,
+        fara
+        ca vreuna dintre parti sa poata pretinde celorlalte parti daune interese.
+    </p>
+    <p><b>Art. 11 Legea aplicabila. Litigii:</b>
+        <br><b>11.1.</b> Prezentul contract va fi interpretat si executat conform legilor din Romania.
+
+        <br><b>11.2.</b> Partile au convenit ca toate neintelegerile decurgand din executarea prezentului contract sa fie
+        rezolvate pe cale amiabila de reprezentantii lor.
+
+        <br><b>11.3.</b> Orice litigiu intre parti, ramas nerezolvat dupa demersurile de la alineatul 11.2 va fi
+        solutionat de catre instanta judecatoreasca de drept comun.
+    </p>
+
+    <p><b>Art. 12 Notificari:</b>
+        <br><b>12.1.</b> In acceptiunea partilor contractante, orice notificare adresata de una dintre acestea celeilalte
+        este valabil indeplinita daca va fi transmisa la adresa/sediul prevazut in partea introductiva a prezentului
+        contract.
+
+        <br><b>12.2.</b> Comunicarile dintre parti se pot face si prin telefon, fax sau
+        e-mail,
+        cu conditia confirmarii in scris a primirii comunicarii.
+
+        <br><b>12.3.</b> Notificarile verbale nu se iau in considerare de nici una dintre parti, daca nu sunt confirmate,
+        prin intermediul uneia din modalitatile prevazute la alineatele precedente.
+    </p>
+
+</div>
+<div >
+    <hr>
+    <div style="text-align: right">
+        Pagina 3
+    </div>
+</div>
+<div >
+    <div ><img  src="utcn.png" height="107" width="661"/></div>
+
+    <p><b>Art. 13 Vointa partilor:</b>
+        <br><b>13.1.</b> Acest contract contine intregul acord de vointa al partilor referitor la obiectul contractului
+        si prevaleaza asupra oricarui consimtamant anterior sau oricarui antecontract intervenit intre parti in
+        legatura cu subiectul in cauza.
+
+        <br><b>13.2.</b> Partile iau la cunostinta prin prezentul si consimt ca daca vor exista la orice moment viitor
+        conflicte, interpretari eronate sau discrepante intre acest contract si orice alt document intervenit intre
+        ele in legatura cu acest contract, prevederile prezentului contract vor prevala in masura permisa de legea
+        aplicabila.
+    </p>
+
+    <p><b>Art. 14 Dispozitii finale:</b>
+        <br><b>14.1.</b> Modificarea prezentului contract se face numai prin act aditional incheiat intre partile
+        contractante si semnat de catre reprezentantii acestora.
+
+        <br><b>14.2.</b>In cazul in care partile isi incalca obligatiile lor, neexercitarea de partea care sufera vreun
+        prejudiciu a dreptului de a cere executarea intocmai sau prin echivalent banesc a obligatiei respective nu
+        inseamna ca ea a renuntat la acest drept al sau.
+        <b>14.3.</b> Prezentul contract, continand <b th:text="${numarPagini}"></b> pagini numerotate (exclusiv
+        anexele) a fost incheiat astazi <b th:text="${dataInceput}"></b>,
+        <br> intr-un numar de <b th:text="${numarExemplare}"></b> exemplare originale, toate cu valoare juridica egala,
+        din care
+
+        <br> <b th:text="${exemplareBeneficiar}"></b> exemplare raman la Beneficiar si
+        <b th:text="${exemplareUniv}"></b> exemplare raman la Executant.
+    </p>
+
+    <table style="width:100%;margin-top: 60px">
+        <tr>
+            <td>
+                <h>EXECUTANT</h>
+            </td>
+            <td>
+                <h>BENEFICIAR</h>
+            </td>
+        </tr>
+    </table>
+    <h>Universitatea Tehnica din
+        Cluj-Napoca
+    </h>
+    <table style="width:100%;">
+        <tr>
+            <td>
+               <br> <h>Rector,</h>
+            </td>
+            <td>
+                <h>.......................................</h>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h> <b th:text="${reprezentant1Univ}"></b></h>
+            </td>
+            <td>
+                <h>(semnatura autoritara)</h>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br><h>Director Economic,</h>
+            </td>
+            <td>
+                <h>LS</h>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h> <b th:text="${reprezentant2Univ}"></b></h>
+            </td>
+            <td>
+                <h> </h>
+            </td>
+        </tr>
+    </table>
+    <p>Director DMCDI
+    <br> <b th:text="${directorDMCDI}"></b></p>
+    <p style="margin-bottom: 50px;">Birou juridic,</p>
+    <p>Director de proiect
+    <br><b th:text="${directorProiect}" ></b></p>
+
+
+
+</div>
+<div style="margin-top: 135px">
+    <hr>
+    <div style="text-align: right">
+        Pagina 4
+    </div>
+</div>
+
+</body>
+
+</HTML>
